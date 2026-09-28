@@ -1,48 +1,1934 @@
 [
-{"day":1,"date":"2026-09-28","weekday":"Mon","week":"Week 1 — Articles & 3rd person -s","grammar":"Articles with countable/uncountable nouns","domain":"E-commerce storefront","scenario":"Describing product catalog & search"},
-{"day":2,"date":"2026-09-29","weekday":"Tue","week":"Week 1 — Articles & 3rd person -s","grammar":"Articles with business nouns (the/a company, a feature)","domain":"E-commerce storefront","scenario":"Cart & checkout flow"},
-{"day":3,"date":"2026-09-30","weekday":"Wed","week":"Week 1 — Articles & 3rd person -s","grammar":"Third-person -s in present simple (tech descriptions)","domain":"B2B / bulk orders","scenario":"Dealer portal walkthrough"},
-{"day":4,"date":"2026-10-01","weekday":"Thu","week":"Week 1 — Articles & 3rd person -s","grammar":"Combined drill: articles + 3rd person -s","domain":"Standup","scenario":"Describing what you're building"},
-{"day":5,"date":"2026-10-02","weekday":"Fri","week":"Week 1 — Articles & 3rd person -s","grammar":"Speaking test: articles & -s under pressure, no prep","domain":"Code review","scenario":"Defending an e-commerce feature"},
-{"day":6,"date":"2026-10-05","weekday":"Mon","week":"Week 2 — Past tense & word order","grammar":"Past simple: regular & irregular verbs","domain":"Payments / Fintech","scenario":"Explaining a past Stripe integration"},
-{"day":7,"date":"2026-10-06","weekday":"Tue","week":"Week 2 — Past tense & word order","grammar":"Past continuous vs past simple","domain":"Payments / Fintech","scenario":"Incident story — a payment bug"},
-{"day":8,"date":"2026-10-07","weekday":"Wed","week":"Week 2 — Past tense & word order","grammar":"Word order in statements & questions","domain":"Fintech","scenario":"Explaining an ID verification flow"},
-{"day":9,"date":"2026-10-08","weekday":"Thu","week":"Week 2 — Past tense & word order","grammar":"Past perfect (introduction)","domain":"Compliance & document verification","scenario":"Explaining the verification process"},
-{"day":10,"date":"2026-10-09","weekday":"Fri","week":"Week 2 — Past tense & word order","grammar":"Speaking test: tell a past-incident story, no prep","domain":"Retrospective","scenario":"STAR method storytelling"},
-{"day":11,"date":"2026-10-12","weekday":"Mon","week":"Week 3 — Infinitive vs gerund","grammar":"Verb + infinitive (decide to, want to, need to)","domain":"SaaS","scenario":"Explaining dashboard features"},
-{"day":12,"date":"2026-10-13","weekday":"Tue","week":"Week 3 — Infinitive vs gerund","grammar":"Verb + gerund (suggest, recommend, avoid)","domain":"Admin panels","scenario":"Proposing improvements"},
-{"day":13,"date":"2026-10-14","weekday":"Wed","week":"Week 3 — Infinitive vs gerund","grammar":"Mixed infinitive/gerund drills","domain":"Analytics & monitoring","scenario":"Presenting a metrics dashboard"},
-{"day":14,"date":"2026-10-15","weekday":"Thu","week":"Week 3 — Infinitive vs gerund","grammar":"Infinitive of purpose (to + verb)","domain":"UI/UX & design systems","scenario":"Explaining a design decision"},
-{"day":15,"date":"2026-10-16","weekday":"Fri","week":"Week 3 — Infinitive vs gerund","grammar":"Speaking test: recommend a UI change, no prep","domain":"Design review","scenario":"Design review meeting"},
-{"day":16,"date":"2026-10-19","weekday":"Mon","week":"Week 4 — Prepositions & conditionals","grammar":"Prepositions of time/place in business context","domain":"Logistics & delivery","scenario":"Delivery slots & scheduling"},
-{"day":17,"date":"2026-10-20","weekday":"Tue","week":"Week 4 — Prepositions & conditionals","grammar":"Prepositions with verbs (depend on, agree with, deal with)","domain":"POS / restaurant","scenario":"Order queue & kitchen status"},
-{"day":18,"date":"2026-10-21","weekday":"Wed","week":"Week 4 — Prepositions & conditionals","grammar":"Zero & first conditional","domain":"Marketplace","scenario":"If a seller cancels an order"},
-{"day":19,"date":"2026-10-22","weekday":"Thu","week":"Week 4 — Prepositions & conditionals","grammar":"Second conditional (hypothetical)","domain":"Logistics","scenario":"What would you do if the system went down?"},
-{"day":20,"date":"2026-10-23","weekday":"Fri","week":"Week 4 — Prepositions & conditionals","grammar":"Speaking test: conditional reasoning, no prep","domain":"Marketplace / customer support","scenario":"Handling a customer complaint"},
-{"day":21,"date":"2026-10-26","weekday":"Mon","week":"Week 5 — Passive voice & reported speech","grammar":"Passive voice: present & past","domain":"Events & ticketing","scenario":"Ticket booking & cancellation"},
-{"day":22,"date":"2026-10-27","weekday":"Tue","week":"Week 5 — Passive voice & reported speech","grammar":"Passive voice in technical descriptions","domain":"Subscriptions & billing","scenario":"Explaining a billing cycle"},
-{"day":23,"date":"2026-10-28","weekday":"Wed","week":"Week 5 — Passive voice & reported speech","grammar":"Reported speech — statements","domain":"Dealer portal","scenario":"Relaying a client's requirements"},
-{"day":24,"date":"2026-10-29","weekday":"Thu","week":"Week 5 — Passive voice & reported speech","grammar":"Reported speech — questions","domain":"Referral / affiliate programs","scenario":"Explaining rules to a partner"},
-{"day":25,"date":"2026-10-30","weekday":"Fri","week":"Week 5 — Passive voice & reported speech","grammar":"Speaking test: report what a stakeholder said, no prep","domain":"Client communication","scenario":"Summarizing a client call"},
-{"day":26,"date":"2026-11-02","weekday":"Mon","week":"Week 6 — Relative clauses & complex sentences","grammar":"Relative clauses (who/which/that)","domain":"Architecture decisions","scenario":"Explaining system components"},
-{"day":27,"date":"2026-11-03","weekday":"Tue","week":"Week 6 — Relative clauses & complex sentences","grammar":"Defining vs non-defining relative clauses","domain":"Security / auth","scenario":"Explaining an auth flow"},
-{"day":28,"date":"2026-11-04","weekday":"Wed","week":"Week 6 — Relative clauses & complex sentences","grammar":"Linking words (however, although, whereas)","domain":"Third-party integrations","scenario":"Discussing trade-offs"},
-{"day":29,"date":"2026-11-05","weekday":"Thu","week":"Week 6 — Relative clauses & complex sentences","grammar":"Combining clauses in technical explanations","domain":"Data & privacy (GDPR)","scenario":"Explaining a compliance requirement"},
-{"day":30,"date":"2026-11-06","weekday":"Fri","week":"Week 6 — Relative clauses & complex sentences","grammar":"Speaking test: explain an architecture decision, no prep","domain":"Architecture","scenario":"Defending a technical decision"},
-{"day":31,"date":"2026-11-09","weekday":"Mon","week":"Week 7 — Requirements, scope, estimation, trade-offs","grammar":"Review: error log from weeks 1-6","domain":"Requirements discovery","scenario":"Clarifying vague requirements"},
-{"day":32,"date":"2026-11-10","weekday":"Tue","week":"Week 7 — Requirements, scope, estimation, trade-offs","grammar":"Modal verbs (could, might, should)","domain":"Scope & scope creep","scenario":"Pushing back on a new request"},
-{"day":33,"date":"2026-11-11","weekday":"Wed","week":"Week 7 — Requirements, scope, estimation, trade-offs","grammar":"Review: articles & prepositions in estimation language","domain":"Estimation","scenario":"Giving a timeline with caveats"},
-{"day":34,"date":"2026-11-12","weekday":"Thu","week":"Week 7 — Requirements, scope, estimation, trade-offs","grammar":"Comparatives / superlatives","domain":"Trade-offs","scenario":"Comparing two technical approaches"},
-{"day":35,"date":"2026-11-13","weekday":"Fri","week":"Week 7 — Requirements, scope, estimation, trade-offs","grammar":"Speaking test: full role-play, no prep","domain":"Client discovery call","scenario":"Full discovery call simulation"},
-{"day":36,"date":"2026-11-16","weekday":"Mon","week":"Week 8 — Risks, incidents, migration, stakeholders","grammar":"Review: conditionals for risk scenarios","domain":"Risks & mitigation","scenario":"Presenting a risk to a client"},
-{"day":37,"date":"2026-11-17","weekday":"Tue","week":"Week 8 — Risks, incidents, migration, stakeholders","grammar":"Review: past tenses for incident reports","domain":"Incidents & outages","scenario":"Explaining what went wrong"},
-{"day":38,"date":"2026-11-18","weekday":"Wed","week":"Week 8 — Risks, incidents, migration, stakeholders","grammar":"Review: passive voice for process description","domain":"Migration & legacy","scenario":"Explaining a legacy system migration"},
-{"day":39,"date":"2026-11-19","weekday":"Thu","week":"Week 8 — Risks, incidents, migration, stakeholders","grammar":"Vocabulary: stakeholder management phrases","domain":"Stakeholder management","scenario":"Managing client expectations"},
-{"day":40,"date":"2026-11-20","weekday":"Fri","week":"Week 8 — Risks, incidents, migration, stakeholders","grammar":"Speaking test: full role-play, no prep","domain":"Standup & code review","scenario":"Standup + code review role-play"},
-{"day":41,"date":"2026-11-23","weekday":"Mon","week":"Week 9 — Mixed simulation (random topics)","grammar":"Mixed drill — self-test on error log","domain":"Banking / loans","scenario":"Explaining a hypothetical banking product"},
-{"day":42,"date":"2026-11-24","weekday":"Tue","week":"Week 9 — Mixed simulation (random topics)","grammar":"Mixed drill — self-test on error log","domain":"Healthcare / travel","scenario":"Small talk & random topic, no prep"},
-{"day":43,"date":"2026-11-25","weekday":"Wed","week":"Week 9 — Mixed simulation (random topics)","grammar":"Mixed drill — self-test on error log","domain":"Gambling/iGaming / real estate","scenario":"Explaining a hypothetical product"},
-{"day":44,"date":"2026-11-26","weekday":"Thu","week":"Week 9 — Mixed simulation (random topics)","grammar":"Mixed drill — self-test on error log","domain":"Storytelling","scenario":"STAR method — a challenge you overcame"},
-{"day":45,"date":"2026-11-27","weekday":"Fri","week":"Week 9 — Mixed simulation (random topics)","grammar":"Full mock simulation, back to back, no prep","domain":"Mixed","scenario":"Client call + standup + small talk"},
-{"day":46,"date":"2026-11-30","weekday":"Mon","week":"Week 10 — December prep kickoff","grammar":"Diagnostic self-check: review full error log","domain":"Exam prep planning","scenario":"Identify weak points before the December mock test"}
+{
+"day": 1,
+"date": "2026-09-28",
+"weekday": "Mon",
+"week": "Week 1 — Articles & 3rd person -s",
+"grammar": "Articles with countable/uncountable nouns",
+"domain": "E-commerce storefront",
+"scenario": "Describing product catalog & search",
+"vocab": [
+{
+"term": "inventory",
+"meaning": "the full stock of items available to sell",
+"emoji": "📦"
+},
+{
+"term": "a search filter",
+"meaning": "a control that narrows results by criteria",
+"emoji": "🔍"
+},
+{
+"term": "to browse",
+"meaning": "to look through items casually, without a specific plan",
+"emoji": "🛍️"
+},
+{
+"term": "out of stock",
+"meaning": "currently unavailable to buy",
+"emoji": "🚫"
+},
+{
+"term": "a featured product",
+"meaning": "an item highlighted for promotion",
+"emoji": "⭐"
+}
+],
+"tasks": [
+"Grammar: ask Claude/GPT to drill you on a/an/the — 10 sentences about your product catalog; self-check against \"the = specific, a/an = one of many, no article = general/plural.\"",
+"Vocabulary: write one original sentence per word above, about your own product's catalog page.",
+"Speaking: record a 3-min voice memo demoing the catalog & search feature to a \"new teammate\"; use 4+ target words.",
+"Feedback: replay the recording, log every article slip in your error sheet with the correction next to it."
+]
+},
+{
+"day": 2,
+"date": "2026-09-29",
+"weekday": "Tue",
+"week": "Week 1 — Articles & 3rd person -s",
+"grammar": "Articles with business nouns (the/a company, a feature)",
+"domain": "E-commerce storefront",
+"scenario": "Cart & checkout flow",
+"vocab": [
+{
+"term": "to add to cart",
+"meaning": "to place an item in the shopping basket",
+"emoji": "🛒"
+},
+{
+"term": "checkout flow",
+"meaning": "the sequence of steps to complete a purchase",
+"emoji": "🧾"
+},
+{
+"term": "a discount code",
+"meaning": "a code that reduces the price",
+"emoji": "🏷️"
+},
+{
+"term": "to abandon a cart",
+"meaning": "to leave without completing the purchase",
+"emoji": "🛒"
+},
+{
+"term": "a payment gateway",
+"meaning": "the service that processes online payments",
+"emoji": "💳"
+}
+],
+"tasks": [
+"Grammar: 10 GPT-drilled sentences with \"a/the + company/feature/discount\" — generic vs specific use.",
+"Vocabulary: explain the checkout flow in 5 sentences, one per word above.",
+"Speaking: 3-min recording explaining to a \"client\" why users abandon carts and what you'd fix.",
+"Feedback: mark every 3rd-person -s and article error; rewrite the 3 worst sentences correctly."
+]
+},
+{
+"day": 3,
+"date": "2026-09-30",
+"weekday": "Wed",
+"week": "Week 1 — Articles & 3rd person -s",
+"grammar": "Third-person -s in present simple (tech descriptions)",
+"domain": "B2B / bulk orders",
+"scenario": "Dealer portal walkthrough",
+"vocab": [
+{
+"term": "a bulk order",
+"meaning": "a large quantity ordered at once",
+"emoji": "📦"
+},
+{
+"term": "a dealer portal",
+"meaning": "a private site for business partners to order through",
+"emoji": "🚗"
+},
+{
+"term": "to place an order",
+"meaning": "to submit a purchase request",
+"emoji": "🛍️"
+},
+{
+"term": "a price tier",
+"meaning": "a pricing level based on volume or status",
+"emoji": "🏷️"
+},
+{
+"term": "to reconcile an order",
+"meaning": "to check it matches your records",
+"emoji": "🧮"
+}
+],
+"tasks": [
+"Grammar: drill \"he/she/it + verb-s\" — 10 present-simple sentences describing what the dealer portal does.",
+"Vocabulary: use each word above in one sentence describing a dealer's workflow.",
+"Speaking: 3-min walkthrough of the dealer portal for a new B2B client — present tense throughout.",
+"Feedback: write out your recording's transcript, circle every missing/extra -s, and fix it."
+]
+},
+{
+"day": 4,
+"date": "2026-10-01",
+"weekday": "Thu",
+"week": "Week 1 — Articles & 3rd person -s",
+"grammar": "Combined drill: articles + 3rd person -s",
+"domain": "Standup",
+"scenario": "Describing what you're building",
+"vocab": [
+{
+"term": "to be blocked on something",
+"meaning": "unable to proceed because of a dependency",
+"emoji": "🚧"
+},
+{
+"term": "a work in progress (WIP)",
+"meaning": "a task currently being done",
+"emoji": "🚧"
+},
+{
+"term": "to wrap up",
+"meaning": "to finish something",
+"emoji": "🎬"
+},
+{
+"term": "a follow-up",
+"meaning": "a subsequent action or conversation",
+"emoji": "🔁"
+},
+{
+"term": "to flag an issue",
+"meaning": "to raise a problem for attention",
+"emoji": "🚩"
+}
+],
+"tasks": [
+"Grammar: write your real standup update as text, circle every article + verb-s, self-correct with GPT.",
+"Vocabulary: slot each of the 5 words naturally into your standup update.",
+"Speaking: deliver the update out loud, unscripted, 90 seconds max — real standups are short.",
+"Feedback: note which words you hesitated on; add them to your \"activate this\" list."
+]
+},
+{
+"day": 5,
+"date": "2026-10-02",
+"weekday": "Fri",
+"week": "Week 1 — Articles & 3rd person -s",
+"grammar": "Speaking test: articles & -s under pressure, no prep",
+"domain": "Code review",
+"scenario": "Defending an e-commerce feature",
+"vocab": [
+{
+"term": "a trade-off",
+"meaning": "a balance between two competing options",
+"emoji": "⚖️"
+},
+{
+"term": "to push back on something",
+"meaning": "to politely disagree or question it",
+"emoji": "🙅"
+},
+{
+"term": "maintainable",
+"meaning": "easy to keep working and updated over time",
+"emoji": "🧱"
+},
+{
+"term": "an edge case",
+"meaning": "an unusual situation a system must still handle",
+"emoji": "🧩"
+},
+{
+"term": "to justify a decision",
+"meaning": "to explain the reasoning behind it",
+"emoji": "⚖️"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk about your e-commerce feature, self-timed, no notes.",
+"Speaking test: defend your feature design against a reviewer's pushback for 3 minutes — record it.",
+"Right after: transcribe your worst sentence and name the article/verb-s slip in it.",
+"Feedback: score yourself 1–5 on fluency + accuracy; write one line on what to fix next week."
+]
+},
+{
+"day": 6,
+"date": "2026-10-05",
+"weekday": "Mon",
+"week": "Week 2 — Past tense & word order",
+"grammar": "Past simple: regular & irregular verbs",
+"domain": "Payments / Fintech",
+"scenario": "Explaining a past Stripe integration",
+"vocab": [
+{
+"term": "to integrate with",
+"meaning": "to connect two systems together",
+"emoji": "🔌"
+},
+{
+"term": "a webhook",
+"meaning": "an automated message sent when an event happens",
+"emoji": "🔗"
+},
+{
+"term": "to roll out",
+"meaning": "to release something gradually",
+"emoji": "🚀"
+},
+{
+"term": "latency",
+"meaning": "the delay before a system responds",
+"emoji": "🐢"
+},
+{
+"term": "a fallback",
+"meaning": "a backup option if the main one fails",
+"emoji": "🛟"
+}
+],
+"tasks": [
+"Grammar: 10 past-simple sentences (regular + irregular) about the Stripe integration you built.",
+"Vocabulary: use all 5 words to describe the integration's timeline.",
+"Speaking: 3-min story \"How I integrated Stripe\" — past tense only, chronological order.",
+"Feedback: check every irregular verb form against a list; log the ones you got wrong."
+]
+},
+{
+"day": 7,
+"date": "2026-10-06",
+"weekday": "Tue",
+"week": "Week 2 — Past tense & word order",
+"grammar": "Past continuous vs past simple",
+"domain": "Payments / Fintech",
+"scenario": "Incident story — a payment bug",
+"vocab": [
+{
+"term": "a race condition",
+"meaning": "a bug caused by two processes running in the wrong order",
+"emoji": "⚡"
+},
+{
+"term": "to roll back",
+"meaning": "to undo a deployed change",
+"emoji": "⏪"
+},
+{
+"term": "root cause",
+"meaning": "the underlying reason for a problem",
+"emoji": "🔬"
+},
+{
+"term": "downtime",
+"meaning": "the period a system is unavailable",
+"emoji": "🔴"
+},
+{
+"term": "a hotfix",
+"meaning": "an urgent small fix deployed quickly",
+"emoji": "🩹"
+}
+],
+"tasks": [
+"Grammar: drill \"was/were + -ing\" vs simple past — 8 sentences about what was happening when the bug hit.",
+"Vocabulary: write the incident timeline using all 5 words above.",
+"Speaking: tell the incident story — \"While we were deploying X, Y happened\" — 3 minutes.",
+"Feedback: mark every mixed-up continuous/simple past; rewrite 3 of them correctly."
+]
+},
+{
+"day": 8,
+"date": "2026-10-07",
+"weekday": "Wed",
+"week": "Week 2 — Past tense & word order",
+"grammar": "Word order in statements & questions",
+"domain": "Fintech",
+"scenario": "Explaining an ID verification flow",
+"vocab": [
+{
+"term": "identity verification (KYC)",
+"meaning": "confirming a user's identity",
+"emoji": "🪪"
+},
+{
+"term": "a document upload",
+"meaning": "submitting a file as proof",
+"emoji": "📤"
+},
+{
+"term": "to flag a user/transaction",
+"meaning": "to mark it for review",
+"emoji": "🚩"
+},
+{
+"term": "a false positive",
+"meaning": "something wrongly flagged as an issue",
+"emoji": "🚫"
+},
+{
+"term": "compliance",
+"meaning": "following required rules and regulations",
+"emoji": "📋"
+}
+],
+"tasks": [
+"Grammar: fix 10 scrambled sentences about the verification flow into correct word order.",
+"Vocabulary: describe the verification flow step by step using all 5 words.",
+"Speaking: explain the ID verification flow to a non-technical stakeholder — 3 minutes, careful word order.",
+"Feedback: listen back, flag any sentence where the word order felt \"off,\" and rewrite it."
+]
+},
+{
+"day": 9,
+"date": "2026-10-08",
+"weekday": "Thu",
+"week": "Week 2 — Past tense & word order",
+"grammar": "Past perfect (introduction)",
+"domain": "Compliance & document verification",
+"scenario": "Explaining the verification process",
+"vocab": [
+{
+"term": "to have already done something",
+"meaning": "completed before another point in the past",
+"emoji": "⏳"
+},
+{
+"term": "an audit trail",
+"meaning": "a record of who did what, and when",
+"emoji": "📜"
+},
+{
+"term": "to escalate",
+"meaning": "to pass an issue to someone with more authority",
+"emoji": "📣"
+},
+{
+"term": "a retention policy",
+"meaning": "rules on how long data is kept",
+"emoji": "🗄️"
+},
+{
+"term": "to comply with a regulation",
+"meaning": "to follow a rule or law",
+"emoji": "📜"
+}
+],
+"tasks": [
+"Grammar: 8 sentences with \"had already + past participle\" about what was done before the audit.",
+"Vocabulary: use all 5 words to describe your compliance process.",
+"Speaking: 3-min explanation: \"By the time the audit happened, we had already...\"",
+"Feedback: check every past perfect for correct \"had + V3\"; fix any mistakes."
+]
+},
+{
+"day": 10,
+"date": "2026-10-09",
+"weekday": "Fri",
+"week": "Week 2 — Past tense & word order",
+"grammar": "Speaking test: tell a past-incident story, no prep",
+"domain": "Retrospective",
+"scenario": "STAR method storytelling",
+"vocab": [
+{
+"term": "STAR (Situation/Task/Action/Result)",
+"meaning": "a structure for telling a work story",
+"emoji": "⭐"
+},
+{
+"term": "a lesson learned",
+"meaning": "an insight gained from an experience",
+"emoji": "💡"
+},
+{
+"term": "to take ownership of something",
+"meaning": "to be responsible for it",
+"emoji": "🙋"
+},
+{
+"term": "a post-mortem",
+"meaning": "a review after an incident, to learn from it",
+"emoji": "🕯️"
+},
+{
+"term": "to mitigate a risk",
+"meaning": "to reduce its likelihood or impact",
+"emoji": "🛟"
+}
+],
+"tasks": [
+"No-prep warm-up: pick a real incident, outline S-T-A-R in 4 bullet points, 3 minutes.",
+"Speaking test: tell the full STAR story out loud, no notes, 3–4 minutes, past tense throughout.",
+"Feedback: transcribe the first 30 seconds of your recording; mark every tense error.",
+"Log the 3 most repeated mistakes from this week into your running error list."
+]
+},
+{
+"day": 11,
+"date": "2026-10-12",
+"weekday": "Mon",
+"week": "Week 3 — Infinitive vs gerund",
+"grammar": "Verb + infinitive (decide to, want to, need to)",
+"domain": "SaaS",
+"scenario": "Explaining dashboard features",
+"vocab": [
+{
+"term": "to enable a feature",
+"meaning": "to turn a feature on",
+"emoji": "🔛"
+},
+{
+"term": "customizable",
+"meaning": "able to be changed to suit the user",
+"emoji": "🎛️"
+},
+{
+"term": "a widget",
+"meaning": "a small self-contained UI component",
+"emoji": "🧩"
+},
+{
+"term": "real-time data",
+"meaning": "information updated instantly as it changes",
+"emoji": "⏱️"
+},
+{
+"term": "to configure",
+"meaning": "to set up according to requirements",
+"emoji": "⚙️"
+}
+],
+"tasks": [
+"Grammar: drill verb + infinitive (decide to, want to, need to) — 10 sentences about dashboard features.",
+"Vocabulary: write 5 sentences about the dashboard, one per word above.",
+"Speaking: 3-min demo of the dashboard's features, using infinitives naturally.",
+"Feedback: circle every infinitive/gerund slip; rewrite each one correctly."
+]
+},
+{
+"day": 12,
+"date": "2026-10-13",
+"weekday": "Tue",
+"week": "Week 3 — Infinitive vs gerund",
+"grammar": "Verb + gerund (suggest, recommend, avoid)",
+"domain": "Admin panels",
+"scenario": "Proposing improvements",
+"vocab": [
+{
+"term": "to suggest doing something",
+"meaning": "to propose an action (note: gerund, not infinitive)",
+"emoji": "💭"
+},
+{
+"term": "to avoid doing something",
+"meaning": "to stay away from an action",
+"emoji": "🚫"
+},
+{
+"term": "a bottleneck",
+"meaning": "a point that slows the whole process down",
+"emoji": "🍾"
+},
+{
+"term": "user-friendly",
+"meaning": "easy and pleasant for people to use",
+"emoji": "😊"
+},
+{
+"term": "to streamline",
+"meaning": "to make a process simpler and faster",
+"emoji": "🧹"
+}
+],
+"tasks": [
+"Grammar: drill verb + gerund (suggest, recommend, avoid) — 10 sentences proposing changes.",
+"Vocabulary: write 5 sentences proposing improvements, one per word above.",
+"Speaking: 3-min pitch to a \"PM\" proposing 3 improvements to the admin panel.",
+"Feedback: circle every gerund slip (e.g. \"suggest to do\" → \"suggest doing\"); fix it."
+]
+},
+{
+"day": 13,
+"date": "2026-10-14",
+"weekday": "Wed",
+"week": "Week 3 — Infinitive vs gerund",
+"grammar": "Mixed infinitive/gerund drills",
+"domain": "Analytics & monitoring",
+"scenario": "Presenting a metrics dashboard",
+"vocab": [
+{
+"term": "a KPI",
+"meaning": "a key performance indicator — a metric that matters",
+"emoji": "📊"
+},
+{
+"term": "to track a metric",
+"meaning": "to monitor it over time",
+"emoji": "📊"
+},
+{
+"term": "a spike / a drop",
+"meaning": "a sudden increase / decrease in a value",
+"emoji": "📈"
+},
+{
+"term": "an anomaly",
+"meaning": "something unusual that stands out from the pattern",
+"emoji": "❗"
+},
+{
+"term": "to drill down into data",
+"meaning": "to look at more detail behind a summary",
+"emoji": "🔎"
+}
+],
+"tasks": [
+"Grammar: 10 mixed infinitive/gerund sentences about analyzing metrics.",
+"Vocabulary: write 5 sentences about a metrics dashboard, one per word above.",
+"Speaking: 3-min presentation of a metrics dashboard, explaining a spike or anomaly.",
+"Feedback: mark every mixed infinitive/gerund error and correct it."
+]
+},
+{
+"day": 14,
+"date": "2026-10-15",
+"weekday": "Thu",
+"week": "Week 3 — Infinitive vs gerund",
+"grammar": "Infinitive of purpose (to + verb)",
+"domain": "UI/UX & design systems",
+"scenario": "Explaining a design decision",
+"vocab": [
+{
+"term": "consistency",
+"meaning": "the same style/behavior applied everywhere",
+"emoji": "📏"
+},
+{
+"term": "accessibility (a11y)",
+"meaning": "design that works for people with disabilities",
+"emoji": "♿"
+},
+{
+"term": "a design token",
+"meaning": "a named, reusable design value (color, spacing, etc.)",
+"emoji": "🎨"
+},
+{
+"term": "to prioritize readability",
+"meaning": "to make reading easy the main goal",
+"emoji": "👓"
+},
+{
+"term": "intuitive",
+"meaning": "easy to understand without explanation",
+"emoji": "💡"
+}
+],
+"tasks": [
+"Grammar: drill infinitive of purpose (\"we did X to achieve Y\") — 8 sentences about a design decision.",
+"Vocabulary: write 5 sentences justifying design choices, one per word above.",
+"Speaking: 3-min explanation of a design decision, using \"to + verb\" for purpose throughout.",
+"Feedback: check every purpose clause is a bare infinitive, not \"for + -ing\"; fix mistakes."
+]
+},
+{
+"day": 15,
+"date": "2026-10-16",
+"weekday": "Fri",
+"week": "Week 3 — Infinitive vs gerund",
+"grammar": "Speaking test: recommend a UI change, no prep",
+"domain": "Design review",
+"scenario": "Design review meeting",
+"vocab": [
+{
+"term": "a mockup",
+"meaning": "a visual draft of a design, before it's built",
+"emoji": "🖼️"
+},
+{
+"term": "to iterate on a design",
+"meaning": "to improve it in repeated small steps",
+"emoji": "🔁"
+},
+{
+"term": "a feedback loop",
+"meaning": "a cycle of trying something and adjusting based on results",
+"emoji": "🔁"
+},
+{
+"term": "a design system",
+"meaning": "a shared set of reusable components and rules",
+"emoji": "🎨"
+},
+{
+"term": "to advocate for something",
+"meaning": "to argue in favor of it",
+"emoji": "🎨"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk about a UI change you'd make and why.",
+"Speaking test: recommend a UI change in a design review, with justification, 3 minutes.",
+"Feedback: transcribe your weakest 30 seconds; mark every infinitive/gerund slip.",
+"Log this week's 3 most repeated mistakes into your running error list."
+]
+},
+{
+"day": 16,
+"date": "2026-10-19",
+"weekday": "Mon",
+"week": "Week 4 — Prepositions & conditionals",
+"grammar": "Prepositions of time/place in business context",
+"domain": "Logistics & delivery",
+"scenario": "Delivery slots & scheduling",
+"vocab": [
+{
+"term": "a delivery slot",
+"meaning": "a scheduled time window for delivery",
+"emoji": "🚚"
+},
+{
+"term": "to schedule for",
+"meaning": "to arrange to happen at a set time",
+"emoji": "🗓️"
+},
+{
+"term": "ETA (estimated time of arrival)",
+"meaning": "the expected arrival time",
+"emoji": "🕐"
+},
+{
+"term": "a time window",
+"meaning": "a range of time something can happen in",
+"emoji": "🕐"
+},
+{
+"term": "to reschedule",
+"meaning": "to change to a different time",
+"emoji": "🗓️"
+}
+],
+"tasks": [
+"Grammar: drill prepositions of time/place (at/on/in, for/during) — 10 sentences about scheduling.",
+"Vocabulary: write 5 sentences about delivery scheduling, one per word above.",
+"Speaking: 3-min explanation of how the scheduling system picks delivery slots.",
+"Feedback: circle every wrong preposition; write the correct one next to it."
+]
+},
+{
+"day": 17,
+"date": "2026-10-20",
+"weekday": "Tue",
+"week": "Week 4 — Prepositions & conditionals",
+"grammar": "Prepositions with verbs (depend on, agree with, deal with)",
+"domain": "POS / restaurant",
+"scenario": "Order queue & kitchen status",
+"vocab": [
+{
+"term": "to depend on",
+"meaning": "to rely on something for a result",
+"emoji": "🔗"
+},
+{
+"term": "to deal with",
+"meaning": "to handle a problem or situation",
+"emoji": "🤹"
+},
+{
+"term": "an order queue",
+"meaning": "a line of orders waiting to be processed",
+"emoji": "📥"
+},
+{
+"term": "to sync with",
+"meaning": "to keep two systems updated together",
+"emoji": "🔄"
+},
+{
+"term": "a bottleneck",
+"meaning": "the slowest point that limits overall speed",
+"emoji": "🍾"
+}
+],
+"tasks": [
+"Grammar: drill verb + preposition (depend on, agree with, deal with) — 10 sentences about the order queue.",
+"Vocabulary: write 5 sentences about the kitchen order system, one per word above.",
+"Speaking: 3-min walkthrough of how the order queue syncs with the kitchen display.",
+"Feedback: circle every wrong verb+preposition pairing; correct it."
+]
+},
+{
+"day": 18,
+"date": "2026-10-21",
+"weekday": "Wed",
+"week": "Week 4 — Prepositions & conditionals",
+"grammar": "Zero & first conditional",
+"domain": "Marketplace",
+"scenario": "If a seller cancels an order",
+"vocab": [
+{
+"term": "to cancel an order",
+"meaning": "to stop and remove a placed order",
+"emoji": "❌"
+},
+{
+"term": "a refund",
+"meaning": "money given back to the buyer",
+"emoji": "💸"
+},
+{
+"term": "a penalty",
+"meaning": "a consequence a seller faces for a rule violation",
+"emoji": "⚠️"
+},
+{
+"term": "to notify the buyer",
+"meaning": "to inform the buyer of something",
+"emoji": "📩"
+},
+{
+"term": "a dispute",
+"meaning": "a disagreement needing resolution",
+"emoji": "⚖️"
+}
+],
+"tasks": [
+"Grammar: 8 zero/first conditional sentences about what happens when a seller cancels.",
+"Vocabulary: write 5 sentences about the cancellation flow, one per word above.",
+"Speaking: 3-min explanation: \"If a seller cancels, then...\" covering refunds and penalties.",
+"Feedback: check every conditional for correct tense pairing (if + present, will + base); fix it."
+]
+},
+{
+"day": 19,
+"date": "2026-10-22",
+"weekday": "Thu",
+"week": "Week 4 — Prepositions & conditionals",
+"grammar": "Second conditional (hypothetical)",
+"domain": "Logistics",
+"scenario": "What would you do if the system went down?",
+"vocab": [
+{
+"term": "a single point of failure",
+"meaning": "one part whose failure breaks the whole system",
+"emoji": "⚠️"
+},
+{
+"term": "redundancy",
+"meaning": "having backup systems in place",
+"emoji": "🧷"
+},
+{
+"term": "to fail over to a backup",
+"meaning": "to automatically switch to a backup system",
+"emoji": "🔀"
+},
+{
+"term": "an outage",
+"meaning": "a period when a system is down",
+"emoji": "🚨"
+},
+{
+"term": "a contingency plan",
+"meaning": "a backup plan for if something goes wrong",
+"emoji": "🧯"
+}
+],
+"tasks": [
+"Grammar: 8 second-conditional hypotheticals — \"If the system went down, we would...\"",
+"Vocabulary: write 5 hypothetical sentences about system failure, one per word above.",
+"Speaking: 3-min hypothetical explanation of what you'd do if the system failed.",
+"Feedback: check every second conditional uses past simple + would; fix mistakes."
+]
+},
+{
+"day": 20,
+"date": "2026-10-23",
+"weekday": "Fri",
+"week": "Week 4 — Prepositions & conditionals",
+"grammar": "Speaking test: conditional reasoning, no prep",
+"domain": "Marketplace / customer support",
+"scenario": "Handling a customer complaint",
+"vocab": [
+{
+"term": "to empathize with a customer",
+"meaning": "to understand and share their feelings",
+"emoji": "🤗"
+},
+{
+"term": "to de-escalate",
+"meaning": "to calm a tense situation down",
+"emoji": "📣"
+},
+{
+"term": "a resolution",
+"meaning": "a solution that settles the issue",
+"emoji": "✅"
+},
+{
+"term": "a goodwill gesture",
+"meaning": "a free extra given to keep the customer happy",
+"emoji": "🎁"
+},
+{
+"term": "to follow up",
+"meaning": "to check back in after the initial contact",
+"emoji": "🎧"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk about handling a difficult customer.",
+"Speaking test: handle an angry customer's complaint using conditional reasoning (\"if you'd contacted us sooner, we could have...\"), 3 minutes.",
+"Feedback: transcribe your weakest 30 seconds; mark every conditional error.",
+"Log this week's 3 most repeated mistakes into your running error list."
+]
+},
+{
+"day": 21,
+"date": "2026-10-26",
+"weekday": "Mon",
+"week": "Week 5 — Passive voice & reported speech",
+"grammar": "Passive voice: present & past",
+"domain": "Events & ticketing",
+"scenario": "Ticket booking & cancellation",
+"vocab": [
+{
+"term": "a ticket is issued",
+"meaning": "a ticket is created and given to the buyer",
+"emoji": "🎫"
+},
+{
+"term": "to be refunded",
+"meaning": "to have your money given back",
+"emoji": "💸"
+},
+{
+"term": "a waitlist",
+"meaning": "a list of people waiting for availability",
+"emoji": "📝"
+},
+{
+"term": "to be sold out",
+"meaning": "to have no more available",
+"emoji": "🚫"
+},
+{
+"term": "a confirmation email",
+"meaning": "an email confirming an action was completed",
+"emoji": "📧"
+}
+],
+"tasks": [
+"Grammar: drill passive voice, present + past — 10 sentences about the booking flow.",
+"Vocabulary: write 5 passive sentences about ticket booking, one per word above.",
+"Speaking: 3-min passive-voice explanation of how booking and cancellation work.",
+"Feedback: check every passive is \"be + past participle\"; fix mistakes."
+]
+},
+{
+"day": 22,
+"date": "2026-10-27",
+"weekday": "Tue",
+"week": "Week 5 — Passive voice & reported speech",
+"grammar": "Passive voice in technical descriptions",
+"domain": "Subscriptions & billing",
+"scenario": "Explaining a billing cycle",
+"vocab": [
+{
+"term": "to be charged automatically",
+"meaning": "to have payment taken without manual action",
+"emoji": "💳"
+},
+{
+"term": "a billing cycle",
+"meaning": "the recurring period between charges",
+"emoji": "🧾"
+},
+{
+"term": "to be prorated",
+"meaning": "to be adjusted proportionally for partial use",
+"emoji": "🧮"
+},
+{
+"term": "an invoice",
+"meaning": "a document requesting payment",
+"emoji": "🧾"
+},
+{
+"term": "to be renewed",
+"meaning": "to continue automatically for another period",
+"emoji": "🔄"
+}
+],
+"tasks": [
+"Grammar: drill passive voice for technical processes — 10 sentences about billing.",
+"Vocabulary: write 5 passive sentences about the billing cycle, one per word above.",
+"Speaking: 3-min technical explanation of the billing cycle, passive voice throughout.",
+"Feedback: check every passive sentence; rewrite any that slipped into active voice."
+]
+},
+{
+"day": 23,
+"date": "2026-10-28",
+"weekday": "Wed",
+"week": "Week 5 — Passive voice & reported speech",
+"grammar": "Reported speech — statements",
+"domain": "Dealer portal",
+"scenario": "Relaying a client's requirements",
+"vocab": [
+{
+"term": "to relay information",
+"meaning": "to pass a message from one person to another",
+"emoji": "📨"
+},
+{
+"term": "the client said that...",
+"meaning": "the standard opener for reported statements",
+"emoji": "💬"
+},
+{
+"term": "a requirement",
+"meaning": "something the client needs the product to do",
+"emoji": "📋"
+},
+{
+"term": "to clarify",
+"meaning": "to make something clearer",
+"emoji": "❓"
+},
+{
+"term": "a misunderstanding",
+"meaning": "a case where something was understood incorrectly",
+"emoji": "😕"
+}
+],
+"tasks": [
+"Grammar: drill reported speech statements — 10 sentences relaying what a client said.",
+"Vocabulary: write 5 sentences relaying requirements, one per word above.",
+"Speaking: 3-min relay of a \"client's\" requirements to a teammate, in reported speech.",
+"Feedback: check every tense-backshift (say → said, is → was); fix mistakes."
+]
+},
+{
+"day": 24,
+"date": "2026-10-29",
+"weekday": "Thu",
+"week": "Week 5 — Passive voice & reported speech",
+"grammar": "Reported speech — questions",
+"domain": "Referral / affiliate programs",
+"scenario": "Explaining rules to a partner",
+"vocab": [
+{
+"term": "a commission",
+"meaning": "a percentage paid for a successful referral",
+"emoji": "💰"
+},
+{
+"term": "a referral link",
+"meaning": "a unique link that tracks who referred a sale",
+"emoji": "🔗"
+},
+{
+"term": "to ask whether/if",
+"meaning": "the reported-speech form of a yes/no question",
+"emoji": "❓"
+},
+{
+"term": "eligibility",
+"meaning": "whether someone qualifies for something",
+"emoji": "✅"
+},
+{
+"term": "a payout",
+"meaning": "the money actually paid to someone",
+"emoji": "💵"
+}
+],
+"tasks": [
+"Grammar: drill reported questions (\"he asked whether/if...\") — 10 sentences.",
+"Vocabulary: write 5 sentences about referral program rules, one per word above.",
+"Speaking: 3-min explanation of the program's rules to a \"partner\", in reported speech.",
+"Feedback: check every reported question drops the question word order; fix mistakes."
+]
+},
+{
+"day": 25,
+"date": "2026-10-30",
+"weekday": "Fri",
+"week": "Week 5 — Passive voice & reported speech",
+"grammar": "Speaking test: report what a stakeholder said, no prep",
+"domain": "Client communication",
+"scenario": "Summarizing a client call",
+"vocab": [
+{
+"term": "to summarize",
+"meaning": "to give the main points briefly",
+"emoji": "📝"
+},
+{
+"term": "a takeaway",
+"meaning": "the key point someone leaves with",
+"emoji": "🎁"
+},
+{
+"term": "an action item",
+"meaning": "a specific task someone commits to doing",
+"emoji": "✅"
+},
+{
+"term": "to align on something",
+"meaning": "to reach shared agreement",
+"emoji": "🤝"
+},
+{
+"term": "a next step",
+"meaning": "what happens after this point",
+"emoji": "➡️"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk summarizing any recent conversation.",
+"Speaking test: summarize a \"client call\" in reported speech, 3 minutes, covering takeaways and action items.",
+"Feedback: transcribe your weakest 30 seconds; mark every reported-speech error.",
+"Log this week's 3 most repeated mistakes into your running error list."
+]
+},
+{
+"day": 26,
+"date": "2026-11-02",
+"weekday": "Mon",
+"week": "Week 6 — Relative clauses & complex sentences",
+"grammar": "Relative clauses (who/which/that)",
+"domain": "Architecture decisions",
+"scenario": "Explaining system components",
+"vocab": [
+{
+"term": "a component that handles X",
+"meaning": "relative clause describing a part's job",
+"emoji": "🧩"
+},
+{
+"term": "a service which depends on Y",
+"meaning": "relative clause describing a dependency",
+"emoji": "🔗"
+},
+{
+"term": "a microservice",
+"meaning": "a small, independently deployable service",
+"emoji": "🧩"
+},
+{
+"term": "a monolith",
+"meaning": "a single large, tightly-coupled application",
+"emoji": "🗿"
+},
+{
+"term": "to decouple",
+"meaning": "to separate parts so they don't depend on each other",
+"emoji": "🔓"
+}
+],
+"tasks": [
+"Grammar: drill relative clauses (who/which/that) — 10 sentences describing system components.",
+"Vocabulary: write 5 sentences about your architecture, one per word above.",
+"Speaking: 3-min architecture overview, using relative clauses to describe each component.",
+"Feedback: check every relative pronoun (who=people, which=things, that=either); fix mistakes."
+]
+},
+{
+"day": 27,
+"date": "2026-11-03",
+"weekday": "Tue",
+"week": "Week 6 — Relative clauses & complex sentences",
+"grammar": "Defining vs non-defining relative clauses",
+"domain": "Security / auth",
+"scenario": "Explaining an auth flow",
+"vocab": [
+{
+"term": "a token, which expires after...",
+"meaning": "non-defining relative clause example",
+"emoji": "⏳"
+},
+{
+"term": "to authenticate",
+"meaning": "to verify who someone is",
+"emoji": "🔑"
+},
+{
+"term": "to authorize",
+"meaning": "to verify what someone is allowed to do",
+"emoji": "🔑"
+},
+{
+"term": "a session",
+"meaning": "a period of continued authenticated access",
+"emoji": "🕒"
+},
+{
+"term": "multi-factor authentication (MFA)",
+"meaning": "verification using two or more methods",
+"emoji": "🔐"
+}
+],
+"tasks": [
+"Grammar: drill defining vs non-defining relative clauses (comma or no comma) — 8 sentences about auth.",
+"Vocabulary: write 5 sentences about the auth flow, one per word above.",
+"Speaking: 3-min explanation of the auth flow, using at least one non-defining clause correctly.",
+"Feedback: check every comma decision (defining = no comma, non-defining = comma); fix mistakes."
+]
+},
+{
+"day": 28,
+"date": "2026-11-04",
+"weekday": "Wed",
+"week": "Week 6 — Relative clauses & complex sentences",
+"grammar": "Linking words (however, although, whereas)",
+"domain": "Third-party integrations",
+"scenario": "Discussing trade-offs",
+"vocab": [
+{
+"term": "however",
+"meaning": "contrast connector, starts a new sentence",
+"emoji": "🔄"
+},
+{
+"term": "although",
+"meaning": "contrast connector, joins two clauses",
+"emoji": "🔄"
+},
+{
+"term": "whereas",
+"meaning": "contrast connector for comparing two things",
+"emoji": "🔄"
+},
+{
+"term": "despite",
+"meaning": "contrast connector + noun/-ing, no full clause",
+"emoji": "🔄"
+},
+{
+"term": "vendor lock-in",
+"meaning": "being stuck with one vendor because switching is costly",
+"emoji": "🔒"
+}
+],
+"tasks": [
+"Grammar: combine 8 sentence pairs about integration trade-offs using however/although/whereas/despite.",
+"Vocabulary: write one sentence per connector above about a real trade-off you've faced.",
+"Speaking: 3-min discussion of integration trade-offs, using 4+ of these connectors.",
+"Feedback: check despite is followed by a noun/-ing, not a full clause; fix any mistakes."
+]
+},
+{
+"day": 29,
+"date": "2026-11-05",
+"weekday": "Thu",
+"week": "Week 6 — Relative clauses & complex sentences",
+"grammar": "Combining clauses in technical explanations",
+"domain": "Data & privacy (GDPR)",
+"scenario": "Explaining a compliance requirement",
+"vocab": [
+{
+"term": "personal data",
+"meaning": "information that identifies an individual",
+"emoji": "🪪"
+},
+{
+"term": "consent",
+"meaning": "permission given to process someone's data",
+"emoji": "✅"
+},
+{
+"term": "to anonymize",
+"meaning": "to remove identifying information",
+"emoji": "🕵️"
+},
+{
+"term": "data retention",
+"meaning": "how long data is kept before deletion",
+"emoji": "🗄️"
+},
+{
+"term": "a data breach",
+"meaning": "unauthorized access to protected data",
+"emoji": "🚨"
+}
+],
+"tasks": [
+"Grammar: combine simple sentences into complex ones (relative clause + connector) about a GDPR requirement.",
+"Vocabulary: write 5 sentences about data privacy, one per word above.",
+"Speaking: 3-min explanation of a compliance requirement, using complex sentences throughout.",
+"Feedback: check each complex sentence has correct punctuation; fix mistakes."
+]
+},
+{
+"day": 30,
+"date": "2026-11-06",
+"weekday": "Fri",
+"week": "Week 6 — Relative clauses & complex sentences",
+"grammar": "Speaking test: explain an architecture decision, no prep",
+"domain": "Architecture",
+"scenario": "Defending a technical decision",
+"vocab": [
+{
+"term": "scalable",
+"meaning": "able to handle growth without redesign",
+"emoji": "📐"
+},
+{
+"term": "single responsibility",
+"meaning": "a component should do one thing well",
+"emoji": "1️⃣"
+},
+{
+"term": "to future-proof",
+"meaning": "to design so it survives future change",
+"emoji": "🛡️"
+},
+{
+"term": "technical debt",
+"meaning": "the cost of quick fixes chosen over better solutions",
+"emoji": "💸"
+},
+{
+"term": "a trade-off",
+"meaning": "a balance between two competing options",
+"emoji": "⚖️"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk about an architecture decision you made.",
+"Speaking test: defend an architecture decision for 3–4 minutes, using relative clauses and connectors.",
+"Feedback: transcribe your weakest 30 seconds; mark every grammar error.",
+"Log this week's 3 most repeated mistakes into your running error list."
+]
+},
+{
+"day": 31,
+"date": "2026-11-09",
+"weekday": "Mon",
+"week": "Week 7 — Requirements, scope, estimation, trade-offs",
+"grammar": "Review: error log from weeks 1-6",
+"domain": "Requirements discovery",
+"scenario": "Clarifying vague requirements",
+"vocab": [
+{
+"term": "an open question",
+"meaning": "something not yet decided or answered",
+"emoji": "❓"
+},
+{
+"term": "to clarify scope",
+"meaning": "to define exactly what is and isn't included",
+"emoji": "🔎"
+},
+{
+"term": "an assumption",
+"meaning": "something taken as true without confirming it",
+"emoji": "🤔"
+},
+{
+"term": "a use case",
+"meaning": "a specific situation the product must support",
+"emoji": "🧩"
+},
+{
+"term": "ambiguous",
+"meaning": "unclear, open to more than one interpretation",
+"emoji": "🌫️"
+}
+],
+"tasks": [
+"Review: read your error log from weeks 1–6, pick the top 3 recurring mistakes.",
+"Vocabulary: write 5 sentences clarifying a vague requirement, one per word above.",
+"Speaking: 3-min role-play asking a \"client\" clarifying questions about a vague request.",
+"Feedback: focused only on your top 3 recurring mistakes — did you repeat any today?"
+]
+},
+{
+"day": 32,
+"date": "2026-11-10",
+"weekday": "Tue",
+"week": "Week 7 — Requirements, scope, estimation, trade-offs",
+"grammar": "Modal verbs (could, might, should)",
+"domain": "Scope & scope creep",
+"scenario": "Pushing back on a new request",
+"vocab": [
+{
+"term": "scope creep",
+"meaning": "scope quietly growing beyond what was agreed",
+"emoji": "📈"
+},
+{
+"term": "to push back",
+"meaning": "to politely resist or question a request",
+"emoji": "🙅"
+},
+{
+"term": "a change request",
+"meaning": "a formal ask to modify agreed scope",
+"emoji": "✏️"
+},
+{
+"term": "feasible",
+"meaning": "realistically possible to do",
+"emoji": "✅"
+},
+{
+"term": "a trade-off",
+"meaning": "a balance between two competing options",
+"emoji": "⚖️"
+}
+],
+"tasks": [
+"Grammar: drill modal verbs (could/might/should) for polite pushback — 8 sentences.",
+"Vocabulary: write 5 sentences pushing back on a request, one per word above.",
+"Speaking: 3-min role-play pushing back on an added feature, politely but firmly.",
+"Feedback: check your modals sound polite, not blunt (\"could we...\" vs \"you must...\"); fix tone."
+]
+},
+{
+"day": 33,
+"date": "2026-11-11",
+"weekday": "Wed",
+"week": "Week 7 — Requirements, scope, estimation, trade-offs",
+"grammar": "Review: articles & prepositions in estimation language",
+"domain": "Estimation",
+"scenario": "Giving a timeline with caveats",
+"vocab": [
+{
+"term": "a ballpark estimate",
+"meaning": "a rough, approximate figure",
+"emoji": "🎯"
+},
+{
+"term": "a buffer",
+"meaning": "extra time added in case of delays",
+"emoji": "🧯"
+},
+{
+"term": "a dependency",
+"meaning": "something that must happen before this can",
+"emoji": "🔗"
+},
+{
+"term": "a caveat",
+"meaning": "a condition or warning attached to a statement",
+"emoji": "⚠️"
+},
+{
+"term": "to commit to a date",
+"meaning": "to promise a specific deadline",
+"emoji": "📅"
+}
+],
+"tasks": [
+"Review: 10 estimation sentences — fix every article and preposition error.",
+"Vocabulary: write 5 sentences giving an estimate with a caveat, one per word above.",
+"Speaking: 3-min timeline explanation that includes 2+ caveats.",
+"Feedback: check you didn't over-commit; did every caveat land clearly?"
+]
+},
+{
+"day": 34,
+"date": "2026-11-12",
+"weekday": "Thu",
+"week": "Week 7 — Requirements, scope, estimation, trade-offs",
+"grammar": "Comparatives / superlatives",
+"domain": "Trade-offs",
+"scenario": "Comparing two technical approaches",
+"vocab": [
+{
+"term": "more scalable than",
+"meaning": "comparative form for comparing two options",
+"emoji": "📐"
+},
+{
+"term": "the simplest approach",
+"meaning": "superlative form, picking the best of several",
+"emoji": "🧩"
+},
+{
+"term": "less maintainable",
+"meaning": "comparative form, negative direction",
+"emoji": "🧱"
+},
+{
+"term": "the best trade-off",
+"meaning": "superlative form for a final recommendation",
+"emoji": "⚖️"
+},
+{
+"term": "comparable",
+"meaning": "similar enough to be fairly compared",
+"emoji": "⚖️"
+}
+],
+"tasks": [
+"Grammar: drill comparatives/superlatives — 8 sentences comparing two technical approaches.",
+"Vocabulary: write 5 comparison sentences, one per word/phrase above.",
+"Speaking: 3-min comparison of two technical approaches, ending with a clear recommendation.",
+"Feedback: check comparative/superlative forms (more/most, -er/-est); fix any mistakes."
+]
+},
+{
+"day": 35,
+"date": "2026-11-13",
+"weekday": "Fri",
+"week": "Week 7 — Requirements, scope, estimation, trade-offs",
+"grammar": "Speaking test: full role-play, no prep",
+"domain": "Client discovery call",
+"scenario": "Full discovery call simulation",
+"vocab": [
+{
+"term": "to uncover a need",
+"meaning": "to discover a requirement the client hadn't stated",
+"emoji": "🔎"
+},
+{
+"term": "a pain point",
+"meaning": "a specific problem causing frustration",
+"emoji": "😣"
+},
+{
+"term": "must-have vs nice-to-have",
+"meaning": "priority levels for requirements",
+"emoji": "⭐"
+},
+{
+"term": "to probe for detail",
+"meaning": "to ask follow-up questions to learn more",
+"emoji": "🔎"
+},
+{
+"term": "a next step",
+"meaning": "the concrete action that follows",
+"emoji": "➡️"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk about a discovery call you'd run.",
+"Speaking test: full discovery-call role-play, 5 minutes — cover requirements, scope, and a rough estimate.",
+"Feedback: transcribe your weakest exchange; mark every grammar and vocabulary miss.",
+"Update your error log with this week's full set of mistakes."
+]
+},
+{
+"day": 36,
+"date": "2026-11-16",
+"weekday": "Mon",
+"week": "Week 8 — Risks, incidents, migration, stakeholders",
+"grammar": "Review: conditionals for risk scenarios",
+"domain": "Risks & mitigation",
+"scenario": "Presenting a risk to a client",
+"vocab": [
+{
+"term": "a risk register",
+"meaning": "a list of known risks and their status",
+"emoji": "📋"
+},
+{
+"term": "likelihood",
+"meaning": "how probable something is to happen",
+"emoji": "🎲"
+},
+{
+"term": "impact",
+"meaning": "how bad the consequences would be",
+"emoji": "💥"
+},
+{
+"term": "a mitigation plan",
+"meaning": "the plan to reduce a risk's likelihood or impact",
+"emoji": "🛟"
+},
+{
+"term": "a worst-case scenario",
+"meaning": "the most damaging possible outcome",
+"emoji": "🌩️"
+}
+],
+"tasks": [
+"Review: 8 conditional sentences about risk — fix any tense-pairing mistakes.",
+"Vocabulary: write 5 sentences about a real risk, one per word above.",
+"Speaking: 3-min risk presentation to a \"client\": likelihood, impact, mitigation plan.",
+"Feedback: did you sound calm and structured, not alarmist? Note one thing to improve."
+]
+},
+{
+"day": 37,
+"date": "2026-11-17",
+"weekday": "Tue",
+"week": "Week 8 — Risks, incidents, migration, stakeholders",
+"grammar": "Review: past tenses for incident reports",
+"domain": "Incidents & outages",
+"scenario": "Explaining what went wrong",
+"vocab": [
+{
+"term": "an outage",
+"meaning": "a period when a system is unavailable",
+"emoji": "🚨"
+},
+{
+"term": "to go down",
+"meaning": "to stop working (informal, common in incident talk)",
+"emoji": "🔴"
+},
+{
+"term": "to restore service",
+"meaning": "to bring the system back to normal",
+"emoji": "🟢"
+},
+{
+"term": "a timeline of events",
+"meaning": "the chronological sequence of what happened",
+"emoji": "🕒"
+},
+{
+"term": "a professional apology",
+"meaning": "acknowledging impact without over-explaining or blaming",
+"emoji": "🙏"
+}
+],
+"tasks": [
+"Review: past tenses in an incident timeline — fix any irregular verb or tense-mixing errors.",
+"Vocabulary: write 5 sentences describing an outage, one per word above.",
+"Speaking: 3-min incident explanation to a stakeholder: what happened, impact, fix, prevention.",
+"Feedback: did your apology sound professional, not overly casual or overly formal? Adjust."
+]
+},
+{
+"day": 38,
+"date": "2026-11-18",
+"weekday": "Wed",
+"week": "Week 8 — Risks, incidents, migration, stakeholders",
+"grammar": "Review: passive voice for process description",
+"domain": "Migration & legacy",
+"scenario": "Explaining a legacy system migration",
+"vocab": [
+{
+"term": "legacy code",
+"meaning": "old code still in use, often hard to change",
+"emoji": "🗄️"
+},
+{
+"term": "to migrate data",
+"meaning": "to move data from one system to another",
+"emoji": "📦"
+},
+{
+"term": "a cutover",
+"meaning": "the moment of switching from old to new system",
+"emoji": "🔀"
+},
+{
+"term": "backward compatibility",
+"meaning": "new version still works with old data/clients",
+"emoji": "🔙"
+},
+{
+"term": "to deprecate",
+"meaning": "to mark something as being phased out",
+"emoji": "🗑️"
+}
+],
+"tasks": [
+"Review: passive voice describing migration steps — fix any that slipped into active voice.",
+"Vocabulary: write 5 passive sentences about a migration plan, one per word above.",
+"Speaking: 3-min migration plan explanation, passive voice throughout.",
+"Feedback: check every migration step sentence is clear about who's responsible, even in passive."
+]
+},
+{
+"day": 39,
+"date": "2026-11-19",
+"weekday": "Thu",
+"week": "Week 8 — Risks, incidents, migration, stakeholders",
+"grammar": "Vocabulary: stakeholder management phrases",
+"domain": "Stakeholder management",
+"scenario": "Managing client expectations",
+"vocab": [
+{
+"term": "to manage expectations",
+"meaning": "to keep what people expect realistic",
+"emoji": "🎚️"
+},
+{
+"term": "a stakeholder",
+"meaning": "anyone with an interest in the project's outcome",
+"emoji": "🤝"
+},
+{
+"term": "to align on priorities",
+"meaning": "to agree on what matters most",
+"emoji": "🤝"
+},
+{
+"term": "a status update",
+"meaning": "a brief report on current progress",
+"emoji": "📢"
+},
+{
+"term": "to under-promise and over-deliver",
+"meaning": "to set modest expectations, then exceed them",
+"emoji": "🤞"
+}
+],
+"tasks": [
+"Build a short stakeholder-update script using all 5 phrases above.",
+"Vocabulary: write one extra sentence per phrase, using your own real project.",
+"Speaking: 3-min mock status update to a stakeholder, using the script as a base but not reading it.",
+"Feedback: did it sound natural, not scripted? Note one phrase to make more automatic."
+]
+},
+{
+"day": 40,
+"date": "2026-11-20",
+"weekday": "Fri",
+"week": "Week 8 — Risks, incidents, migration, stakeholders",
+"grammar": "Speaking test: full role-play, no prep",
+"domain": "Standup & code review",
+"scenario": "Standup + code review role-play",
+"vocab": [
+{
+"term": "to give constructive feedback",
+"meaning": "to comment in a way that helps, not just criticizes",
+"emoji": "💡"
+},
+{
+"term": "to nitpick",
+"meaning": "to focus on very small, often unimportant details",
+"emoji": "🔬"
+},
+{
+"term": "a blocking comment",
+"meaning": "a review comment that must be resolved before merging",
+"emoji": "⛔"
+},
+{
+"term": "LGTM (looks good to me)",
+"meaning": "informal approval in a code review",
+"emoji": "✅"
+},
+{
+"term": "a follow-up",
+"meaning": "a subsequent action or conversation",
+"emoji": "🔁"
+}
+],
+"tasks": [
+"No-prep warm-up: 2 minutes free-talk reviewing an imaginary pull request out loud.",
+"Speaking test: back-to-back standup (2 min) then code-review role-play (3 min), no notes.",
+"Feedback: transcribe your weakest moment; mark every grammar and vocabulary miss.",
+"Full error-log review: which mistakes from weeks 6–8 are still showing up?"
+]
+},
+{
+"day": 41,
+"date": "2026-11-23",
+"weekday": "Mon",
+"week": "Week 9 — Mixed simulation (random topics)",
+"grammar": "Mixed drill — self-test on error log",
+"domain": "Banking / loans",
+"scenario": "Explaining a hypothetical banking product",
+"vocab": [
+{
+"term": "a loan",
+"meaning": "money borrowed that must be repaid",
+"emoji": "🏦"
+},
+{
+"term": "an interest rate",
+"meaning": "the cost of borrowing, as a percentage",
+"emoji": "📈"
+},
+{
+"term": "to qualify for a loan",
+"meaning": "to meet the requirements to be approved",
+"emoji": "🏦"
+},
+{
+"term": "collateral",
+"meaning": "an asset pledged to secure a loan",
+"emoji": "🏠"
+},
+{
+"term": "a repayment schedule",
+"meaning": "the plan for paying a loan back over time",
+"emoji": "🗓️"
+}
+],
+"tasks": [
+"Self-test: pick 5 recurring mistakes from your error log and drill them for 10 minutes.",
+"Vocabulary: write 5 sentences about a hypothetical banking feature, one per word above.",
+"Speaking: 3-min no-prep explanation of a hypothetical banking product feature.",
+"Feedback: did any of your 5 target mistakes show up again? Note it plainly."
+]
+},
+{
+"day": 42,
+"date": "2026-11-24",
+"weekday": "Tue",
+"week": "Week 9 — Mixed simulation (random topics)",
+"grammar": "Mixed drill — self-test on error log",
+"domain": "Healthcare / travel",
+"scenario": "Small talk & random topic, no prep",
+"vocab": [
+{
+"term": "to book an appointment",
+"meaning": "to arrange a time for a medical visit",
+"emoji": "📅"
+},
+{
+"term": "a check-up",
+"meaning": "a routine medical examination",
+"emoji": "🩺"
+},
+{
+"term": "a layover",
+"meaning": "a stop between flights on a journey",
+"emoji": "🛫"
+},
+{
+"term": "to reschedule a flight",
+"meaning": "to change it to a different time or date",
+"emoji": "✈️"
+},
+{
+"term": "jet lag",
+"meaning": "tiredness from crossing time zones",
+"emoji": "😴"
+}
+],
+"tasks": [
+"Self-test: pick 5 recurring mistakes from your error log and drill them for 10 minutes.",
+"Vocabulary: write 5 small-talk sentences using the words above.",
+"Speaking: 5 minutes of no-prep small talk on a random topic — weekend plans, travel, health.",
+"Feedback: note where you froze or paused too long; that's your target for next time."
+]
+},
+{
+"day": 43,
+"date": "2026-11-25",
+"weekday": "Wed",
+"week": "Week 9 — Mixed simulation (random topics)",
+"grammar": "Mixed drill — self-test on error log",
+"domain": "Gambling/iGaming / real estate",
+"scenario": "Explaining a hypothetical product",
+"vocab": [
+{
+"term": "a wager",
+"meaning": "a bet placed on an outcome",
+"emoji": "🎲"
+},
+{
+"term": "responsible gambling",
+"meaning": "practices that limit gambling-related harm",
+"emoji": "🎲"
+},
+{
+"term": "a mortgage",
+"meaning": "a loan specifically for buying property",
+"emoji": "🏠"
+},
+{
+"term": "a down payment",
+"meaning": "the upfront portion paid before financing the rest",
+"emoji": "🏠"
+},
+{
+"term": "to appreciate in value",
+"meaning": "to become worth more over time",
+"emoji": "📈"
+}
+],
+"tasks": [
+"Self-test: pick 5 recurring mistakes from your error log and drill them for 10 minutes.",
+"Vocabulary: write 5 sentences using the words above, in either domain.",
+"Speaking: 3-min no-prep pitch of a hypothetical product in gambling or real estate.",
+"Feedback: did you reach for a B2 connector (however/although/despite) even once? Note it."
+]
+},
+{
+"day": 44,
+"date": "2026-11-26",
+"weekday": "Thu",
+"week": "Week 9 — Mixed simulation (random topics)",
+"grammar": "Mixed drill — self-test on error log",
+"domain": "Storytelling",
+"scenario": "STAR method — a challenge you overcame",
+"vocab": [
+{
+"term": "resilience",
+"meaning": "the ability to recover from difficulty",
+"emoji": "💪"
+},
+{
+"term": "to overcome a challenge",
+"meaning": "to successfully deal with a difficulty",
+"emoji": "🏔️"
+},
+{
+"term": "a turning point",
+"meaning": "the moment things started to change",
+"emoji": "🔀"
+},
+{
+"term": "to reflect on something",
+"meaning": "to think carefully about a past experience",
+"emoji": "🪞"
+},
+{
+"term": "a lesson learned",
+"meaning": "an insight gained from an experience",
+"emoji": "💡"
+}
+],
+"tasks": [
+"Self-test: pick 5 recurring mistakes from your error log and drill them for 10 minutes.",
+"Vocabulary: write 5 sentences about a real challenge, one per word above.",
+"Speaking: 4-min STAR story about a real challenge you overcame, no notes.",
+"Feedback: did the story have a clear turning point and result? Tighten it if not."
+]
+},
+{
+"day": 45,
+"date": "2026-11-27",
+"weekday": "Fri",
+"week": "Week 9 — Mixed simulation (random topics)",
+"grammar": "Full mock simulation, back to back, no prep",
+"domain": "Mixed",
+"scenario": "Client call + standup + small talk",
+"vocab": [
+{
+"term": "a wrap-up",
+"meaning": "a short closing summary",
+"emoji": "🎁"
+},
+{
+"term": "to circle back",
+"meaning": "to return to a topic later",
+"emoji": "🔁"
+},
+{
+"term": "to keep this brief",
+"meaning": "a polite way to signal you'll be quick",
+"emoji": "⏱️"
+},
+{
+"term": "any final questions?",
+"meaning": "a natural way to close a conversation",
+"emoji": "❓"
+},
+{
+"term": "a takeaway",
+"meaning": "the key point someone leaves with",
+"emoji": "🎁"
+}
+],
+"tasks": [
+"No warm-up — go straight in, cold, like a real day.",
+"Back-to-back, no breaks: 2-min standup → 3-min client call → 2-min small talk.",
+"Immediately after: write down every moment you froze or reached for Russian.",
+"Full feedback session: log every error across all three simulations into your error sheet."
+]
+},
+{
+"day": 46,
+"date": "2026-11-30",
+"weekday": "Mon",
+"week": "Week 10 — December prep kickoff",
+"grammar": "Diagnostic self-check: review full error log",
+"domain": "Exam prep planning",
+"scenario": "Identify weak points before the December mock test",
+"vocab": [
+{
+"term": "a diagnostic",
+"meaning": "an assessment that identifies specific weak points",
+"emoji": "🩺"
+},
+{
+"term": "a weak point",
+"meaning": "a specific, recurring gap in ability",
+"emoji": "📉"
+},
+{
+"term": "a study plan",
+"meaning": "a structured plan for what to practice and when",
+"emoji": "📚"
+},
+{
+"term": "to prioritize review",
+"meaning": "to choose what to revisit first, based on impact",
+"emoji": "📌"
+},
+{
+"term": "exam format",
+"meaning": "the specific structure and timing of the real test",
+"emoji": "📝"
+}
+],
+"tasks": [
+"Read through your full September–November error log, start to finish.",
+"Group every mistake into the 3 biggest recurring patterns (e.g. articles, past tense, connectors).",
+"Write a 1-paragraph December study plan that targets those 3 patterns specifically.",
+"No speaking task today — this is a planning day. Save the plan somewhere you'll actually reread it."
+]
+}
 ]

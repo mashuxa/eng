@@ -8,6 +8,7 @@ export type Progress = {
   lessons: Record<string, boolean>;
   activity: Record<string, boolean>;
   goal: Goal | null;
+  words: Record<string, boolean>;
 };
 
 type ProgressContextValue = {
@@ -17,10 +18,12 @@ type ProgressContextValue = {
   toggleActivity: (iso: string) => void;
   setGoal: (start: string, end: string) => void;
   clearGoal: () => void;
+  toggleWord: (key: string) => void;
+  wordsKnownForDay: (day: number, terms: string[]) => number;
 };
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
-const EMPTY: Progress = { lessons: {}, activity: {}, goal: null };
+const EMPTY: Progress = { lessons: {}, activity: {}, goal: null, words: {} };
 const KEY = 'eng-progress';
 
 function readLocal(): Progress {
@@ -32,6 +35,7 @@ function readLocal(): Progress {
         lessons: parsed.lessons || {},
         activity: parsed.activity || {},
         goal: parsed.goal || null,
+        words: parsed.words || {},
       };
     }
   } catch {
@@ -90,8 +94,21 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     update((prev) => ({ ...prev, goal: null }));
   }
 
+  function toggleWord(key: string) {
+    update((prev) => ({
+      ...prev,
+      words: { ...prev.words, [key]: !prev.words[key] },
+    }));
+  }
+
+  function wordsKnownForDay(day: number, terms: string[]) {
+    return terms.filter((t) => progress.words[`${day}:${t}`]).length;
+  }
+
   return (
-    <ProgressContext.Provider value={{ progress, ready, toggleLesson, toggleActivity, setGoal, clearGoal }}>
+    <ProgressContext.Provider
+      value={{ progress, ready, toggleLesson, toggleActivity, setGoal, clearGoal, toggleWord, wordsKnownForDay }}
+    >
       {children}
     </ProgressContext.Provider>
   );

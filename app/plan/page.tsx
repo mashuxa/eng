@@ -1,17 +1,9 @@
 'use client';
 
-import { useProgress } from '@/lib/progress-context';
-import lessons from '@/data/lessons.json';
+import LessonCard, { Lesson } from '@/components/LessonCard';
+import lessonsData from '@/data/lessons.json';
 
-type Lesson = {
-  day: number;
-  date: string;
-  weekday: string;
-  week: string;
-  grammar: string;
-  domain: string;
-  scenario: string;
-};
+const lessons = lessonsData as Lesson[];
 
 function fmtDate(iso: string) {
   const [, m, d] = iso.split('-');
@@ -19,10 +11,8 @@ function fmtDate(iso: string) {
 }
 
 export default function PlanPage() {
-  const { progress, toggleLesson } = useProgress();
-
   const weeks = new Map<string, Lesson[]>();
-  (lessons as Lesson[]).forEach((l) => {
+  lessons.forEach((l) => {
     if (!weeks.has(l.week)) weeks.set(l.week, []);
     weeks.get(l.week)!.push(l);
   });
@@ -53,22 +43,9 @@ export default function PlanPage() {
             {fmtDate(items[0].date)} – {fmtDate(items[items.length - 1].date)}
           </div>
           <h4>{weekName}</h4>
-          {items.map((l) => {
-            const done = !!progress.lessons[String(l.day)];
-            return (
-              <label className={'lesson-row' + (done ? ' done' : '')} key={l.day}>
-                <input type="checkbox" checked={done} onChange={() => toggleLesson(l.day)} />
-                <span className="lesson-day">Day {l.day}</span>
-                <span className="lesson-date">
-                  {fmtDate(l.date)} · {l.weekday}
-                </span>
-                <span className="lesson-grammar">{l.grammar}</span>
-                <span className="lesson-domain">
-                  {l.domain} — {l.scenario}
-                </span>
-              </label>
-            );
-          })}
+          {items.map((l) => (
+            <LessonCard lesson={l} key={l.day} />
+          ))}
         </div>
       ))}
 
