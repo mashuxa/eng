@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useProgress } from '@/lib/progress-context';
 import Flashcards from '@/components/Flashcards';
+import WordImage from '@/components/WordImage';
 
 export type VocabItem = { term: string; meaning: string };
 
@@ -78,6 +79,7 @@ export default function LessonCard({ lesson }: { lesson: Lesson }) {
                 const isKnown = !!progress.words[k];
                 return (
                   <li key={v.term} className={'vocab-item' + (isKnown ? ' known' : '')}>
+                    <WordImage imgKey={k} />
                     <span className="vocab-text">
                       <b>{v.term}</b>
                       <span className="vocab-meaning"> — {v.meaning}</span>

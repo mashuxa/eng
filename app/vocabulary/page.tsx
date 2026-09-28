@@ -2,6 +2,7 @@
 
 import { useProgress } from '@/lib/progress-context';
 import vocabData from '@/data/vocabulary.json';
+import WordImage from '@/components/WordImage';
 
 type VocabRow = {
   word: string;
@@ -61,6 +62,7 @@ export default function VocabularyPage() {
                 const isKnown = !!progress.words[k];
                 return (
                   <li key={r.word} className={'vocab-item' + (isKnown ? ' known' : '')}>
+                    <WordImage imgKey={k} />
                     <span className="vocab-text">
                       <b>{r.word}</b>
                       {r.translation && <span className="vocab-meaning"> — {r.translation}</span>}

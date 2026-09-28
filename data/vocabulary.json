@@ -1,45 +1,94 @@
 [
 {
+"word": "backlash",
+"translation": "отрицательная реакция, отпор",
+"category": "Crisis & Incidents",
+"example": "The failed deploy caused backlash from the client.",
+"level": "C1"
+},
+{
+"word": "contingency plan",
+"translation": "резервный план",
+"category": "Crisis & Incidents",
+"example": "We need a contingency plan if the third-party API goes down.",
+"level": "C1"
+},
+{
+"word": "damage control",
+"translation": "контроль ущерба",
+"category": "Crisis & Incidents",
+"example": "We're in damage control mode — the client saw the broken UI.",
+"level": "B2"
+},
+{
+"word": "data breach",
+"translation": "утечка данных",
+"category": "Crisis & Incidents",
+"example": "We had a data breach — user tokens were exposed.",
+"level": "B2"
+},
+{
 "word": "derail",
 "translation": "сбить с пути",
 "category": "Crisis & Incidents",
 "example": "One bad PR can derail the entire sprint.",
-"level": null
+"level": "B2"
+},
+{
+"word": "escalation",
+"translation": "эскалация проблемы",
+"category": "Crisis & Incidents",
+"example": "This needs escalation — the client is waiting.",
+"level": "B2"
 },
 {
 "word": "incident response",
 "translation": "реагирование на инцидент",
 "category": "Crisis & Incidents",
 "example": "The incident response took 3 hours but we resolved it.",
-"level": null
+"level": "B2"
 },
 {
-"word": "Root cause",
-"translation": "основная причина",
+"word": "mitigate risks",
+"translation": "снижать риски",
 "category": "Crisis & Incidents",
-"example": "The root cause of the problem was a software bug.",
-"level": null
+"example": "We need to mitigate the risk of downtime during the migration.",
+"level": "B2"
+},
+{
+"word": "mitigation",
+"translation": "снижение рисков",
+"category": "Crisis & Incidents",
+"example": "What's the mitigation plan if the deploy fails?",
+"level": "B2"
+},
+{
+"word": "pinpoint",
+"translation": "точно выявить, определить",
+"category": "Crisis & Incidents",
+"example": "We need to pinpoint where the memory leak is happening.",
+"level": "B2"
 },
 {
 "word": "root cause analysis",
 "translation": "коренная причина",
 "category": "Crisis & Incidents",
 "example": "The root cause was a missing null check in the auth service.",
-"level": null
+"level": "C1"
 },
 {
 "word": "a nuanced view of the world",
 "translation": null,
 "category": "Expressions",
 "example": "Startups have to have a more nuanced view of the world.",
-"level": null
+"level": "C1"
 },
 {
 "word": "a wrong mindset",
 "translation": null,
 "category": "Expressions",
 "example": "It may be a wrong mindset to raise venture capital today.",
-"level": null
+"level": "B2"
 },
 {
 "word": "act as a stimulus",
@@ -53,13 +102,83 @@
 "translation": null,
 "category": "Expressions",
 "example": "Large companies can benefit from applying a top-down approach.",
+"level": "B2"
+},
+{
+"word": "be into something",
+"translation": "увлекаться, любить что-то",
+"category": "Expressions",
+"example": null,
 "level": null
 },
 {
-"word": "drop by",
+"word": "be on the rise",
 "translation": null,
 "category": "Expressions",
+"example": "I always see LinkedIn on the rise.",
+"level": null
+},
+{
+"word": "be scared of",
+"translation": null,
+"category": "Expressions",
+"example": "For a lot of people, that is what they are scared of.",
+"level": null
+},
+{
+"word": "be willing to spend",
+"translation": null,
+"category": "Expressions",
+"example": "Users are willing to spend a couple thousand dollars a month.",
+"level": null
+},
+{
+"word": "bring to the table",
+"translation": "вносить ценность, привносить",
+"category": "Expressions",
+"example": "She really brings a lot to the table in terms of UX thinking.",
+"level": "C1"
+},
+{
+"word": "build off viral posts",
+"translation": null,
+"category": "Expressions",
+"example": "They build their whole newsletter just off viral X posts.",
+"level": "B2"
+},
+{
+"word": "by far",
+"translation": "безусловно, гораздо",
+"category": "Expressions",
+"example": "This is by far the cleanest solution we've had.",
+"level": "B1"
+},
+{
+"word": "by then",
+"translation": null,
+"category": "Expressions",
+"example": "Everyone had tried AI by then.",
+"level": "B1"
+},
+{
+"word": "check myself",
+"translation": "сдерживать себя, контролировать себя",
+"category": "Expressions",
 "example": null,
+"level": null
+},
+{
+"word": "Cope with",
+"translation": "справляться с",
+"category": "Expressions",
+"example": "It's hard to cope with several urgent tasks at once.",
+"level": null
+},
+{
+"word": "Deal with",
+"translation": "иметь дело с; справляться с",
+"category": "Expressions",
+"example": "I'm dealing with a production issue right now.",
 "level": null
 },
 {
@@ -74,84 +193,98 @@
 "translation": "развлекать / допускать мысль",
 "category": "Expressions",
 "example": "I refuse to entertain that idea — it'll derail the sprint.",
-"level": null
+"level": "B2"
 },
 {
 "word": "entertain an idea",
 "translation": "рассматривать идею, допускать мысль",
 "category": "Expressions",
 "example": "I'm willing to entertain the idea of refactoring the whole module.",
+"level": "B2"
+},
+{
+"word": "evolve the product",
+"translation": null,
+"category": "Expressions",
+"example": "They try to evolve the product with every release.",
 "level": null
 },
 {
-"word": "keep visibility high",
+"word": "expand media presence",
 "translation": null,
+"category": "Expressions",
+"example": "Creators can expand their media presence.",
+"level": null
+},
+{
+"word": "feel adventurous",
+"translation": "быть настроенным попробовать что-то новое",
 "category": "Expressions",
 "example": null,
 "level": null
 },
 {
-"word": "kick off",
-"translation": null,
+"word": "Feel in my element",
+"translation": "чувствовать себя в своей стихии",
 "category": "Expressions",
-"example": null,
+"example": "I feel in my element when I'm discussing frontend architecture.",
 "level": null
 },
 {
-"word": "make a trade-off",
+"word": "get there",
 "translation": null,
 "category": "Expressions",
-"example": null,
+"example": "Once the technology gets there, the workflow becomes easier.",
 "level": null
 },
 {
-"word": "make significant progress",
-"translation": null,
+"word": "negativity",
+"translation": "негативный настрой",
 "category": "Expressions",
-"example": null,
+"example": "His constant negativity is affecting the whole team.",
+"level": "B2"
+},
+{
+"word": "overwhelming",
+"translation": "подавляющий, невыносимый",
+"category": "Expressions",
+"example": "The amount of legacy code was overwhelming.",
+"level": "B2"
+},
+{
+"word": "refuse",
+"translation": "отказываться",
+"category": "Expressions",
+"example": "I refuse to entertain negativity — let's focus on solutions.",
+"level": "B2"
+},
+{
+"word": "Stand my ground",
+"translation": "стоять на своем, отстаивать свою позицию",
+"category": "Expressions",
+"example": "I stood my ground and explained why I disagreed with the approach.",
 "level": null
 },
 {
-"word": "resonate with",
-"translation": null,
+"word": "suspicious",
+"translation": "подозрительный",
 "category": "Expressions",
-"example": "The content formats can resonate with the target audience.",
+"example": "The spike in errors looked suspicious after the deploy.",
+"level": "B1"
+},
+{
+"word": "Under the table",
+"translation": "тайно, неофициально",
+"category": "Expressions",
+"example": "They paid him under the table.",
 "level": null
 },
 {
-"word": "retain knowledge",
-"translation": null,
+"word": "when it comes to",
+"translation": "когда речь идёт о...",
 "category": "Expressions",
-"example": null,
-"level": null
-},
-{
-"word": "riches are in the niches",
-"translation": null,
-"category": "Expressions",
-"example": "Riches are in the niches, as they say.",
-"level": null
-},
-{
-"word": "right away",
-"translation": null,
-"category": "Expressions",
-"example": "Let's get very practical right away.",
-"level": null
-},
-{
-"word": "shape the product",
-"translation": null,
-"category": "Expressions",
-"example": "Customer interviews helped shape the product.",
-"level": null
-},
-{
-"word": "sit on",
-"translation": null,
-"category": "Expressions",
-"example": null,
-"level": null
+"example": "When it comes to performance, React is very flexible.",
+"level": "B2"
 },
 {
 "word": "although",
@@ -175,6 +308,27 @@
 "level": null
 },
 {
+"word": "even though",
+"translation": "даже если, несмотря на то что",
+"category": "Linking Words",
+"example": "Even though the deadline is tight, quality matters.",
+"level": null
+},
+{
+"word": "Furthermore",
+"translation": "кроме того",
+"category": "Linking Words",
+"example": "The product is affordable and, furthermore, environmentally friendly.",
+"level": null
+},
+{
+"word": "however",
+"translation": "однако",
+"category": "Linking Words",
+"example": "The feature works, however it has performance issues.",
+"level": null
+},
+{
 "word": "in contrast",
 "translation": "в отличие, напротив",
 "category": "Linking Words",
@@ -182,10 +336,17 @@
 "level": null
 },
 {
-"word": "instead",
+"word": "Instead",
 "translation": "вместо этого",
 "category": "Linking Words",
 "example": "She decided to stay home instead of going to the party.",
+"level": null
+},
+{
+"word": "Otherwise",
+"translation": "в противном случае",
+"category": "Linking Words",
+"example": "You need to hurry; otherwise, you'll miss the train.",
 "level": null
 },
 {
@@ -193,6 +354,27 @@
 "translation": "поскольку, так как",
 "category": "Linking Words",
 "example": "Since the PR isn't reviewed, I can't merge yet.",
+"level": null
+},
+{
+"word": "therefore",
+"translation": "следовательно",
+"category": "Linking Words",
+"example": "The API is unstable, therefore we added a retry mechanism.",
+"level": null
+},
+{
+"word": "unless",
+"translation": "если не, если только не",
+"category": "Linking Words",
+"example": "Unless the tests pass, we can't ship this.",
+"level": null
+},
+{
+"word": "whereas",
+"translation": "в то время как, тогда как",
+"category": "Linking Words",
+"example": "The frontend is fast, whereas the backend is the bottleneck.",
 "level": null
 },
 {
@@ -329,13 +511,6 @@
 "level": "B1"
 },
 {
-"word": "pull out",
-"translation": null,
-"category": "Phrasal Verbs",
-"example": null,
-"level": null
-},
-{
 "word": "reach out",
 "translation": "связаться, написать",
 "category": "Phrasal Verbs",
@@ -406,13 +581,6 @@
 "level": "B1"
 },
 {
-"word": "wipe out",
-"translation": null,
-"category": "Phrasal Verbs",
-"example": null,
-"level": null
-},
-{
 "word": "work out",
 "translation": "разобраться, решить",
 "category": "Phrasal Verbs",
@@ -424,35 +592,98 @@
 "translation": "повестка дня",
 "category": "Standup Phrases",
 "example": "Can you add this to the agenda for tomorrow's sync?",
-"level": null
+"level": "B1"
 },
 {
 "word": "alignment",
 "translation": "согласованность",
 "category": "Standup Phrases",
 "example": "We need alignment between design and engineering before we start.",
+"level": "B2"
+},
+{
+"word": "For transparency...",
+"translation": "чтобы всем было понятно...",
+"category": "Standup Phrases",
+"example": "For transparency, this task might slip if the API isn't ready.",
+"level": "B2"
+},
+{
+"word": "I made significant progress on...",
+"translation": "я значительно продвинулся в работе над...",
+"category": "Standup Phrases",
+"example": "I made significant progress on the filtering feature.",
+"level": "B2"
+},
+{
+"word": "I need clarification on...",
+"translation": "мне нужно уточнение по...",
+"category": "Standup Phrases",
+"example": "I need clarification on the expected behaviour for edge cases.",
+"level": "B2"
+},
+{
+"word": "I ran into a problem with...",
+"translation": "я столкнулся с проблемой в...",
+"category": "Standup Phrases",
+"example": "I ran into a problem with the WebSocket connection.",
+"level": "B2"
+},
+{
+"word": "I wrapped up...",
+"translation": "я завершил...",
+"category": "Standup Phrases",
+"example": "I wrapped up the integration with the payment service.",
 "level": null
+},
+{
+"word": "I'm blocked by...",
+"translation": "меня блокирует...",
+"category": "Standup Phrases",
+"example": "I'm blocked by the missing API contract from the backend team.",
+"level": "B1"
+},
+{
+"word": "I'm pushing forward with...",
+"translation": "я продолжаю работу над...",
+"category": "Standup Phrases",
+"example": "Today I'm pushing forward with the dashboard redesign.",
+"level": "B1"
+},
+{
+"word": "I'm still figuring out...",
+"translation": "я всё ещё разбираюсь с...",
+"category": "Standup Phrases",
+"example": "I'm still figuring out why the component re-renders twice.",
+"level": "B1"
 },
 {
 "word": "Just to make sure we're aligned...",
 "translation": "просто чтобы убедиться что мы на одной волне...",
 "category": "Standup Phrases",
 "example": "Just to make sure we're aligned — the priority this week is the auth flow.",
-"level": null
+"level": "B2"
 },
 {
-"word": "accomplish",
-"translation": "достичь, выполнить",
-"category": "Tech & Business",
-"example": null,
-"level": null
+"word": "milestone",
+"translation": "веховый пункт, этап",
+"category": "Standup Phrases",
+"example": "The release milestone is end of sprint.",
+"level": "A2"
 },
 {
-"word": "acquisition",
-"translation": "приобретение",
-"category": "Tech & Business",
-"example": null,
-"level": null
+"word": "There's a bottleneck in...",
+"translation": "есть затор в...",
+"category": "Standup Phrases",
+"example": "There's a bottleneck in QA that might delay deployment.",
+"level": "B2"
+},
+{
+"word": "We kicked off...",
+"translation": "мы запустили...",
+"category": "Standup Phrases",
+"example": "We kicked off the new sprint with a planning session.",
+"level": "B1"
 },
 {
 "word": "Address",
@@ -476,67 +707,11 @@
 "level": "B2"
 },
 {
-"word": "Agile",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "allocate",
-"translation": "распределять, выделять",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "allocation",
-"translation": "распределение, выделение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "ambiguity",
-"translation": "неопределённость",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "amplify",
-"translation": "усиливать",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "anticipate",
-"translation": "предвидеть, ожидать",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "anticipation",
-"translation": "предвидение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
 "word": "applicability",
 "translation": "применимость",
 "category": "Tech & Business",
 "example": null,
 "level": "C1"
-},
-{
-"word": "articulate",
-"translation": "чётко выражать",
-"category": "Tech & Business",
-"example": null,
-"level": null
 },
 {
 "word": "articulation",
@@ -553,27 +728,6 @@
 "level": null
 },
 {
-"word": "assumption",
-"translation": "допущение, предположение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "attain",
-"translation": "достичь",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "attribution",
-"translation": "приписывание, атрибуция",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
 "word": "augmentation",
 "translation": "расширение, увеличение",
 "category": "Tech & Business",
@@ -581,11 +735,11 @@
 "level": null
 },
 {
-"word": "Bottleneck",
-"translation": "узкое место, препятствие",
+"word": "bottleneck",
+"translation": "узкое место, затор",
 "category": "Tech & Business",
-"example": "The API is the main bottleneck in the current workflow.",
-"level": null
+"example": "Using useCallback incorrectly can create a bottleneck.",
+"level": "B2"
 },
 {
 "word": "breakthrough",
@@ -609,151 +763,11 @@
 "level": "C1"
 },
 {
-"word": "collaboration",
-"translation": null,
+"word": "constraint",
+"translation": "ограничение",
 "category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "compatibility",
-"translation": "совместимость",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "competence",
-"translation": "компетентность",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "compliance",
-"translation": "соответствие",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "conflict resolution",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "consensus",
-"translation": "согласие, консенсус",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "consolidation",
-"translation": "консолидация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "continuous improvement",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "customer feedback",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "decentralization",
-"translation": "децентрализация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "delineation",
-"translation": "очерчивание, разграничение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "deterrent",
-"translation": "сдерживающий фактор",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "detrimental",
-"translation": "вредный, негативный",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "deviation",
-"translation": "отклонение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "differentiate",
-"translation": "дифференцироваться",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "differentiation",
-"translation": "дифференциация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "discrepancy",
-"translation": "расхождение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "disrupt",
-"translation": "разрушать, революционизировать",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "disruption",
-"translation": "разрушение, дисрапция",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "disruptive",
-"translation": "разрушающий, революционный",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "diversification",
-"translation": "диверсификация",
-"category": "Tech & Business",
-"example": null,
-"level": null
+"example": "Due to time constraints, we'll ship the core features first.",
+"level": "B2"
 },
 {
 "word": "Division",
@@ -763,66 +777,10 @@
 "level": "B2"
 },
 {
-"word": "efficacy",
-"translation": "эффективность",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "elasticity",
-"translation": "эластичность",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "emerge",
-"translation": "появляться",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "empower",
-"translation": "давать возможности",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "empowerment",
-"translation": "расширение возможностей",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "enablement",
-"translation": "возможность, активация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "engage",
-"translation": "вовлекать, взаимодействовать",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
 "word": "Ensure",
 "translation": "обеспечивать; убеждаться",
 "category": "Tech & Business",
 "example": "We need to ensure the deployment goes smoothly.",
-"level": null
-},
-{
-"word": "equilibrium",
-"translation": "равновесие",
-"category": "Tech & Business",
-"example": null,
 "level": null
 },
 {
@@ -833,24 +791,10 @@
 "level": "B1"
 },
 {
-"word": "exposure",
-"translation": "воздействие, открытость",
+"word": "feasibility",
+"translation": "реалистичность, осуществимость",
 "category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "extrapolation",
-"translation": "экстраполяция",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "facilitation",
-"translation": "содействие, фасилитация",
-"category": "Tech & Business",
-"example": null,
+"example": "Let's check the technical feasibility before committing to this.",
 "level": null
 },
 {
@@ -868,74 +812,11 @@
 "level": "B2"
 },
 {
-"word": "foresight",
-"translation": "дальновидение, предвидение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "friction",
-"translation": "трение, сопротивление",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
 "word": "Glitch",
 "translation": "сбой, ошибка",
 "category": "Tech & Business",
 "example": "There was a glitch in the program during the presentation.",
 "level": "B1"
-},
-{
-"word": "governance",
-"translation": "управление",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "harmonization",
-"translation": "гармонизация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "incentive",
-"translation": "стимул, мотивация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "interoperability",
-"translation": "интероперабельность",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "Kanban",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "leverage",
-"translation": "рычаг влияния; использовать",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "leverageable",
-"translation": "применимый как рычаг",
-"category": "Tech & Business",
-"example": null,
-"level": null
 },
 {
 "word": "Loss",
@@ -952,60 +833,18 @@
 "level": "B2"
 },
 {
-"word": "mitigation",
-"translation": "снижение рисков",
+"word": "proof of concept",
+"translation": "доказательство концепции",
 "category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "orchestration",
-"translation": "оркестрация",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "plenty of pre-seed capital",
-"translation": null,
-"category": "Tech & Business",
-"example": "There is plenty of pre-seed capital available today.",
-"level": null
-},
-{
-"word": "proficiency",
-"translation": "владение",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "proof of payment",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "redundancy",
-"translation": "избыточность, дублирование",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "resilience",
-"translation": "устойчивость, гибкость",
-"category": "Tech & Business",
-"example": null,
-"level": null
+"example": "This is just a proof of concept — not production ready.",
+"level": "C1"
 },
 {
 "word": "retain",
 "translation": "сохранять, удерживать",
 "category": "Tech & Business",
 "example": "The app retains user data even after logout.",
-"level": null
+"level": "B2"
 },
 {
 "word": "Revenue",
@@ -1015,39 +854,11 @@
 "level": "B2"
 },
 {
-"word": "reverse-engineer",
-"translation": "анализировать с конца",
-"category": "Tech & Business",
-"example": "Let's reverse-engineer why this worked so well.",
-"level": null
-},
-{
 "word": "sandbox",
 "translation": "изолированная среда для тестов",
 "category": "Tech & Business",
 "example": "Let's test it in the sandbox before touching production.",
-"level": null
-},
-{
-"word": "Scrum",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "severity of a risk",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "software suite",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
+"level": "B2"
 },
 {
 "word": "Spreadsheet",
@@ -1064,13 +875,6 @@
 "level": "B2"
 },
 {
-"word": "sustainability",
-"translation": "устойчивое развитие",
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
 "word": "Tackle",
 "translation": "решать, заниматься проблемой",
 "category": "Tech & Business",
@@ -1078,31 +882,17 @@
 "level": null
 },
 {
+"word": "trade-off",
+"translation": "компромисс",
+"category": "Tech & Business",
+"example": "There's a trade-off between performance and readability here.",
+"level": "B2"
+},
+{
 "word": "upfront",
 "translation": "заранее; предварительно; на начальном этапе",
 "category": "Tech & Business",
 "example": "The second option requires more work upfront, but it gives us more flexibility as the product grows.",
 "level": "B2"
-},
-{
-"word": "version control",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "work in progress",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
-},
-{
-"word": "workflow",
-"translation": null,
-"category": "Tech & Business",
-"example": null,
-"level": null
 }
 ]

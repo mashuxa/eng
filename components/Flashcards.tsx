@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useProgress } from '@/lib/progress-context';
+import WordImage from '@/components/WordImage';
 
 type Word = { term: string; meaning: string };
 
@@ -38,6 +39,7 @@ export default function Flashcards({ day, words }: { day: number; words: Word[] 
       <div className={'flashcard' + (flipped ? ' flipped' : '')} onClick={() => setFlipped((f) => !f)}>
         <div className="flashcard-inner">
           <div className="flashcard-face flashcard-front">
+            <WordImage imgKey={key} size="lg" />
             <div className="flash-term">{w.term}</div>
             <div className="flash-hint">tap to flip</div>
           </div>

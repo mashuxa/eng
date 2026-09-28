@@ -9,6 +9,7 @@ export type Progress = {
   activity: Record<string, boolean>;
   goal: Goal | null;
   words: Record<string, boolean>;
+  images: Record<string, string>;
 };
 
 type ProgressContextValue = {
@@ -20,10 +21,12 @@ type ProgressContextValue = {
   clearGoal: () => void;
   toggleWord: (key: string) => void;
   wordsKnownForDay: (day: number, terms: string[]) => number;
+  setImage: (key: string, url: string) => void;
+  clearImage: (key: string) => void;
 };
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
-const EMPTY: Progress = { lessons: {}, activity: {}, goal: null, words: {} };
+const EMPTY: Progress = { lessons: {}, activity: {}, goal: null, words: {}, images: {} };
 const KEY = 'eng-progress';
 
 function readLocal(): Progress {
@@ -36,6 +39,7 @@ function readLocal(): Progress {
         activity: parsed.activity || {},
         goal: parsed.goal || null,
         words: parsed.words || {},
+        images: parsed.images || {},
       };
     }
   } catch {
@@ -105,9 +109,35 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     return terms.filter((t) => progress.words[`${day}:${t}`]).length;
   }
 
+  function setImage(key: string, url: string) {
+    update((prev) => ({
+      ...prev,
+      images: { ...prev.images, [key]: url },
+    }));
+  }
+
+  function clearImage(key: string) {
+    update((prev) => {
+      const images = { ...prev.images };
+      delete images[key];
+      return { ...prev, images };
+    });
+  }
+
   return (
     <ProgressContext.Provider
-      value={{ progress, ready, toggleLesson, toggleActivity, setGoal, clearGoal, toggleWord, wordsKnownForDay }}
+      value={{
+        progress,
+        ready,
+        toggleLesson,
+        toggleActivity,
+        setGoal,
+        clearGoal,
+        toggleWord,
+        wordsKnownForDay,
+        setImage,
+        clearImage,
+      }}
     >
       {children}
     </ProgressContext.Provider>
