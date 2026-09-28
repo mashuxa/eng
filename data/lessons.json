@@ -220,6 +220,10 @@
 {
 "term": "a territory",
 "meaning": "the region a dealer is assigned to sell in"
+},
+{
+"term": "a walkthrough",
+"meaning": "пошаговый показ/разбор (например, интерфейса)"
 }
 ],
 "tasks": [
@@ -980,6 +984,14 @@
 {
 "term": "a benchmark",
 "meaning": "a reference point used for comparison"
+},
+{
+"term": "a feature demo",
+"meaning": "демонстрация функции"
+},
+{
+"term": "an end-to-end demo",
+"meaning": "демонстрация полного пользовательского сценария"
 }
 ],
 "tasks": [

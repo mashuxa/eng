@@ -77,27 +77,6 @@
 "level": "C1"
 },
 {
-"word": "a nuanced view of the world",
-"translation": null,
-"category": "Expressions",
-"example": "Startups have to have a more nuanced view of the world.",
-"level": "C1"
-},
-{
-"word": "a wrong mindset",
-"translation": null,
-"category": "Expressions",
-"example": "It may be a wrong mindset to raise venture capital today.",
-"level": "B2"
-},
-{
-"word": "act as a stimulus",
-"translation": "выступать стимулом",
-"category": "Expressions",
-"example": null,
-"level": null
-},
-{
 "word": "apply a top-down approach",
 "translation": null,
 "category": "Expressions",
@@ -112,24 +91,10 @@
 "level": null
 },
 {
-"word": "be on the rise",
-"translation": null,
-"category": "Expressions",
-"example": "I always see LinkedIn on the rise.",
-"level": null
-},
-{
 "word": "be scared of",
 "translation": null,
 "category": "Expressions",
 "example": "For a lot of people, that is what they are scared of.",
-"level": null
-},
-{
-"word": "be willing to spend",
-"translation": null,
-"category": "Expressions",
-"example": "Users are willing to spend a couple thousand dollars a month.",
 "level": null
 },
 {
@@ -138,13 +103,6 @@
 "category": "Expressions",
 "example": "She really brings a lot to the table in terms of UX thinking.",
 "level": "C1"
-},
-{
-"word": "build off viral posts",
-"translation": null,
-"category": "Expressions",
-"example": "They build their whole newsletter just off viral X posts.",
-"level": "B2"
 },
 {
 "word": "by far",
@@ -175,17 +133,17 @@
 "level": null
 },
 {
+"word": "count on",
+"translation": "рассчитывать на",
+"category": "Expressions",
+"example": "You can count on me to review the PR today.",
+"level": "B1"
+},
+{
 "word": "Deal with",
 "translation": "иметь дело с; справляться с",
 "category": "Expressions",
 "example": "I'm dealing with a production issue right now.",
-"level": null
-},
-{
-"word": "eight out of eight",
-"translation": null,
-"category": "Expressions",
-"example": "Eight out of eight said the same thing.",
 "level": null
 },
 {
@@ -210,20 +168,6 @@
 "level": null
 },
 {
-"word": "expand media presence",
-"translation": null,
-"category": "Expressions",
-"example": "Creators can expand their media presence.",
-"level": null
-},
-{
-"word": "feel adventurous",
-"translation": "быть настроенным попробовать что-то новое",
-"category": "Expressions",
-"example": null,
-"level": null
-},
-{
 "word": "Feel in my element",
 "translation": "чувствовать себя в своей стихии",
 "category": "Expressions",
@@ -231,17 +175,24 @@
 "level": null
 },
 {
-"word": "get there",
-"translation": null,
+"word": "go over",
+"translation": "разобрать, пройтись по (деталям)",
 "category": "Expressions",
-"example": "Once the technology gets there, the workflow becomes easier.",
-"level": null
+"example": "Let's go over the requirements one more time before we start.",
+"level": "B1"
 },
 {
 "word": "negativity",
 "translation": "негативный настрой",
 "category": "Expressions",
 "example": "His constant negativity is affecting the whole team.",
+"level": "B2"
+},
+{
+"word": "on top of all of that",
+"translation": "вдобавок ко всему",
+"category": "Expressions",
+"example": "On top of all of that, the deploy failed right before the demo.",
 "level": "B2"
 },
 {
@@ -252,10 +203,45 @@
 "level": "B2"
 },
 {
+"word": "prior to that",
+"translation": "до этого, перед этим",
+"category": "Expressions",
+"example": "Prior to that, we were using a different state management library.",
+"level": "B2"
+},
+{
 "word": "refuse",
 "translation": "отказываться",
 "category": "Expressions",
 "example": "I refuse to entertain negativity — let's focus on solutions.",
+"level": "B2"
+},
+{
+"word": "rely on",
+"translation": "полагаться на",
+"category": "Expressions",
+"example": "The frontend relies on this API being stable before we can ship.",
+"level": "B1"
+},
+{
+"word": "resonate with",
+"translation": "находить отклик, быть созвучным",
+"category": "Expressions",
+"example": "This proposal really resonates with the rest of the team.",
+"level": "B2"
+},
+{
+"word": "right away",
+"translation": "сразу же, немедленно",
+"category": "Expressions",
+"example": "I'll push the hotfix right away.",
+"level": "B1"
+},
+{
+"word": "sit on",
+"translation": "откладывать, тянуть с решением",
+"category": "Expressions",
+"example": "Don't sit on this decision too long — the deadline is close.",
 "level": "B2"
 },
 {
@@ -271,6 +257,20 @@
 "category": "Expressions",
 "example": "The spike in errors looked suspicious after the deploy.",
 "level": "B1"
+},
+{
+"word": "the way to go",
+"translation": "лучший, правильный вариант действий",
+"category": "Expressions",
+"example": "Using TypeScript here is definitely the way to go.",
+"level": "B2"
+},
+{
+"word": "treat something as",
+"translation": "относиться к чему-то как к...",
+"category": "Expressions",
+"example": "We treat this bug as a P1 since it blocks checkout.",
+"level": "B2"
 },
 {
 "word": "Under the table",
@@ -686,81 +686,53 @@
 "level": "B1"
 },
 {
-"word": "Address",
-"translation": "решать; рассматривать, затрагивать",
+"word": "ambiguity",
+"translation": "неопределённость, двусмысленность",
 "category": "Tech & Business",
-"example": "We need to address this problem before the release.",
-"level": null
-},
-{
-"word": "adversity",
-"translation": "трудность, неблагоприятные условия",
-"category": "Tech & Business",
-"example": null,
-"level": "C1"
-},
-{
-"word": "advocacy",
-"translation": "поддержка, отстаивание",
-"category": "Tech & Business",
-"example": null,
+"example": "The requirements had too much ambiguity, so we scheduled a call to clarify.",
 "level": "B2"
 },
 {
-"word": "applicability",
-"translation": "применимость",
+"word": "assumption",
+"translation": "предположение, допущение",
 "category": "Tech & Business",
-"example": null,
-"level": "C1"
+"example": "Let's write down our assumptions before we estimate the task.",
+"level": "B2"
 },
 {
-"word": "articulation",
-"translation": "ясность речи",
+"word": "bandwidth",
+"translation": "пропускная способность; свободные ресурсы/время",
 "category": "Tech & Business",
-"example": null,
-"level": "C1"
-},
-{
-"word": "Assess",
-"translation": "оценивать",
-"category": "Tech & Business",
-"example": "Let's assess the impact before we make a decision.",
-"level": null
-},
-{
-"word": "augmentation",
-"translation": "расширение, увеличение",
-"category": "Tech & Business",
-"example": null,
-"level": null
+"example": "I don't have the bandwidth to take on another project this sprint.",
+"level": "B2"
 },
 {
 "word": "bottleneck",
-"translation": "узкое место, затор",
+"translation": "узкое место, препятствие",
 "category": "Tech & Business",
-"example": "Using useCallback incorrectly can create a bottleneck.",
+"example": "The API is the main bottleneck in the current workflow.",
 "level": "B2"
 },
 {
-"word": "breakthrough",
-"translation": "прорыв, открытие",
+"word": "compliance",
+"translation": "соответствие требованиям",
 "category": "Tech & Business",
-"example": null,
-"level": null
+"example": "We need the feature to be in compliance with the new data policy.",
+"level": "B2"
 },
 {
-"word": "bypass incumbent tooling",
-"translation": null,
+"word": "conflict resolution",
+"translation": "разрешение конфликта",
 "category": "Tech & Business",
-"example": "AI-native agencies try to bypass incumbent tooling like Adobe.",
-"level": "C1"
+"example": "The team lead stepped in for some quick conflict resolution during the debate.",
+"level": "B2"
 },
 {
-"word": "calibration",
-"translation": "калибровка",
+"word": "consensus",
+"translation": "единое мнение, консенсус",
 "category": "Tech & Business",
-"example": null,
-"level": "C1"
+"example": "We reached a consensus on which library to use for state management.",
+"level": "B2"
 },
 {
 "word": "constraint",
@@ -770,66 +742,94 @@
 "level": "B2"
 },
 {
-"word": "Division",
-"translation": "подразделение, деление",
+"word": "continuous improvement",
+"translation": "постоянное совершенствование",
 "category": "Tech & Business",
-"example": "The division is responsible for marketing and sales.",
+"example": "Refactoring the checkout flow is part of our continuous improvement process.",
 "level": "B2"
 },
 {
-"word": "Ensure",
-"translation": "обеспечивать; убеждаться",
+"word": "credibility",
+"translation": "авторитет, доверие",
 "category": "Tech & Business",
-"example": "We need to ensure the deployment goes smoothly.",
-"level": null
+"example": "Shipping on time builds credibility with the stakeholders.",
+"level": "B2"
 },
 {
-"word": "Expense",
-"translation": "расход",
+"word": "customer feedback",
+"translation": "отзывы клиентов",
 "category": "Tech & Business",
-"example": "The trip was an unexpected expense in their budget.",
+"example": "We prioritized this fix based on customer feedback from the support tickets.",
 "level": "B1"
+},
+{
+"word": "discrepancy",
+"translation": "расхождение, несоответствие",
+"category": "Tech & Business",
+"example": "There's a discrepancy between the design mockup and what's in production.",
+"level": "B2"
+},
+{
+"word": "disruption",
+"translation": "срыв, серьёзное нарушение работы",
+"category": "Tech & Business",
+"example": "The outage caused a major disruption to the checkout process.",
+"level": "B2"
+},
+{
+"word": "facilitate",
+"translation": "способствовать, облегчать",
+"category": "Tech & Business",
+"example": "This new component will facilitate faster onboarding for new developers.",
+"level": "B2"
 },
 {
 "word": "feasibility",
-"translation": "реалистичность, осуществимость",
+"translation": "осуществимость",
 "category": "Tech & Business",
 "example": "Let's check the technical feasibility before committing to this.",
-"level": null
+"level": "C1"
 },
 {
-"word": "feature",
-"translation": "включать как функцию, отличаться",
+"word": "forecast",
+"translation": "прогноз; прогнозировать",
 "category": "Tech & Business",
-"example": null,
-"level": "A2"
-},
-{
-"word": "Foreign key",
-"translation": "внешний ключ",
-"category": "Tech & Business",
-"example": "The foreign key connects two tables in the database.",
+"example": "We forecast the migration will take about two sprints.",
 "level": "B2"
 },
 {
-"word": "Glitch",
-"translation": "сбой, ошибка",
+"word": "friction",
+"translation": "трение, сложности во взаимодействии",
 "category": "Tech & Business",
-"example": "There was a glitch in the program during the presentation.",
-"level": "B1"
+"example": "The extra approval step adds friction to the release process.",
+"level": "B2"
 },
 {
-"word": "Loss",
-"translation": "потеря, убыток",
+"word": "governance",
+"translation": "управление, регулирование",
 "category": "Tech & Business",
-"example": "The company faced a significant loss last quarter.",
-"level": "B1"
+"example": "We need clearer governance around who can merge to main.",
+"level": "C1"
 },
 {
-"word": "Malware",
-"translation": "вредоносное ПО",
+"word": "incentive",
+"translation": "стимул, мотивация",
 "category": "Tech & Business",
-"example": "The malware infected the system and stole sensitive data.",
+"example": "There's an incentive to ship early, but not at the cost of quality.",
+"level": "B2"
+},
+{
+"word": "leverage",
+"translation": "рычаг влияния; использовать в своих интересах",
+"category": "Tech & Business",
+"example": "We can leverage the existing component library instead of building from scratch.",
+"level": "B2"
+},
+{
+"word": "mitigate",
+"translation": "смягчать, снижать риски",
+"category": "Tech & Business",
+"example": "We added a fallback to mitigate the risk of the third-party API failing.",
 "level": "B2"
 },
 {
@@ -840,17 +840,24 @@
 "level": "C1"
 },
 {
+"word": "redundancy",
+"translation": "избыточность, дублирование",
+"category": "Tech & Business",
+"example": "We built in some redundancy so one failing service doesn't take down the app.",
+"level": "B2"
+},
+{
+"word": "resilience",
+"translation": "устойчивость, отказоустойчивость",
+"category": "Tech & Business",
+"example": "Adding retries improved the resilience of the payment flow.",
+"level": "B2"
+},
+{
 "word": "retain",
 "translation": "сохранять, удерживать",
 "category": "Tech & Business",
 "example": "The app retains user data even after logout.",
-"level": "B2"
-},
-{
-"word": "Revenue",
-"translation": "доход, выручка",
-"category": "Tech & Business",
-"example": "The company's revenue increased by 20% this year.",
 "level": "B2"
 },
 {
@@ -861,25 +868,11 @@
 "level": "B2"
 },
 {
-"word": "Spreadsheet",
-"translation": "таблица",
+"word": "throughput",
+"translation": "пропускная способность системы",
 "category": "Tech & Business",
-"example": "I updated the spreadsheet with the latest numbers.",
-"level": "B1"
-},
-{
-"word": "Supplier",
-"translation": "поставщик",
-"category": "Tech & Business",
-"example": "We need to find a new supplier for office materials.",
+"example": "Caching improved the throughput of the search endpoint.",
 "level": "B2"
-},
-{
-"word": "Tackle",
-"translation": "решать, заниматься проблемой",
-"category": "Tech & Business",
-"example": "Let's tackle the most critical issue first.",
-"level": null
 },
 {
 "word": "trade-off",
@@ -889,10 +882,17 @@
 "level": "B2"
 },
 {
-"word": "upfront",
-"translation": "заранее; предварительно; на начальном этапе",
+"word": "version control",
+"translation": "контроль версий",
 "category": "Tech & Business",
-"example": "The second option requires more work upfront, but it gives us more flexibility as the product grows.",
-"level": "B2"
+"example": "All the code lives under version control in Git.",
+"level": "B1"
+},
+{
+"word": "workflow",
+"translation": "рабочий процесс",
+"category": "Tech & Business",
+"example": "The new CI setup streamlined our whole workflow.",
+"level": "B1"
 }
 ]
