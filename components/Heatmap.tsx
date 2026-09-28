@@ -3,29 +3,33 @@
 import { useEffect, useRef } from 'react';
 import { useProgress } from '@/lib/progress-context';
 
-const HEATMAP_START = '2026-09-28'; // Monday
-const HEATMAP_END = '2026-12-31';
 const MONTH_NAMES = ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'];
 
-type Cell = { iso: string; isFuture: boolean; isToday: boolean };
+type Cell = { iso: string; isFuture: boolean; isToday: boolean; isPadding: boolean };
 type MonthLabel = { month: number; col: number };
 
-function buildCells() {
-  const start = new Date(HEATMAP_START + 'T00:00:00');
-  const end = new Date(HEATMAP_END + 'T00:00:00');
+function buildCells(startStr: string, endStr: string) {
+  const realStart = new Date(startStr + 'T00:00:00');
+  const end = new Date(endStr + 'T00:00:00');
+
+  // pad back to the Monday on/before the real start so weekday rows line up with the labels
+  const dow0 = (realStart.getDay() + 6) % 7; // Mon=0..Sun=6
+  const gridStart = new Date(realStart);
+  gridStart.setDate(realStart.getDate() - dow0);
+
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const todayIso = today.toISOString().slice(0, 10);
 
   const cells: Cell[] = [];
   const monthLabels: MonthLabel[] = [];
-  let d = new Date(start);
+  let d = new Date(gridStart);
   let dayIndex = 0;
   let lastMonth = -1;
 
   while (d <= end) {
     const iso = d.toISOString().slice(0, 10);
-    const dow = (d.getDay() + 6) % 7; // Mon=0..Sun=6
+    const dow = (d.getDay() + 6) % 7;
     const col = Math.floor(dayIndex / 7);
     if (dow === 0) {
       const m = d.getMonth();
@@ -34,21 +38,26 @@ function buildCells() {
         monthLabels.push({ month: m, col });
       }
     }
-    cells.push({ iso, isFuture: d > today, isToday: iso === todayIso });
+    cells.push({
+      iso,
+      isFuture: d > today,
+      isToday: iso === todayIso,
+      isPadding: d < realStart,
+    });
     d.setDate(d.getDate() + 1);
     dayIndex++;
   }
   return { cells, monthLabels };
 }
 
-export default function Heatmap() {
-  const { progress, toggleActivity } = useProgress();
+export default function Heatmap({ start, end }: { start: string; end: string }) {
+  const { progress, toggleActivity, isSignedIn } = useProgress();
   const scrollRef = useRef<HTMLDivElement>(null);
-  const { cells, monthLabels } = buildCells();
+  const { cells, monthLabels } = buildCells(start, end);
 
   useEffect(() => {
     if (scrollRef.current) scrollRef.current.scrollLeft = scrollRef.current.scrollWidth;
-  }, []);
+  }, [start, end]);
 
   return (
     <div className="heatmap-wrap">
@@ -70,21 +79,25 @@ export default function Heatmap() {
           ))}
         </div>
         <div className="heatmap-grid">
-          {cells.map((c) => (
-            <div
-              key={c.iso}
-              className={
-                'cell' +
-                (progress.activity[c.iso] ? ' done' : '') +
-                (c.isFuture ? ' future' : '') +
-                (c.isToday ? ' today' : '')
-              }
-              title={c.iso}
-              onClick={() => {
-                if (!c.isFuture) toggleActivity(c.iso);
-              }}
-            />
-          ))}
+          {cells.map((c) =>
+            c.isPadding ? (
+              <div key={c.iso} className="cell pad" />
+            ) : (
+              <div
+                key={c.iso}
+                className={
+                  'cell' +
+                  (progress.activity[c.iso] ? ' done' : '') +
+                  (c.isFuture || !isSignedIn ? ' future' : '') +
+                  (c.isToday ? ' today' : '')
+                }
+                title={!isSignedIn ? 'Sign in to save progress' : c.iso}
+                onClick={() => {
+                  if (!c.isFuture && isSignedIn) toggleActivity(c.iso);
+                }}
+              />
+            )
+          )}
         </div>
       </div>
     </div>

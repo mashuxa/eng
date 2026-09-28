@@ -19,7 +19,7 @@ function fmtDate(iso: string) {
 }
 
 export default function PlanPage() {
-  const { progress, toggleLesson } = useProgress();
+  const { progress, toggleLesson, isSignedIn } = useProgress();
 
   const weeks = new Map<string, Lesson[]>();
   (lessons as Lesson[]).forEach((l) => {
@@ -47,6 +47,13 @@ export default function PlanPage() {
         </div>
       </div>
 
+      {!isSignedIn && (
+        <div className="signin-banner">
+          <b>Sign in to save progress</b>
+          <span>Checkboxes are disabled while you&apos;re signed out.</span>
+        </div>
+      )}
+
       {Array.from(weeks.entries()).map(([weekName, items]) => (
         <div className="week" key={weekName}>
           <div className="dates">
@@ -57,7 +64,12 @@ export default function PlanPage() {
             const done = !!progress.lessons[String(l.day)];
             return (
               <label className={'lesson-row' + (done ? ' done' : '')} key={l.day}>
-                <input type="checkbox" checked={done} onChange={() => toggleLesson(l.day)} />
+                <input
+                  type="checkbox"
+                  checked={done}
+                  disabled={!isSignedIn}
+                  onChange={() => toggleLesson(l.day)}
+                />
                 <span className="lesson-day">Day {l.day}</span>
                 <span className="lesson-date">
                   {fmtDate(l.date)} · {l.weekday}

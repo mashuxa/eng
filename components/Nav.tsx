@@ -8,6 +8,7 @@ const TABS = [
   { href: '/', label: 'Home' },
   { href: '/topics', label: 'Topics' },
   { href: '/plan', label: 'Plan' },
+  { href: '/vocabulary', label: 'Vocabulary' },
 ];
 
 export default function Nav() {
