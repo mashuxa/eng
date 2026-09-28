@@ -3,9 +3,13 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { createContext, useContext, useEffect, useRef, useState, ReactNode } from 'react';
 
-const SUPABASE_URL = 'https://cfwocsqltypzuuxlofdu.supabase.co';
+// Fallback values keep local dev / a Vercel deploy without env vars working too —
+// these are public anon keys, safe to read from the client either way.
+const SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://jimlnwemwyyzqybtbkxg.supabase.co';
 const SUPABASE_KEY =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNmd29jc3FsdHlwenV1eGxvZmR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5NzM1MDksImV4cCI6MjA5MzU0OTUwOX0.9Xa_PtYTsP2rRY2VbvOLwIm9A-RX6XgC1k3HMR37_S4';
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppbWxud2Vtd3l5enF5YnRia3hnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA2MDU3MzMsImV4cCI6MjEwNjE4MTczM30.kzRfBmuzidF-p6CqfW7u_3bpQ7dydOF3TLemcZiF_OI';
 
 export type Progress = {
   lessons: Record<string, boolean>;
