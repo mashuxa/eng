@@ -39,6 +39,37 @@
   .day-structure{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;}
   .day-structure div{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:0.85rem;flex:1;min-width:130px;}
   .day-structure div b{display:block;color:var(--accent2);font-size:0.8rem;margin-bottom:2px;}
+
+  /* lesson rows */
+  .lesson-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:0.85rem;cursor:pointer;}
+  .lesson-row:last-child{border-bottom:none;}
+  .lesson-row input{margin-top:3px;flex-shrink:0;accent-color:var(--accent2);}
+  .lesson-row.done .lesson-grammar, .lesson-row.done .lesson-day{opacity:.5;text-decoration:line-through;}
+  .lesson-day{color:var(--accent);font-weight:600;min-width:48px;flex-shrink:0;}
+  .lesson-date{color:var(--muted);min-width:78px;flex-shrink:0;}
+  .lesson-grammar{color:var(--text);min-width:210px;flex-shrink:0;}
+  .lesson-domain{color:var(--muted);}
+  @media(max-width:760px){.lesson-row{flex-wrap:wrap;}}
+
+  /* heatmap */
+  .sync-line{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:0.8rem;color:var(--muted);}
+  .sync-dot{width:8px;height:8px;border-radius:50%;background:var(--muted);flex-shrink:0;}
+  .sync-dot.ok{background:var(--accent2);}
+  .sync-dot.err{background:#ff8a8a;}
+  .heatmap-wrap{display:flex;gap:8px;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;}
+  .heatmap-labels{display:flex;flex-direction:column;justify-content:space-between;gap:3px;font-size:0.65rem;color:var(--muted);padding-top:18px;flex-shrink:0;}
+  .heatmap-labels div{height:13px;line-height:13px;}
+  .heatmap-scroll{overflow-x:auto;max-width:100%;padding-bottom:4px;}
+  .heatmap-months{display:grid;grid-auto-flow:column;grid-auto-columns:14px;gap:3px;height:14px;margin-bottom:4px;}
+  .month-label{font-size:0.65rem;color:var(--muted);white-space:nowrap;}
+  .heatmap-grid{display:grid;grid-template-rows:repeat(7,13px);grid-auto-flow:column;grid-auto-columns:13px;gap:3px;}
+  .cell{width:13px;height:13px;border-radius:3px;background:var(--chip);border:1px solid var(--chip-border);cursor:pointer;}
+  .cell:hover{border-color:var(--accent);}
+  .cell.done{background:var(--accent2);border-color:var(--accent2);}
+  .cell.future{cursor:default;opacity:.35;}
+  .cell.future:hover{border-color:var(--chip-border);}
+  .cell.today{box-shadow:0 0 0 2px var(--accent);}
+
   @media(max-width:720px){.app{flex-direction:column}nav{width:100%;height:auto;position:relative;display:flex;gap:6px;padding:12px;}nav h1{display:none}nav button{margin:0;flex:1;text-align:center}main{padding:20px;}}
 </style>
 </head>
@@ -57,9 +88,20 @@
       <p class="sub">Senior frontend developer · target: confident B2, exam in December</p>
       <div class="chips">
         <span class="chip">103 speaking topics</span>
-        <span class="chip">9 weeks · Oct–Nov</span>
+        <span class="chip">46 lessons · Oct–Nov</span>
         <span class="chip">2h / day · Mon–Fri</span>
         <span class="chip">December: exam polish</span>
+        <span class="chip" id="progressChip">0/46 done</span>
+      </div>
+
+      <h3 style="margin-top:28px;font-size:0.95rem;color:var(--accent2);text-transform:uppercase;letter-spacing:.04em;">Activity</h3>
+      <div class="sync-line"><span class="sync-dot" id="syncDot"></span><span id="syncText">loading…</span></div>
+      <div class="heatmap-wrap">
+        <div class="heatmap-labels"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+        <div class="heatmap-scroll" id="heatmapScroll">
+          <div class="heatmap-months" id="heatmapMonths"></div>
+          <div class="heatmap-grid" id="heatmapGrid"></div>
+        </div>
       </div>
     </section>
 
@@ -143,8 +185,8 @@
     </section>
 
     <section id="plan">
-      <h2>Plan · Oct–Nov, daily Mon–Fri, 2h</h2>
-      <p class="sub">December: полировка перед B2-экзаменом</p>
+      <h2>Plan · 46 lessons, Mon–Fri, 2h</h2>
+      <p class="sub">28 Сен – 30 Ноя · декабрь — полировка перед B2-экзаменом</p>
 
       <div class="day-structure">
         <div><b>30 мин</b>Grammar — тема недели</div>
@@ -153,41 +195,7 @@
         <div><b>20 мин</b>Feedback + error log</div>
       </div>
 
-      <div class="week"><div class="dates">28 Сен – 2 Окт · Неделя 1</div>
-        <h4>Grammar: articles + 3rd person -s</h4>
-        <p><b>Домены:</b> e-commerce & storefronts, B2B / bulk orders</p></div>
-
-      <div class="week"><div class="dates">5 – 9 Окт · Неделя 2</div>
-        <h4>Grammar: past tense + word order</h4>
-        <p><b>Домены:</b> payments, fintech, compliance & documents</p></div>
-
-      <div class="week"><div class="dates">12 – 16 Окт · Неделя 3</div>
-        <h4>Grammar: infinitive vs gerund</h4>
-        <p><b>Домены:</b> SaaS, admin panels, analytics, UI/UX</p></div>
-
-      <div class="week"><div class="dates">19 – 23 Окт · Неделя 4</div>
-        <h4>Grammar: prepositions + conditionals</h4>
-        <p><b>Домены:</b> logistics & delivery, POS/restaurant, marketplace</p></div>
-
-      <div class="week"><div class="dates">26 – 30 Окт · Неделя 5</div>
-        <h4>Grammar: passive voice + reported speech (повтор)</h4>
-        <p><b>Домены:</b> events & ticketing, subscriptions & billing, dealer/referral</p></div>
-
-      <div class="week"><div class="dates">2 – 6 Ноя · Неделя 6</div>
-        <h4>Grammar: relative clauses + сложные предложения</h4>
-        <p><b>Домены:</b> architecture, security, auth, integrations, data/privacy</p></div>
-
-      <div class="week"><div class="dates">9 – 13 Ноя · Неделя 7</div>
-        <h4>Блок: requirements, scope, estimation, trade-offs</h4>
-        <p><b>Сценарии:</b> discovery call, negotiation, handling objections</p></div>
-
-      <div class="week"><div class="dates">16 – 20 Ноя · Неделя 8</div>
-        <h4>Блок: risks, incidents, migration, stakeholder management</h4>
-        <p><b>Сценарии:</b> standup, code review, demo, tell me about yourself / interview</p></div>
-
-      <div class="week"><div class="dates">23 – 27 Ноя · Неделя 9</div>
-        <h4>Mixed simulation — без подготовки, случайные темы</h4>
-        <p><b>Домены:</b> banking, gambling, healthcare, real estate, travel + everyday + storytelling (STAR)</p></div>
+      <div id="planLessons"><p class="sub">Loading lessons…</p></div>
 
       <div class="dec">
         <h3>Декабрь — полировка перед B2</h3>
@@ -203,6 +211,8 @@
 
   </main>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 document.querySelectorAll('.tab').forEach(btn=>{
   btn.addEventListener('click',()=>{
@@ -212,6 +222,180 @@ document.querySelectorAll('.tab').forEach(btn=>{
     document.getElementById(btn.dataset.target).classList.add('active');
   });
 });
+
+/* ---------- progress store (localStorage + Supabase sync) ---------- */
+const SUPABASE_URL = 'https://cfwocsqltypzuuxlofdu.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNmd29jc3FsdHlwenV1eGxvZmR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5NzM1MDksImV4cCI6MjA5MzU0OTUwOX0.9Xa_PtYTsP2rRY2VbvOLwIm9A-RX6XgC1k3HMR37_S4';
+let sb = null;
+try{ sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY); }catch(e){ sb = null; }
+
+let progress = { lessons:{}, activity:{} };
+let lessonsData = [];
+let saveTimer = null;
+
+function loadLocal(){
+  try{
+    const raw = localStorage.getItem('eng-progress');
+    if(raw){ const parsed = JSON.parse(raw); progress = Object.assign({lessons:{},activity:{}}, parsed); }
+  }catch(e){}
+  if(!progress.lessons) progress.lessons = {};
+  if(!progress.activity) progress.activity = {};
+}
+function saveLocal(){
+  try{ localStorage.setItem('eng-progress', JSON.stringify(progress)); }catch(e){}
+}
+function setSync(state){
+  const dot = document.getElementById('syncDot');
+  const txt = document.getElementById('syncText');
+  if(!dot||!txt) return;
+  dot.className = 'sync-dot' + (state==='synced' ? ' ok' : state==='error' ? ' err' : '');
+  txt.textContent = state==='synced' ? 'synced' : state==='saving' ? 'saving…' : state==='error' ? 'offline — saved locally only' : 'loading…';
+}
+async function pullRemote(){
+  if(!sb){ setSync('error'); return; }
+  try{
+    const { data, error } = await sb.from('eng_progress').select('data,updated_at').eq('id','main').single();
+    if(!error && data){
+      const localTs = localStorage.getItem('eng-progress-ts');
+      if(!localTs || (data.updated_at && new Date(data.updated_at) > new Date(localTs))){
+        const remote = data.data || {};
+        progress.lessons = remote.lessons || {};
+        progress.activity = remote.activity || {};
+        saveLocal();
+        if(data.updated_at) localStorage.setItem('eng-progress-ts', data.updated_at);
+      }
+      setSync('synced');
+    } else {
+      setSync('synced');
+    }
+  }catch(e){ setSync('error'); }
+}
+function saveProgress(){
+  saveLocal();
+  setSync('saving');
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(pushRemote, 500);
+}
+async function pushRemote(){
+  if(!sb){ setSync('error'); return; }
+  const ts = new Date().toISOString();
+  try{
+    const { error } = await sb.from('eng_progress').upsert({ id:'main', data: progress, updated_at: ts });
+    if(error) throw error;
+    localStorage.setItem('eng-progress-ts', ts);
+    setSync('synced');
+  }catch(e){ setSync('error'); }
+}
+
+/* ---------- Plan: render all 46 lessons ---------- */
+function fmtDate(iso){ const [,m,d] = iso.split('-'); return d+'.'+m; }
+function renderPlan(){
+  const container = document.getElementById('planLessons');
+  const weeks = new Map();
+  lessonsData.forEach(l=>{ if(!weeks.has(l.week)) weeks.set(l.week, []); weeks.get(l.week).push(l); });
+  let html = '';
+  weeks.forEach((items, weekName)=>{
+    html += '<div class="week"><div class="dates">'+fmtDate(items[0].date)+' – '+fmtDate(items[items.length-1].date)+'</div><h4>'+weekName+'</h4>';
+    items.forEach(l=>{
+      const done = !!progress.lessons[l.day];
+      html += '<label class="lesson-row'+(done?' done':'')+'" data-day="'+l.day+'">'
+        + '<input type="checkbox" data-day="'+l.day+'" '+(done?'checked':'')+'>'
+        + '<span class="lesson-day">Day '+l.day+'</span>'
+        + '<span class="lesson-date">'+fmtDate(l.date)+' · '+l.weekday+'</span>'
+        + '<span class="lesson-grammar">'+l.grammar+'</span>'
+        + '<span class="lesson-domain">'+l.domain+' — '+l.scenario+'</span>'
+        + '</label>';
+    });
+    html += '</div>';
+  });
+  container.innerHTML = html;
+  container.querySelectorAll('input[type=checkbox]').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      progress.lessons[cb.dataset.day] = cb.checked;
+      cb.closest('.lesson-row').classList.toggle('done', cb.checked);
+      updateProgressChip();
+      saveProgress();
+    });
+  });
+  updateProgressChip();
+}
+function updateProgressChip(){
+  const chip = document.getElementById('progressChip');
+  if(!chip) return;
+  const total = lessonsData.length;
+  const done = lessonsData.filter(l=>progress.lessons[l.day]).length;
+  chip.textContent = done+'/'+total+' done';
+}
+
+/* ---------- Home: activity heatmap (scrollable, GitHub-style) ---------- */
+const HEATMAP_START = '2026-09-28'; // Monday
+const HEATMAP_END = '2026-12-31';
+function renderHeatmap(){
+  const grid = document.getElementById('heatmapGrid');
+  const months = document.getElementById('heatmapMonths');
+  if(!grid||!months) return;
+  grid.innerHTML = ''; months.innerHTML = '';
+  const start = new Date(HEATMAP_START+'T00:00:00');
+  const end = new Date(HEATMAP_END+'T00:00:00');
+  const today = new Date(); today.setHours(0,0,0,0);
+  const monthNames = ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'];
+  let d = new Date(start);
+  let dayIndex = 0;
+  let lastMonth = -1;
+  while(d <= end){
+    const iso = d.toISOString().slice(0,10);
+    const dow = (d.getDay()+6)%7; // Mon=0..Sun=6
+    const col = Math.floor(dayIndex/7);
+    if(dow===0){
+      const m = d.getMonth();
+      if(m!==lastMonth){
+        lastMonth = m;
+        const lbl = document.createElement('div');
+        lbl.className = 'month-label';
+        lbl.style.gridColumn = (col+1)+' / span 4';
+        lbl.textContent = monthNames[m];
+        months.appendChild(lbl);
+      }
+    }
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    cell.dataset.date = iso;
+    cell.title = iso;
+    const isFuture = d > today;
+    if(isFuture) cell.classList.add('future');
+    if(iso === today.toISOString().slice(0,10)) cell.classList.add('today');
+    if(progress.activity[iso]) cell.classList.add('done');
+    if(!isFuture){
+      cell.addEventListener('click', ()=>{
+        progress.activity[iso] = !progress.activity[iso];
+        cell.classList.toggle('done');
+        saveProgress();
+      });
+    }
+    grid.appendChild(cell);
+    d.setDate(d.getDate()+1);
+    dayIndex++;
+  }
+  const scrollWrap = document.getElementById('heatmapScroll');
+  requestAnimationFrame(()=>{ scrollWrap.scrollLeft = scrollWrap.scrollWidth; });
+}
+
+function renderAll(){
+  renderPlan();
+  renderHeatmap();
+}
+
+async function init(){
+  loadLocal();
+  try{
+    const res = await fetch('lessons.json');
+    lessonsData = await res.json();
+  }catch(e){ lessonsData = []; }
+  renderAll();
+  await pullRemote();
+  renderAll();
+}
+init();
 </script>
 </body>
 </html>
