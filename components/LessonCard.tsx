@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useProgress } from '@/lib/progress-context';
 import Flashcards from '@/components/Flashcards';
 
-export type VocabItem = { term: string; meaning: string; emoji: string };
+export type VocabItem = { term: string; meaning: string };
 
 export type Lesson = {
   day: number;
@@ -78,7 +78,6 @@ export default function LessonCard({ lesson }: { lesson: Lesson }) {
                 const isKnown = !!progress.words[k];
                 return (
                   <li key={v.term} className={'vocab-item' + (isKnown ? ' known' : '')}>
-                    <span className="vocab-emoji">{v.emoji}</span>
                     <span className="vocab-text">
                       <b>{v.term}</b>
                       <span className="vocab-meaning"> — {v.meaning}</span>

@@ -10,28 +10,35 @@
 "vocab": [
 {
 "term": "inventory",
-"meaning": "the full stock of items available to sell",
-"emoji": "📦"
+"meaning": "the full stock of items available to sell"
 },
 {
 "term": "a search filter",
-"meaning": "a control that narrows results by criteria",
-"emoji": "🔍"
+"meaning": "a control that narrows results by criteria"
 },
 {
 "term": "to browse",
-"meaning": "to look through items casually, without a specific plan",
-"emoji": "🛍️"
+"meaning": "to look through items casually, without a specific plan"
 },
 {
 "term": "out of stock",
-"meaning": "currently unavailable to buy",
-"emoji": "🚫"
+"meaning": "currently unavailable to buy"
 },
 {
 "term": "a featured product",
-"meaning": "an item highlighted for promotion",
-"emoji": "⭐"
+"meaning": "an item highlighted for promotion"
+},
+{
+"term": "a product listing",
+"meaning": "a single item's page with details"
+},
+{
+"term": "to sort by relevance",
+"meaning": "to order results by best match"
+},
+{
+"term": "a category page",
+"meaning": "a page grouping similar products"
 }
 ],
 "tasks": [
@@ -52,28 +59,35 @@
 "vocab": [
 {
 "term": "to add to cart",
-"meaning": "to place an item in the shopping basket",
-"emoji": "🛒"
+"meaning": "to place an item in the shopping basket"
 },
 {
 "term": "checkout flow",
-"meaning": "the sequence of steps to complete a purchase",
-"emoji": "🧾"
+"meaning": "the sequence of steps to complete a purchase"
 },
 {
 "term": "a discount code",
-"meaning": "a code that reduces the price",
-"emoji": "🏷️"
+"meaning": "a code that reduces the price"
 },
 {
 "term": "to abandon a cart",
-"meaning": "to leave without completing the purchase",
-"emoji": "🛒"
+"meaning": "to leave without completing the purchase"
 },
 {
 "term": "a payment gateway",
-"meaning": "the service that processes online payments",
-"emoji": "💳"
+"meaning": "the service that processes online payments"
+},
+{
+"term": "to apply a discount",
+"meaning": "to reduce the price using a code"
+},
+{
+"term": "shipping cost",
+"meaning": "the fee charged for delivery"
+},
+{
+"term": "an empty cart state",
+"meaning": "the UI shown when the cart has no items"
 }
 ],
 "tasks": [
@@ -94,28 +108,35 @@
 "vocab": [
 {
 "term": "a bulk order",
-"meaning": "a large quantity ordered at once",
-"emoji": "📦"
+"meaning": "a large quantity ordered at once"
 },
 {
 "term": "a dealer portal",
-"meaning": "a private site for business partners to order through",
-"emoji": "🚗"
+"meaning": "a private site for business partners to order through"
 },
 {
 "term": "to place an order",
-"meaning": "to submit a purchase request",
-"emoji": "🛍️"
+"meaning": "to submit a purchase request"
 },
 {
 "term": "a price tier",
-"meaning": "a pricing level based on volume or status",
-"emoji": "🏷️"
+"meaning": "a pricing level based on volume or status"
 },
 {
 "term": "to reconcile an order",
-"meaning": "to check it matches your records",
-"emoji": "🧮"
+"meaning": "to check it matches your records"
+},
+{
+"term": "a login credential",
+"meaning": "a username/password used to access a system"
+},
+{
+"term": "a commission rate",
+"meaning": "the percentage a dealer earns per sale"
+},
+{
+"term": "to onboard a dealer",
+"meaning": "to get a new dealer set up on the platform"
 }
 ],
 "tasks": [
@@ -136,28 +157,35 @@
 "vocab": [
 {
 "term": "to be blocked on something",
-"meaning": "unable to proceed because of a dependency",
-"emoji": "🚧"
+"meaning": "unable to proceed because of a dependency"
 },
 {
 "term": "a work in progress (WIP)",
-"meaning": "a task currently being done",
-"emoji": "🚧"
+"meaning": "a task currently being done"
 },
 {
 "term": "to wrap up",
-"meaning": "to finish something",
-"emoji": "🎬"
+"meaning": "to finish something"
 },
 {
 "term": "a follow-up",
-"meaning": "a subsequent action or conversation",
-"emoji": "🔁"
+"meaning": "a subsequent action or conversation"
 },
 {
 "term": "to flag an issue",
-"meaning": "to raise a problem for attention",
-"emoji": "🚩"
+"meaning": "to raise a problem for attention"
+},
+{
+"term": "a story point",
+"meaning": "a unit estimating task effort"
+},
+{
+"term": "to be on track",
+"meaning": "to be progressing as planned"
+},
+{
+"term": "a stretch goal",
+"meaning": "an ambitious extra target"
 }
 ],
 "tasks": [
@@ -178,28 +206,35 @@
 "vocab": [
 {
 "term": "a trade-off",
-"meaning": "a balance between two competing options",
-"emoji": "⚖️"
+"meaning": "a balance between two competing options"
 },
 {
 "term": "to push back on something",
-"meaning": "to politely disagree or question it",
-"emoji": "🙅"
+"meaning": "to politely disagree or question it"
 },
 {
 "term": "maintainable",
-"meaning": "easy to keep working and updated over time",
-"emoji": "🧱"
+"meaning": "easy to keep working and updated over time"
 },
 {
 "term": "an edge case",
-"meaning": "an unusual situation a system must still handle",
-"emoji": "🧩"
+"meaning": "an unusual situation a system must still handle"
 },
 {
 "term": "to justify a decision",
-"meaning": "to explain the reasoning behind it",
-"emoji": "⚖️"
+"meaning": "to explain the reasoning behind it"
+},
+{
+"term": "to justify an approach",
+"meaning": "to explain why a choice was made"
+},
+{
+"term": "readability",
+"meaning": "how easy code is to understand"
+},
+{
+"term": "a code smell",
+"meaning": "a sign of a potential deeper problem in code"
 }
 ],
 "tasks": [
@@ -220,28 +255,35 @@
 "vocab": [
 {
 "term": "to integrate with",
-"meaning": "to connect two systems together",
-"emoji": "🔌"
+"meaning": "to connect two systems together"
 },
 {
 "term": "a webhook",
-"meaning": "an automated message sent when an event happens",
-"emoji": "🔗"
+"meaning": "an automated message sent when an event happens"
 },
 {
 "term": "to roll out",
-"meaning": "to release something gradually",
-"emoji": "🚀"
+"meaning": "to release something gradually"
 },
 {
 "term": "latency",
-"meaning": "the delay before a system responds",
-"emoji": "🐢"
+"meaning": "the delay before a system responds"
 },
 {
 "term": "a fallback",
-"meaning": "a backup option if the main one fails",
-"emoji": "🛟"
+"meaning": "a backup option if the main one fails"
+},
+{
+"term": "a webhook event",
+"meaning": "an automatic notification sent when something happens"
+},
+{
+"term": "to reconcile payments",
+"meaning": "to match records to confirm accuracy"
+},
+{
+"term": "an API key",
+"meaning": "a secret credential used to authenticate API calls"
 }
 ],
 "tasks": [
@@ -262,28 +304,35 @@
 "vocab": [
 {
 "term": "a race condition",
-"meaning": "a bug caused by two processes running in the wrong order",
-"emoji": "⚡"
+"meaning": "a bug caused by two processes running in the wrong order"
 },
 {
 "term": "to roll back",
-"meaning": "to undo a deployed change",
-"emoji": "⏪"
+"meaning": "to undo a deployed change"
 },
 {
 "term": "root cause",
-"meaning": "the underlying reason for a problem",
-"emoji": "🔬"
+"meaning": "the underlying reason for a problem"
 },
 {
 "term": "downtime",
-"meaning": "the period a system is unavailable",
-"emoji": "🔴"
+"meaning": "the period a system is unavailable"
 },
 {
 "term": "a hotfix",
-"meaning": "an urgent small fix deployed quickly",
-"emoji": "🩹"
+"meaning": "an urgent small fix deployed quickly"
+},
+{
+"term": "to reproduce a bug",
+"meaning": "to make the error happen again on purpose"
+},
+{
+"term": "a stack trace",
+"meaning": "the list of function calls shown when an error occurs"
+},
+{
+"term": "to patch",
+"meaning": "to apply a quick fix"
 }
 ],
 "tasks": [
@@ -304,28 +353,35 @@
 "vocab": [
 {
 "term": "identity verification (KYC)",
-"meaning": "confirming a user's identity",
-"emoji": "🪪"
+"meaning": "confirming a user's identity"
 },
 {
 "term": "a document upload",
-"meaning": "submitting a file as proof",
-"emoji": "📤"
+"meaning": "submitting a file as proof"
 },
 {
 "term": "to flag a user/transaction",
-"meaning": "to mark it for review",
-"emoji": "🚩"
+"meaning": "to mark it for review"
 },
 {
 "term": "a false positive",
-"meaning": "something wrongly flagged as an issue",
-"emoji": "🚫"
+"meaning": "something wrongly flagged as an issue"
 },
 {
 "term": "compliance",
-"meaning": "following required rules and regulations",
-"emoji": "📋"
+"meaning": "following required rules and regulations"
+},
+{
+"term": "to upload a document",
+"meaning": "to send a file to the system"
+},
+{
+"term": "a verification status",
+"meaning": "the current state of a check: pending/approved/rejected"
+},
+{
+"term": "to flag for review",
+"meaning": "to mark something for manual checking"
 }
 ],
 "tasks": [
@@ -346,28 +402,35 @@
 "vocab": [
 {
 "term": "to have already done something",
-"meaning": "completed before another point in the past",
-"emoji": "⏳"
+"meaning": "completed before another point in the past"
 },
 {
 "term": "an audit trail",
-"meaning": "a record of who did what, and when",
-"emoji": "📜"
+"meaning": "a record of who did what, and when"
 },
 {
 "term": "to escalate",
-"meaning": "to pass an issue to someone with more authority",
-"emoji": "📣"
+"meaning": "to pass an issue to someone with more authority"
 },
 {
 "term": "a retention policy",
-"meaning": "rules on how long data is kept",
-"emoji": "🗄️"
+"meaning": "rules on how long data is kept"
 },
 {
 "term": "to comply with a regulation",
-"meaning": "to follow a rule or law",
-"emoji": "📜"
+"meaning": "to follow a rule or law"
+},
+{
+"term": "a compliance officer",
+"meaning": "a person who ensures rules are followed"
+},
+{
+"term": "to redact",
+"meaning": "to hide sensitive parts of a document"
+},
+{
+"term": "a retention period",
+"meaning": "how long data must be kept"
 }
 ],
 "tasks": [
@@ -388,28 +451,35 @@
 "vocab": [
 {
 "term": "STAR (Situation/Task/Action/Result)",
-"meaning": "a structure for telling a work story",
-"emoji": "⭐"
+"meaning": "a structure for telling a work story"
 },
 {
 "term": "a lesson learned",
-"meaning": "an insight gained from an experience",
-"emoji": "💡"
+"meaning": "an insight gained from an experience"
 },
 {
 "term": "to take ownership of something",
-"meaning": "to be responsible for it",
-"emoji": "🙋"
+"meaning": "to be responsible for it"
 },
 {
 "term": "a post-mortem",
-"meaning": "a review after an incident, to learn from it",
-"emoji": "🕯️"
+"meaning": "a review after an incident, to learn from it"
 },
 {
 "term": "to mitigate a risk",
-"meaning": "to reduce its likelihood or impact",
-"emoji": "🛟"
+"meaning": "to reduce its likelihood or impact"
+},
+{
+"term": "a takeaway",
+"meaning": "the main lesson learned"
+},
+{
+"term": "to reflect on",
+"meaning": "to think back and evaluate"
+},
+{
+"term": "an action item",
+"meaning": "a task assigned as a result of a discussion"
 }
 ],
 "tasks": [
@@ -430,28 +500,35 @@
 "vocab": [
 {
 "term": "to enable a feature",
-"meaning": "to turn a feature on",
-"emoji": "🔛"
+"meaning": "to turn a feature on"
 },
 {
 "term": "customizable",
-"meaning": "able to be changed to suit the user",
-"emoji": "🎛️"
+"meaning": "able to be changed to suit the user"
 },
 {
 "term": "a widget",
-"meaning": "a small self-contained UI component",
-"emoji": "🧩"
+"meaning": "a small self-contained UI component"
 },
 {
 "term": "real-time data",
-"meaning": "information updated instantly as it changes",
-"emoji": "⏱️"
+"meaning": "information updated instantly as it changes"
 },
 {
 "term": "to configure",
-"meaning": "to set up according to requirements",
-"emoji": "⚙️"
+"meaning": "to set up according to requirements"
+},
+{
+"term": "a subscription tier",
+"meaning": "a pricing level with certain features"
+},
+{
+"term": "an onboarding flow",
+"meaning": "the steps a new user takes when starting"
+},
+{
+"term": "a usage limit",
+"meaning": "the max allowed amount of a resource"
 }
 ],
 "tasks": [
@@ -472,28 +549,35 @@
 "vocab": [
 {
 "term": "to suggest doing something",
-"meaning": "to propose an action (note: gerund, not infinitive)",
-"emoji": "💭"
+"meaning": "to propose an action (note: gerund, not infinitive)"
 },
 {
 "term": "to avoid doing something",
-"meaning": "to stay away from an action",
-"emoji": "🚫"
+"meaning": "to stay away from an action"
 },
 {
 "term": "a bottleneck",
-"meaning": "a point that slows the whole process down",
-"emoji": "🍾"
+"meaning": "a point that slows the whole process down"
 },
 {
 "term": "user-friendly",
-"meaning": "easy and pleasant for people to use",
-"emoji": "😊"
+"meaning": "easy and pleasant for people to use"
 },
 {
 "term": "to streamline",
-"meaning": "to make a process simpler and faster",
-"emoji": "🧹"
+"meaning": "to make a process simpler and faster"
+},
+{
+"term": "a permission level",
+"meaning": "what a user role is allowed to do"
+},
+{
+"term": "a bulk action",
+"meaning": "an action applied to many items at once"
+},
+{
+"term": "an audit log",
+"meaning": "a record of who did what and when"
 }
 ],
 "tasks": [
@@ -514,28 +598,35 @@
 "vocab": [
 {
 "term": "a KPI",
-"meaning": "a key performance indicator — a metric that matters",
-"emoji": "📊"
+"meaning": "a key performance indicator — a metric that matters"
 },
 {
 "term": "to track a metric",
-"meaning": "to monitor it over time",
-"emoji": "📊"
+"meaning": "to monitor it over time"
 },
 {
 "term": "a spike / a drop",
-"meaning": "a sudden increase / decrease in a value",
-"emoji": "📈"
+"meaning": "a sudden increase / decrease in a value"
 },
 {
 "term": "an anomaly",
-"meaning": "something unusual that stands out from the pattern",
-"emoji": "❗"
+"meaning": "something unusual that stands out from the pattern"
 },
 {
 "term": "to drill down into data",
-"meaning": "to look at more detail behind a summary",
-"emoji": "🔎"
+"meaning": "to look at more detail behind a summary"
+},
+{
+"term": "a data point",
+"meaning": "a single value in a measurement set"
+},
+{
+"term": "to visualize data",
+"meaning": "to present data graphically"
+},
+{
+"term": "an outlier",
+"meaning": "a value very different from the rest"
 }
 ],
 "tasks": [
@@ -556,28 +647,35 @@
 "vocab": [
 {
 "term": "consistency",
-"meaning": "the same style/behavior applied everywhere",
-"emoji": "📏"
+"meaning": "the same style/behavior applied everywhere"
 },
 {
 "term": "accessibility (a11y)",
-"meaning": "design that works for people with disabilities",
-"emoji": "♿"
+"meaning": "design that works for people with disabilities"
 },
 {
 "term": "a design token",
-"meaning": "a named, reusable design value (color, spacing, etc.)",
-"emoji": "🎨"
+"meaning": "a named, reusable design value (color, spacing, etc.)"
 },
 {
 "term": "to prioritize readability",
-"meaning": "to make reading easy the main goal",
-"emoji": "👓"
+"meaning": "to make reading easy the main goal"
 },
 {
 "term": "intuitive",
-"meaning": "easy to understand without explanation",
-"emoji": "💡"
+"meaning": "easy to understand without explanation"
+},
+{
+"term": "a design pattern",
+"meaning": "a reusable solution to a common design problem"
+},
+{
+"term": "visual hierarchy",
+"meaning": "the order in which the eye notices elements"
+},
+{
+"term": "to prototype",
+"meaning": "to build a quick draft version to test an idea"
 }
 ],
 "tasks": [
@@ -598,28 +696,35 @@
 "vocab": [
 {
 "term": "a mockup",
-"meaning": "a visual draft of a design, before it's built",
-"emoji": "🖼️"
+"meaning": "a visual draft of a design, before it's built"
 },
 {
 "term": "to iterate on a design",
-"meaning": "to improve it in repeated small steps",
-"emoji": "🔁"
+"meaning": "to improve it in repeated small steps"
 },
 {
 "term": "a feedback loop",
-"meaning": "a cycle of trying something and adjusting based on results",
-"emoji": "🔁"
+"meaning": "a cycle of trying something and adjusting based on results"
 },
 {
 "term": "a design system",
-"meaning": "a shared set of reusable components and rules",
-"emoji": "🎨"
+"meaning": "a shared set of reusable components and rules"
 },
 {
 "term": "to advocate for something",
-"meaning": "to argue in favor of it",
-"emoji": "🎨"
+"meaning": "to argue in favor of it"
+},
+{
+"term": "a design critique",
+"meaning": "structured feedback on a design"
+},
+{
+"term": "a pixel-perfect implementation",
+"meaning": "one matching the design exactly"
+},
+{
+"term": "to sign off on",
+"meaning": "to formally approve something"
 }
 ],
 "tasks": [
@@ -640,28 +745,35 @@
 "vocab": [
 {
 "term": "a delivery slot",
-"meaning": "a scheduled time window for delivery",
-"emoji": "🚚"
+"meaning": "a scheduled time window for delivery"
 },
 {
 "term": "to schedule for",
-"meaning": "to arrange to happen at a set time",
-"emoji": "🗓️"
+"meaning": "to arrange to happen at a set time"
 },
 {
 "term": "ETA (estimated time of arrival)",
-"meaning": "the expected arrival time",
-"emoji": "🕐"
+"meaning": "the expected arrival time"
 },
 {
 "term": "a time window",
-"meaning": "a range of time something can happen in",
-"emoji": "🕐"
+"meaning": "a range of time something can happen in"
 },
 {
 "term": "to reschedule",
-"meaning": "to change to a different time",
-"emoji": "🗓️"
+"meaning": "to change to a different time"
+},
+{
+"term": "a delivery window",
+"meaning": "the time range when delivery will happen"
+},
+{
+"term": "a recurring slot",
+"meaning": "a time that repeats regularly"
+},
+{
+"term": "a delivery zone",
+"meaning": "the geographic area a delivery service covers"
 }
 ],
 "tasks": [
@@ -682,28 +794,35 @@
 "vocab": [
 {
 "term": "to depend on",
-"meaning": "to rely on something for a result",
-"emoji": "🔗"
+"meaning": "to rely on something for a result"
 },
 {
 "term": "to deal with",
-"meaning": "to handle a problem or situation",
-"emoji": "🤹"
+"meaning": "to handle a problem or situation"
 },
 {
 "term": "an order queue",
-"meaning": "a line of orders waiting to be processed",
-"emoji": "📥"
+"meaning": "a line of orders waiting to be processed"
 },
 {
 "term": "to sync with",
-"meaning": "to keep two systems updated together",
-"emoji": "🔄"
+"meaning": "to keep two systems updated together"
 },
 {
 "term": "a bottleneck",
-"meaning": "the slowest point that limits overall speed",
-"emoji": "🍾"
+"meaning": "the slowest point that limits overall speed"
+},
+{
+"term": "a kitchen display system",
+"meaning": "a screen showing orders to kitchen staff"
+},
+{
+"term": "an order status",
+"meaning": "the current stage of an order"
+},
+{
+"term": "to mark as fulfilled",
+"meaning": "to indicate an order is complete"
 }
 ],
 "tasks": [
@@ -724,28 +843,35 @@
 "vocab": [
 {
 "term": "to cancel an order",
-"meaning": "to stop and remove a placed order",
-"emoji": "❌"
+"meaning": "to stop and remove a placed order"
 },
 {
 "term": "a refund",
-"meaning": "money given back to the buyer",
-"emoji": "💸"
+"meaning": "money given back to the buyer"
 },
 {
 "term": "a penalty",
-"meaning": "a consequence a seller faces for a rule violation",
-"emoji": "⚠️"
+"meaning": "a consequence a seller faces for a rule violation"
 },
 {
 "term": "to notify the buyer",
-"meaning": "to inform the buyer of something",
-"emoji": "📩"
+"meaning": "to inform the buyer of something"
 },
 {
 "term": "a dispute",
-"meaning": "a disagreement needing resolution",
-"emoji": "⚖️"
+"meaning": "a disagreement needing resolution"
+},
+{
+"term": "a cancellation policy",
+"meaning": "the rules about canceling orders"
+},
+{
+"term": "to issue a refund",
+"meaning": "to return money to the buyer"
+},
+{
+"term": "seller reliability",
+"meaning": "how consistently a seller fulfills orders"
 }
 ],
 "tasks": [
@@ -766,28 +892,35 @@
 "vocab": [
 {
 "term": "a single point of failure",
-"meaning": "one part whose failure breaks the whole system",
-"emoji": "⚠️"
+"meaning": "one part whose failure breaks the whole system"
 },
 {
 "term": "redundancy",
-"meaning": "having backup systems in place",
-"emoji": "🧷"
+"meaning": "having backup systems in place"
 },
 {
 "term": "to fail over to a backup",
-"meaning": "to automatically switch to a backup system",
-"emoji": "🔀"
+"meaning": "to automatically switch to a backup system"
 },
 {
 "term": "an outage",
-"meaning": "a period when a system is down",
-"emoji": "🚨"
+"meaning": "a period when a system is down"
 },
 {
 "term": "a contingency plan",
-"meaning": "a backup plan for if something goes wrong",
-"emoji": "🧯"
+"meaning": "a backup plan for if something goes wrong"
+},
+{
+"term": "a failover system",
+"meaning": "a backup that takes over automatically"
+},
+{
+"term": "to restore service",
+"meaning": "to bring a system back online"
+},
+{
+"term": "an incident commander",
+"meaning": "the person leading the response to an outage"
 }
 ],
 "tasks": [
@@ -808,28 +941,35 @@
 "vocab": [
 {
 "term": "to empathize with a customer",
-"meaning": "to understand and share their feelings",
-"emoji": "🤗"
+"meaning": "to understand and share their feelings"
 },
 {
 "term": "to de-escalate",
-"meaning": "to calm a tense situation down",
-"emoji": "📣"
+"meaning": "to calm a tense situation down"
 },
 {
 "term": "a resolution",
-"meaning": "a solution that settles the issue",
-"emoji": "✅"
+"meaning": "a solution that settles the issue"
 },
 {
 "term": "a goodwill gesture",
-"meaning": "a free extra given to keep the customer happy",
-"emoji": "🎁"
+"meaning": "a free extra given to keep the customer happy"
 },
 {
 "term": "to follow up",
-"meaning": "to check back in after the initial contact",
-"emoji": "🎧"
+"meaning": "to check back in after the initial contact"
+},
+{
+"term": "customer satisfaction",
+"meaning": "how happy a customer is with the service"
+},
+{
+"term": "to acknowledge a complaint",
+"meaning": "to confirm you've heard and understood a complaint"
+},
+{
+"term": "an escalation path",
+"meaning": "the process for passing an issue to someone more senior"
 }
 ],
 "tasks": [
@@ -850,28 +990,35 @@
 "vocab": [
 {
 "term": "a ticket is issued",
-"meaning": "a ticket is created and given to the buyer",
-"emoji": "🎫"
+"meaning": "a ticket is created and given to the buyer"
 },
 {
 "term": "to be refunded",
-"meaning": "to have your money given back",
-"emoji": "💸"
+"meaning": "to have your money given back"
 },
 {
 "term": "a waitlist",
-"meaning": "a list of people waiting for availability",
-"emoji": "📝"
+"meaning": "a list of people waiting for availability"
 },
 {
 "term": "to be sold out",
-"meaning": "to have no more available",
-"emoji": "🚫"
+"meaning": "to have no more available"
 },
 {
 "term": "a confirmation email",
-"meaning": "an email confirming an action was completed",
-"emoji": "📧"
+"meaning": "an email confirming an action was completed"
+},
+{
+"term": "a booking reference",
+"meaning": "a unique code identifying a reservation"
+},
+{
+"term": "a no-show",
+"meaning": "someone who doesn't show up without canceling"
+},
+{
+"term": "to waitlist",
+"meaning": "to add someone to a list for when space opens"
 }
 ],
 "tasks": [
@@ -892,28 +1039,35 @@
 "vocab": [
 {
 "term": "to be charged automatically",
-"meaning": "to have payment taken without manual action",
-"emoji": "💳"
+"meaning": "to have payment taken without manual action"
 },
 {
 "term": "a billing cycle",
-"meaning": "the recurring period between charges",
-"emoji": "🧾"
+"meaning": "the recurring period between charges"
 },
 {
 "term": "to be prorated",
-"meaning": "to be adjusted proportionally for partial use",
-"emoji": "🧮"
+"meaning": "to be adjusted proportionally for partial use"
 },
 {
 "term": "an invoice",
-"meaning": "a document requesting payment",
-"emoji": "🧾"
+"meaning": "a document requesting payment"
 },
 {
 "term": "to be renewed",
-"meaning": "to continue automatically for another period",
-"emoji": "🔄"
+"meaning": "to continue automatically for another period"
+},
+{
+"term": "proration",
+"meaning": "a partial charge for a partial period"
+},
+{
+"term": "an invoice line item",
+"meaning": "a single charged item on a bill"
+},
+{
+"term": "to auto-renew",
+"meaning": "to renew automatically without action"
 }
 ],
 "tasks": [
@@ -934,28 +1088,35 @@
 "vocab": [
 {
 "term": "to relay information",
-"meaning": "to pass a message from one person to another",
-"emoji": "📨"
+"meaning": "to pass a message from one person to another"
 },
 {
 "term": "the client said that...",
-"meaning": "the standard opener for reported statements",
-"emoji": "💬"
+"meaning": "the standard opener for reported statements"
 },
 {
 "term": "a requirement",
-"meaning": "something the client needs the product to do",
-"emoji": "📋"
+"meaning": "something the client needs the product to do"
 },
 {
 "term": "to clarify",
-"meaning": "to make something clearer",
-"emoji": "❓"
+"meaning": "to make something clearer"
 },
 {
 "term": "a misunderstanding",
-"meaning": "a case where something was understood incorrectly",
-"emoji": "😕"
+"meaning": "a case where something was understood incorrectly"
+},
+{
+"term": "to double-check",
+"meaning": "to verify again to be sure"
+},
+{
+"term": "to confirm understanding",
+"meaning": "to check that both sides agree on what was said"
+},
+{
+"term": "a scope document",
+"meaning": "a written description of what work will be done"
 }
 ],
 "tasks": [
@@ -976,28 +1137,35 @@
 "vocab": [
 {
 "term": "a commission",
-"meaning": "a percentage paid for a successful referral",
-"emoji": "💰"
+"meaning": "a percentage paid for a successful referral"
 },
 {
 "term": "a referral link",
-"meaning": "a unique link that tracks who referred a sale",
-"emoji": "🔗"
+"meaning": "a unique link that tracks who referred a sale"
 },
 {
 "term": "to ask whether/if",
-"meaning": "the reported-speech form of a yes/no question",
-"emoji": "❓"
+"meaning": "the reported-speech form of a yes/no question"
 },
 {
 "term": "eligibility",
-"meaning": "whether someone qualifies for something",
-"emoji": "✅"
+"meaning": "whether someone qualifies for something"
 },
 {
 "term": "a payout",
-"meaning": "the money actually paid to someone",
-"emoji": "💵"
+"meaning": "the money actually paid to someone"
+},
+{
+"term": "a referral bonus",
+"meaning": "a reward for bringing in a new customer"
+},
+{
+"term": "an affiliate link",
+"meaning": "a tracked link that earns commission"
+},
+{
+"term": "eligibility criteria",
+"meaning": "the conditions someone must meet to qualify"
 }
 ],
 "tasks": [
@@ -1018,28 +1186,35 @@
 "vocab": [
 {
 "term": "to summarize",
-"meaning": "to give the main points briefly",
-"emoji": "📝"
+"meaning": "to give the main points briefly"
 },
 {
 "term": "a takeaway",
-"meaning": "the key point someone leaves with",
-"emoji": "🎁"
+"meaning": "the key point someone leaves with"
 },
 {
 "term": "an action item",
-"meaning": "a specific task someone commits to doing",
-"emoji": "✅"
+"meaning": "a specific task someone commits to doing"
 },
 {
 "term": "to align on something",
-"meaning": "to reach shared agreement",
-"emoji": "🤝"
+"meaning": "to reach shared agreement"
 },
 {
 "term": "a next step",
-"meaning": "what happens after this point",
-"emoji": "➡️"
+"meaning": "what happens after this point"
+},
+{
+"term": "a follow-up email",
+"meaning": "a message sent after a meeting to confirm points"
+},
+{
+"term": "a key takeaway",
+"meaning": "the most important point from a discussion"
+},
+{
+"term": "to circle back",
+"meaning": "to return to a topic later"
 }
 ],
 "tasks": [
@@ -1060,28 +1235,35 @@
 "vocab": [
 {
 "term": "a component that handles X",
-"meaning": "relative clause describing a part's job",
-"emoji": "🧩"
+"meaning": "relative clause describing a part's job"
 },
 {
 "term": "a service which depends on Y",
-"meaning": "relative clause describing a dependency",
-"emoji": "🔗"
+"meaning": "relative clause describing a dependency"
 },
 {
 "term": "a microservice",
-"meaning": "a small, independently deployable service",
-"emoji": "🧩"
+"meaning": "a small, independently deployable service"
 },
 {
 "term": "a monolith",
-"meaning": "a single large, tightly-coupled application",
-"emoji": "🗿"
+"meaning": "a single large, tightly-coupled application"
 },
 {
 "term": "to decouple",
-"meaning": "to separate parts so they don't depend on each other",
-"emoji": "🔓"
+"meaning": "to separate parts so they don't depend on each other"
+},
+{
+"term": "a service layer",
+"meaning": "the part of the system handling business logic"
+},
+{
+"term": "a data layer",
+"meaning": "the part handling storage/retrieval of data"
+},
+{
+"term": "coupling",
+"meaning": "how dependent two components are on each other"
 }
 ],
 "tasks": [
@@ -1102,28 +1284,35 @@
 "vocab": [
 {
 "term": "a token, which expires after...",
-"meaning": "non-defining relative clause example",
-"emoji": "⏳"
+"meaning": "non-defining relative clause example"
 },
 {
 "term": "to authenticate",
-"meaning": "to verify who someone is",
-"emoji": "🔑"
+"meaning": "to verify who someone is"
 },
 {
 "term": "to authorize",
-"meaning": "to verify what someone is allowed to do",
-"emoji": "🔑"
+"meaning": "to verify what someone is allowed to do"
 },
 {
 "term": "a session",
-"meaning": "a period of continued authenticated access",
-"emoji": "🕒"
+"meaning": "a period of continued authenticated access"
 },
 {
 "term": "multi-factor authentication (MFA)",
-"meaning": "verification using two or more methods",
-"emoji": "🔐"
+"meaning": "verification using two or more methods"
+},
+{
+"term": "a refresh token",
+"meaning": "a credential used to get a new access token"
+},
+{
+"term": "session expiry",
+"meaning": "when a login session stops being valid"
+},
+{
+"term": "to revoke access",
+"meaning": "to cancel someone's permission"
 }
 ],
 "tasks": [
@@ -1144,28 +1333,35 @@
 "vocab": [
 {
 "term": "however",
-"meaning": "contrast connector, starts a new sentence",
-"emoji": "🔄"
+"meaning": "contrast connector, starts a new sentence"
 },
 {
 "term": "although",
-"meaning": "contrast connector, joins two clauses",
-"emoji": "🔄"
+"meaning": "contrast connector, joins two clauses"
 },
 {
 "term": "whereas",
-"meaning": "contrast connector for comparing two things",
-"emoji": "🔄"
+"meaning": "contrast connector for comparing two things"
 },
 {
 "term": "despite",
-"meaning": "contrast connector + noun/-ing, no full clause",
-"emoji": "🔄"
+"meaning": "contrast connector + noun/-ing, no full clause"
 },
 {
 "term": "vendor lock-in",
-"meaning": "being stuck with one vendor because switching is costly",
-"emoji": "🔒"
+"meaning": "being stuck with one vendor because switching is costly"
+},
+{
+"term": "an SLA",
+"meaning": "an agreement guaranteeing a level of service"
+},
+{
+"term": "rate limiting",
+"meaning": "restricting how many requests can be made"
+},
+{
+"term": "a build-vs-buy decision",
+"meaning": "choosing between building something in-house or purchasing it"
 }
 ],
 "tasks": [
@@ -1186,28 +1382,35 @@
 "vocab": [
 {
 "term": "personal data",
-"meaning": "information that identifies an individual",
-"emoji": "🪪"
+"meaning": "information that identifies an individual"
 },
 {
 "term": "consent",
-"meaning": "permission given to process someone's data",
-"emoji": "✅"
+"meaning": "permission given to process someone's data"
 },
 {
 "term": "to anonymize",
-"meaning": "to remove identifying information",
-"emoji": "🕵️"
+"meaning": "to remove identifying information"
 },
 {
 "term": "data retention",
-"meaning": "how long data is kept before deletion",
-"emoji": "🗄️"
+"meaning": "how long data is kept before deletion"
 },
 {
 "term": "a data breach",
-"meaning": "unauthorized access to protected data",
-"emoji": "🚨"
+"meaning": "unauthorized access to protected data"
+},
+{
+"term": "a data subject",
+"meaning": "the person whose personal data is being processed"
+},
+{
+"term": "the right to be forgotten",
+"meaning": "a person's right to have their data deleted"
+},
+{
+"term": "a privacy policy",
+"meaning": "a document explaining how data is used"
 }
 ],
 "tasks": [
@@ -1228,28 +1431,35 @@
 "vocab": [
 {
 "term": "scalable",
-"meaning": "able to handle growth without redesign",
-"emoji": "📐"
+"meaning": "able to handle growth without redesign"
 },
 {
 "term": "single responsibility",
-"meaning": "a component should do one thing well",
-"emoji": "1️⃣"
+"meaning": "a component should do one thing well"
 },
 {
 "term": "to future-proof",
-"meaning": "to design so it survives future change",
-"emoji": "🛡️"
+"meaning": "to design so it survives future change"
 },
 {
 "term": "technical debt",
-"meaning": "the cost of quick fixes chosen over better solutions",
-"emoji": "💸"
+"meaning": "the cost of quick fixes chosen over better solutions"
 },
 {
 "term": "a trade-off",
-"meaning": "a balance between two competing options",
-"emoji": "⚖️"
+"meaning": "a balance between two competing options"
+},
+{
+"term": "a design constraint",
+"meaning": "a limitation that shapes the solution"
+},
+{
+"term": "long-term maintainability",
+"meaning": "how easy the system will be to maintain over time"
+},
+{
+"term": "a proof of concept",
+"meaning": "a small test to show an idea works"
 }
 ],
 "tasks": [
@@ -1270,28 +1480,35 @@
 "vocab": [
 {
 "term": "an open question",
-"meaning": "something not yet decided or answered",
-"emoji": "❓"
+"meaning": "something not yet decided or answered"
 },
 {
 "term": "to clarify scope",
-"meaning": "to define exactly what is and isn't included",
-"emoji": "🔎"
+"meaning": "to define exactly what is and isn't included"
 },
 {
 "term": "an assumption",
-"meaning": "something taken as true without confirming it",
-"emoji": "🤔"
+"meaning": "something taken as true without confirming it"
 },
 {
 "term": "a use case",
-"meaning": "a specific situation the product must support",
-"emoji": "🧩"
+"meaning": "a specific situation the product must support"
 },
 {
 "term": "ambiguous",
-"meaning": "unclear, open to more than one interpretation",
-"emoji": "🌫️"
+"meaning": "unclear, open to more than one interpretation"
+},
+{
+"term": "to seek clarification",
+"meaning": "to ask for something to be made clearer"
+},
+{
+"term": "an implicit assumption",
+"meaning": "something taken for granted but not stated"
+},
+{
+"term": "to paraphrase",
+"meaning": "to restate something in your own words to confirm understanding"
 }
 ],
 "tasks": [
@@ -1312,28 +1529,35 @@
 "vocab": [
 {
 "term": "scope creep",
-"meaning": "scope quietly growing beyond what was agreed",
-"emoji": "📈"
+"meaning": "scope quietly growing beyond what was agreed"
 },
 {
 "term": "to push back",
-"meaning": "to politely resist or question a request",
-"emoji": "🙅"
+"meaning": "to politely resist or question a request"
 },
 {
 "term": "a change request",
-"meaning": "a formal ask to modify agreed scope",
-"emoji": "✏️"
+"meaning": "a formal ask to modify agreed scope"
 },
 {
 "term": "feasible",
-"meaning": "realistically possible to do",
-"emoji": "✅"
+"meaning": "realistically possible to do"
 },
 {
 "term": "a trade-off",
-"meaning": "a balance between two competing options",
-"emoji": "⚖️"
+"meaning": "a balance between two competing options"
+},
+{
+"term": "to renegotiate scope",
+"meaning": "to discuss changing what's included in a project"
+},
+{
+"term": "a hard deadline",
+"meaning": "a date that cannot move"
+},
+{
+"term": "to set expectations",
+"meaning": "to make clear what will and won't happen"
 }
 ],
 "tasks": [
@@ -1354,28 +1578,35 @@
 "vocab": [
 {
 "term": "a ballpark estimate",
-"meaning": "a rough, approximate figure",
-"emoji": "🎯"
+"meaning": "a rough, approximate figure"
 },
 {
 "term": "a buffer",
-"meaning": "extra time added in case of delays",
-"emoji": "🧯"
+"meaning": "extra time added in case of delays"
 },
 {
 "term": "a dependency",
-"meaning": "something that must happen before this can",
-"emoji": "🔗"
+"meaning": "something that must happen before this can"
 },
 {
 "term": "a caveat",
-"meaning": "a condition or warning attached to a statement",
-"emoji": "⚠️"
+"meaning": "a condition or warning attached to a statement"
 },
 {
 "term": "to commit to a date",
-"meaning": "to promise a specific deadline",
-"emoji": "📅"
+"meaning": "to promise a specific deadline"
+},
+{
+"term": "a rough estimate",
+"meaning": "an approximate, not exact, figure"
+},
+{
+"term": "to pad an estimate",
+"meaning": "to add extra time as a safety margin"
+},
+{
+"term": "a contingency margin",
+"meaning": "extra time or budget set aside for the unexpected"
 }
 ],
 "tasks": [
@@ -1396,28 +1627,35 @@
 "vocab": [
 {
 "term": "more scalable than",
-"meaning": "comparative form for comparing two options",
-"emoji": "📐"
+"meaning": "comparative form for comparing two options"
 },
 {
 "term": "the simplest approach",
-"meaning": "superlative form, picking the best of several",
-"emoji": "🧩"
+"meaning": "superlative form, picking the best of several"
 },
 {
 "term": "less maintainable",
-"meaning": "comparative form, negative direction",
-"emoji": "🧱"
+"meaning": "comparative form, negative direction"
 },
 {
 "term": "the best trade-off",
-"meaning": "superlative form for a final recommendation",
-"emoji": "⚖️"
+"meaning": "superlative form for a final recommendation"
 },
 {
 "term": "comparable",
-"meaning": "similar enough to be fairly compared",
-"emoji": "⚖️"
+"meaning": "similar enough to be fairly compared"
+},
+{
+"term": "the trade-off curve",
+"meaning": "how one benefit is exchanged for another"
+},
+{
+"term": "maintainability vs. speed",
+"meaning": "a common technical trade-off"
+},
+{
+"term": "to weigh the pros and cons",
+"meaning": "to consider both benefits and drawbacks"
 }
 ],
 "tasks": [
@@ -1438,28 +1676,35 @@
 "vocab": [
 {
 "term": "to uncover a need",
-"meaning": "to discover a requirement the client hadn't stated",
-"emoji": "🔎"
+"meaning": "to discover a requirement the client hadn't stated"
 },
 {
 "term": "a pain point",
-"meaning": "a specific problem causing frustration",
-"emoji": "😣"
+"meaning": "a specific problem causing frustration"
 },
 {
 "term": "must-have vs nice-to-have",
-"meaning": "priority levels for requirements",
-"emoji": "⭐"
+"meaning": "priority levels for requirements"
 },
 {
 "term": "to probe for detail",
-"meaning": "to ask follow-up questions to learn more",
-"emoji": "🔎"
+"meaning": "to ask follow-up questions to learn more"
 },
 {
 "term": "a next step",
-"meaning": "the concrete action that follows",
-"emoji": "➡️"
+"meaning": "the concrete action that follows"
+},
+{
+"term": "a use case",
+"meaning": "a specific situation where the product would be used"
+},
+{
+"term": "a follow-up question",
+"meaning": "a question that digs deeper into an answer"
+},
+{
+"term": "to qualify a lead",
+"meaning": "to check whether a prospect is a good fit"
 }
 ],
 "tasks": [
@@ -1480,28 +1725,35 @@
 "vocab": [
 {
 "term": "a risk register",
-"meaning": "a list of known risks and their status",
-"emoji": "📋"
+"meaning": "a list of known risks and their status"
 },
 {
 "term": "likelihood",
-"meaning": "how probable something is to happen",
-"emoji": "🎲"
+"meaning": "how probable something is to happen"
 },
 {
 "term": "impact",
-"meaning": "how bad the consequences would be",
-"emoji": "💥"
+"meaning": "how bad the consequences would be"
 },
 {
 "term": "a mitigation plan",
-"meaning": "the plan to reduce a risk's likelihood or impact",
-"emoji": "🛟"
+"meaning": "the plan to reduce a risk's likelihood or impact"
 },
 {
 "term": "a worst-case scenario",
-"meaning": "the most damaging possible outcome",
-"emoji": "🌩️"
+"meaning": "the most damaging possible outcome"
+},
+{
+"term": "risk appetite",
+"meaning": "how much risk a client is willing to accept"
+},
+{
+"term": "a mitigation strategy",
+"meaning": "a plan to reduce a risk"
+},
+{
+"term": "a risk owner",
+"meaning": "the person responsible for tracking and managing a specific risk"
 }
 ],
 "tasks": [
@@ -1522,28 +1774,35 @@
 "vocab": [
 {
 "term": "an outage",
-"meaning": "a period when a system is unavailable",
-"emoji": "🚨"
+"meaning": "a period when a system is unavailable"
 },
 {
 "term": "to go down",
-"meaning": "to stop working (informal, common in incident talk)",
-"emoji": "🔴"
+"meaning": "to stop working (informal, common in incident talk)"
 },
 {
 "term": "to restore service",
-"meaning": "to bring the system back to normal",
-"emoji": "🟢"
+"meaning": "to bring the system back to normal"
 },
 {
 "term": "a timeline of events",
-"meaning": "the chronological sequence of what happened",
-"emoji": "🕒"
+"meaning": "the chronological sequence of what happened"
 },
 {
 "term": "a professional apology",
-"meaning": "acknowledging impact without over-explaining or blaming",
-"emoji": "🙏"
+"meaning": "acknowledging impact without over-explaining or blaming"
+},
+{
+"term": "human error",
+"meaning": "a mistake caused by a person, not a system"
+},
+{
+"term": "a corrective action",
+"meaning": "a step taken to prevent recurrence"
+},
+{
+"term": "a postmortem",
+"meaning": "a review meeting held after an incident to learn from it"
 }
 ],
 "tasks": [
@@ -1564,28 +1823,35 @@
 "vocab": [
 {
 "term": "legacy code",
-"meaning": "old code still in use, often hard to change",
-"emoji": "🗄️"
+"meaning": "old code still in use, often hard to change"
 },
 {
 "term": "to migrate data",
-"meaning": "to move data from one system to another",
-"emoji": "📦"
+"meaning": "to move data from one system to another"
 },
 {
 "term": "a cutover",
-"meaning": "the moment of switching from old to new system",
-"emoji": "🔀"
+"meaning": "the moment of switching from old to new system"
 },
 {
 "term": "backward compatibility",
-"meaning": "new version still works with old data/clients",
-"emoji": "🔙"
+"meaning": "new version still works with old data/clients"
 },
 {
 "term": "to deprecate",
-"meaning": "to mark something as being phased out",
-"emoji": "🗑️"
+"meaning": "to mark something as being phased out"
+},
+{
+"term": "data integrity",
+"meaning": "ensuring data stays accurate during migration"
+},
+{
+"term": "a rollback plan",
+"meaning": "a plan for reverting to the old system if migration fails"
+},
+{
+"term": "data parity",
+"meaning": "having the same data correctly reflected in both systems"
 }
 ],
 "tasks": [
@@ -1606,28 +1872,35 @@
 "vocab": [
 {
 "term": "to manage expectations",
-"meaning": "to keep what people expect realistic",
-"emoji": "🎚️"
+"meaning": "to keep what people expect realistic"
 },
 {
 "term": "a stakeholder",
-"meaning": "anyone with an interest in the project's outcome",
-"emoji": "🤝"
+"meaning": "anyone with an interest in the project's outcome"
 },
 {
 "term": "to align on priorities",
-"meaning": "to agree on what matters most",
-"emoji": "🤝"
+"meaning": "to agree on what matters most"
 },
 {
 "term": "a status update",
-"meaning": "a brief report on current progress",
-"emoji": "📢"
+"meaning": "a brief report on current progress"
 },
 {
 "term": "to under-promise and over-deliver",
-"meaning": "to set modest expectations, then exceed them",
-"emoji": "🤞"
+"meaning": "to set modest expectations, then exceed them"
+},
+{
+"term": "buy-in",
+"meaning": "support and agreement from stakeholders"
+},
+{
+"term": "a stakeholder map",
+"meaning": "a visual showing who is involved and how much influence they have"
+},
+{
+"term": "to escalate an issue",
+"meaning": "to raise a problem to someone with more authority"
 }
 ],
 "tasks": [
@@ -1648,28 +1921,39 @@
 "vocab": [
 {
 "term": "to give constructive feedback",
-"meaning": "to comment in a way that helps, not just criticizes",
-"emoji": "💡"
+"meaning": "to comment in a way that helps, not just criticizes"
 },
 {
 "term": "to nitpick",
-"meaning": "to focus on very small, often unimportant details",
-"emoji": "🔬"
+"meaning": "to focus on very small, often unimportant details"
 },
 {
 "term": "a blocking comment",
-"meaning": "a review comment that must be resolved before merging",
-"emoji": "⛔"
+"meaning": "a review comment that must be resolved before merging"
 },
 {
 "term": "LGTM (looks good to me)",
-"meaning": "informal approval in a code review",
-"emoji": "✅"
+"meaning": "informal approval in a code review"
 },
 {
 "term": "a follow-up",
-"meaning": "a subsequent action or conversation",
-"emoji": "🔁"
+"meaning": "a subsequent action or conversation"
+},
+{
+"term": "a nitpick",
+"meaning": "a minor, non-critical comment"
+},
+{
+"term": "LGTM",
+"meaning": "looks good to me — approval shorthand"
+},
+{
+"term": "to approve a pull request",
+"meaning": "to formally accept code changes for merging"
+},
+{
+"term": "a merge conflict",
+"meaning": "when two code changes can't be combined automatically"
 }
 ],
 "tasks": [
@@ -1690,28 +1974,35 @@
 "vocab": [
 {
 "term": "a loan",
-"meaning": "money borrowed that must be repaid",
-"emoji": "🏦"
+"meaning": "money borrowed that must be repaid"
 },
 {
 "term": "an interest rate",
-"meaning": "the cost of borrowing, as a percentage",
-"emoji": "📈"
+"meaning": "the cost of borrowing, as a percentage"
 },
 {
 "term": "to qualify for a loan",
-"meaning": "to meet the requirements to be approved",
-"emoji": "🏦"
+"meaning": "to meet the requirements to be approved"
 },
 {
 "term": "collateral",
-"meaning": "an asset pledged to secure a loan",
-"emoji": "🏠"
+"meaning": "an asset pledged to secure a loan"
 },
 {
 "term": "a repayment schedule",
-"meaning": "the plan for paying a loan back over time",
-"emoji": "🗓️"
+"meaning": "the plan for paying a loan back over time"
+},
+{
+"term": "creditworthiness",
+"meaning": "how likely someone is to repay a debt"
+},
+{
+"term": "a credit check",
+"meaning": "a review of someone's financial history before lending"
+},
+{
+"term": "to default on a loan",
+"meaning": "to fail to make required payments"
 }
 ],
 "tasks": [
@@ -1732,28 +2023,35 @@
 "vocab": [
 {
 "term": "to book an appointment",
-"meaning": "to arrange a time for a medical visit",
-"emoji": "📅"
+"meaning": "to arrange a time for a medical visit"
 },
 {
 "term": "a check-up",
-"meaning": "a routine medical examination",
-"emoji": "🩺"
+"meaning": "a routine medical examination"
 },
 {
 "term": "a layover",
-"meaning": "a stop between flights on a journey",
-"emoji": "🛫"
+"meaning": "a stop between flights on a journey"
 },
 {
 "term": "to reschedule a flight",
-"meaning": "to change it to a different time or date",
-"emoji": "✈️"
+"meaning": "to change it to a different time or date"
 },
 {
 "term": "jet lag",
-"meaning": "tiredness from crossing time zones",
-"emoji": "😴"
+"meaning": "tiredness from crossing time zones"
+},
+{
+"term": "to reschedule an appointment",
+"meaning": "to change to a different time"
+},
+{
+"term": "a connecting flight",
+"meaning": "a second flight taken to reach the final destination"
+},
+{
+"term": "to check in",
+"meaning": "to register your arrival for a flight or appointment"
 }
 ],
 "tasks": [
@@ -1774,28 +2072,35 @@
 "vocab": [
 {
 "term": "a wager",
-"meaning": "a bet placed on an outcome",
-"emoji": "🎲"
+"meaning": "a bet placed on an outcome"
 },
 {
 "term": "responsible gambling",
-"meaning": "practices that limit gambling-related harm",
-"emoji": "🎲"
+"meaning": "practices that limit gambling-related harm"
 },
 {
 "term": "a mortgage",
-"meaning": "a loan specifically for buying property",
-"emoji": "🏠"
+"meaning": "a loan specifically for buying property"
 },
 {
 "term": "a down payment",
-"meaning": "the upfront portion paid before financing the rest",
-"emoji": "🏠"
+"meaning": "the upfront portion paid before financing the rest"
 },
 {
 "term": "to appreciate in value",
-"meaning": "to become worth more over time",
-"emoji": "📈"
+"meaning": "to become worth more over time"
+},
+{
+"term": "a payout",
+"meaning": "money paid out after winning"
+},
+{
+"term": "a jackpot",
+"meaning": "a large prize or reward"
+},
+{
+"term": "the odds",
+"meaning": "the likelihood of an outcome, expressed as a ratio"
 }
 ],
 "tasks": [
@@ -1816,28 +2121,35 @@
 "vocab": [
 {
 "term": "resilience",
-"meaning": "the ability to recover from difficulty",
-"emoji": "💪"
+"meaning": "the ability to recover from difficulty"
 },
 {
 "term": "to overcome a challenge",
-"meaning": "to successfully deal with a difficulty",
-"emoji": "🏔️"
+"meaning": "to successfully deal with a difficulty"
 },
 {
 "term": "a turning point",
-"meaning": "the moment things started to change",
-"emoji": "🔀"
+"meaning": "the moment things started to change"
 },
 {
 "term": "to reflect on something",
-"meaning": "to think carefully about a past experience",
-"emoji": "🪞"
+"meaning": "to think carefully about a past experience"
 },
 {
 "term": "a lesson learned",
-"meaning": "an insight gained from an experience",
-"emoji": "💡"
+"meaning": "an insight gained from an experience"
+},
+{
+"term": "to step out of your comfort zone",
+"meaning": "to try something unfamiliar or difficult"
+},
+{
+"term": "a growth mindset",
+"meaning": "the belief that abilities can be developed through effort"
+},
+{
+"term": "to persevere",
+"meaning": "to keep going despite difficulty"
 }
 ],
 "tasks": [
@@ -1858,28 +2170,35 @@
 "vocab": [
 {
 "term": "a wrap-up",
-"meaning": "a short closing summary",
-"emoji": "🎁"
+"meaning": "a short closing summary"
 },
 {
 "term": "to circle back",
-"meaning": "to return to a topic later",
-"emoji": "🔁"
+"meaning": "to return to a topic later"
 },
 {
 "term": "to keep this brief",
-"meaning": "a polite way to signal you'll be quick",
-"emoji": "⏱️"
+"meaning": "a polite way to signal you'll be quick"
 },
 {
 "term": "any final questions?",
-"meaning": "a natural way to close a conversation",
-"emoji": "❓"
+"meaning": "a natural way to close a conversation"
 },
 {
 "term": "a takeaway",
-"meaning": "the key point someone leaves with",
-"emoji": "🎁"
+"meaning": "the key point someone leaves with"
+},
+{
+"term": "to keep it brief",
+"meaning": "to make something short and to the point"
+},
+{
+"term": "any final questions",
+"meaning": "checking if anyone needs more clarification"
+},
+{
+"term": "to wrap up",
+"meaning": "to bring something to a close"
 }
 ],
 "tasks": [
@@ -1900,28 +2219,35 @@
 "vocab": [
 {
 "term": "a diagnostic",
-"meaning": "an assessment that identifies specific weak points",
-"emoji": "🩺"
+"meaning": "an assessment that identifies specific weak points"
 },
 {
 "term": "a weak point",
-"meaning": "a specific, recurring gap in ability",
-"emoji": "📉"
+"meaning": "a specific, recurring gap in ability"
 },
 {
 "term": "a study plan",
-"meaning": "a structured plan for what to practice and when",
-"emoji": "📚"
+"meaning": "a structured plan for what to practice and when"
 },
 {
 "term": "to prioritize review",
-"meaning": "to choose what to revisit first, based on impact",
-"emoji": "📌"
+"meaning": "to choose what to revisit first, based on impact"
 },
 {
 "term": "exam format",
-"meaning": "the specific structure and timing of the real test",
-"emoji": "📝"
+"meaning": "the specific structure and timing of the real test"
+},
+{
+"term": "a diagnostic test",
+"meaning": "a test to identify strengths/weaknesses"
+},
+{
+"term": "a mock exam",
+"meaning": "a practice test done under real exam conditions"
+},
+{
+"term": "exam technique",
+"meaning": "strategies for managing time and answering well in an exam"
 }
 ],
 "tasks": [
