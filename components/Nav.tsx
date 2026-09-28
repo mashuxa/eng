@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import AuthButton from './AuthButton';
 
 const TABS = [
   { href: '/', label: 'Home' },
@@ -19,6 +20,7 @@ export default function Nav() {
           {t.label}
         </Link>
       ))}
+      <AuthButton />
     </nav>
   );
 }

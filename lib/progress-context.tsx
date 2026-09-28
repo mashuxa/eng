@@ -1,22 +1,15 @@
 'use client';
 
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { createContext, useContext, useEffect, useRef, useState, ReactNode } from 'react';
-
-// Fallback values keep local dev / a Vercel deploy without env vars working too —
-// these are public anon keys, safe to read from the client either way.
-const SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://jimlnwemwyyzqybtbkxg.supabase.co';
-const SUPABASE_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppbWxud2Vtd3l5enF5YnRia3hnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA2MDU3MzMsImV4cCI6MjEwNjE4MTczM30.kzRfBmuzidF-p6CqfW7u_3bpQ7dydOF3TLemcZiF_OI';
+import { createClient } from '@/lib/supabase/client';
+import type { User } from '@supabase/supabase-js';
 
 export type Progress = {
   lessons: Record<string, boolean>;
   activity: Record<string, boolean>;
 };
 
-type SyncState = 'loading' | 'synced' | 'saving' | 'error';
+type SyncState = 'loading' | 'synced' | 'saving' | 'error' | 'signed-out';
 
 type ProgressContextValue = {
   progress: Progress;
@@ -26,15 +19,7 @@ type ProgressContextValue = {
 };
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
-
 const EMPTY: Progress = { lessons: {}, activity: {} };
-
-let sb: SupabaseClient | null = null;
-try {
-  sb = createClient(SUPABASE_URL, SUPABASE_KEY);
-} catch {
-  sb = null;
-}
 
 function readLocal(): Progress {
   try {
@@ -48,7 +33,6 @@ function readLocal(): Progress {
   }
   return { ...EMPTY };
 }
-
 function writeLocal(p: Progress) {
   try {
     window.localStorage.setItem('eng-progress', JSON.stringify(p));
@@ -60,31 +44,45 @@ function writeLocal(p: Progress) {
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState<Progress>(EMPTY);
   const [syncState, setSyncState] = useState<SyncState>('loading');
+  const [user, setUser] = useState<User | null>(null);
   const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const didInit = useRef(false);
+  const [supabase] = useState(() => createClient());
+  const didInitLocal = useRef(false);
 
+  // load the local cache immediately so the UI never waits on the network
   useEffect(() => {
-    if (didInit.current) return;
-    didInit.current = true;
+    if (didInitLocal.current) return;
+    didInitLocal.current = true;
+    setProgress(readLocal());
+  }, []);
 
-    const local = readLocal();
-    setProgress(local);
+  // track auth state
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data }) => setUser(data.user ?? null));
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => sub.subscription.unsubscribe();
+  }, [supabase]);
 
+  // signed in -> pull + merge remote (own row only, via RLS)
+  useEffect(() => {
+    if (!user) {
+      setSyncState('signed-out');
+      return;
+    }
     (async () => {
-      if (!sb) {
-        setSyncState('error');
-        return;
-      }
+      setSyncState('loading');
       try {
-        const { data, error } = await sb
+        const { data, error } = await supabase
           .from('eng_progress')
           .select('data,updated_at')
-          .eq('id', 'main')
-          .single();
-        if (!error && data) {
+          .eq('user_id', user.id)
+          .maybeSingle();
+        if (!error) {
           const localTs = window.localStorage.getItem('eng-progress-ts');
-          const remoteTs = data.updated_at as string | null;
-          if (!localTs || (remoteTs && new Date(remoteTs) > new Date(localTs))) {
+          const remoteTs = data?.updated_at as string | undefined;
+          if (data && (!localTs || (remoteTs && new Date(remoteTs) > new Date(localTs)))) {
             const remote = (data.data as Progress) || { ...EMPTY };
             const merged = { lessons: remote.lessons || {}, activity: remote.activity || {} };
             setProgress(merged);
@@ -97,19 +95,18 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         setSyncState('error');
       }
     })();
-  }, []);
+  }, [user, supabase]);
 
   function pushRemote(next: Progress) {
+    if (!user) return; // not signed in: local-only, nothing to push
     setSyncState('saving');
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(async () => {
-      if (!sb) {
-        setSyncState('error');
-        return;
-      }
       const ts = new Date().toISOString();
       try {
-        const { error } = await sb.from('eng_progress').upsert({ id: 'main', data: next, updated_at: ts });
+        const { error } = await supabase
+          .from('eng_progress')
+          .upsert({ user_id: user.id, data: next, updated_at: ts });
         if (error) throw error;
         window.localStorage.setItem('eng-progress-ts', ts);
         setSyncState('synced');

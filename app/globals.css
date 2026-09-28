@@ -11,6 +11,10 @@ nav h1{font-size:1.15rem;margin:4px 8px 20px;}
 nav a.tab{display:block;width:100%;text-align:left;background:none;border:none;color:var(--muted);font-size:0.95rem;padding:10px 12px;border-radius:8px;cursor:pointer;margin-bottom:4px;font-weight:500;text-decoration:none;}
 nav a.tab:hover{background:var(--panel2);color:var(--text);}
 nav a.tab.active{background:var(--accent);color:#0b0d12;}
+.auth-box{margin-top:20px;padding-top:16px;border-top:1px solid var(--border);display:flex;flex-direction:column;gap:8px;min-height:60px;}
+.auth-email{color:var(--muted);font-size:0.75rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 4px;}
+.auth-btn{background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:9px 10px;border-radius:8px;cursor:pointer;font-size:0.8rem;font-weight:500;}
+.auth-btn:hover{border-color:var(--accent);color:var(--text);}
 main{flex:1;padding:32px 36px;max-width:980px;}
 h2{font-size:1.5rem;margin-bottom:4px;}
 .sub{color:var(--muted);margin-top:0;margin-bottom:24px;font-size:0.95rem;}

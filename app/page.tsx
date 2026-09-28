@@ -36,6 +36,8 @@ export default function HomePage() {
             ? 'saving…'
             : syncState === 'error'
             ? 'offline — saved locally only'
+            : syncState === 'signed-out'
+            ? 'not signed in — saved locally only'
             : 'loading…'}
         </span>
       </div>
