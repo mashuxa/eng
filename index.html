@@ -1,34 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eng — Workplace English Learning</title>
+<title>Eng</title>
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 640px;
-    margin: 80px auto;
-    padding: 0 20px;
-    color: #1a1a1a;
-    background: #fafafa;
+  :root{
+    --bg:#0b0d12; --panel:#12151c; --panel2:#161a23; --border:#232838;
+    --text:#e7e9ee; --muted:#8b91a3; --accent:#6ea8fe; --accent2:#7ee0c3;
+    --chip:#1b2030; --chip-border:#2a3145;
   }
-  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-  p.tagline { color: #555; margin-top: 0; }
-  .status {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: #eef0ff;
-    color: #4338ca;
-    font-size: 0.9rem;
-  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);}
+  .app{display:flex;min-height:100vh;}
+  nav{width:220px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--border);padding:20px 12px;position:sticky;top:0;height:100vh;}
+  nav h1{font-size:1.15rem;margin:4px 8px 20px;}
+  nav button{display:block;width:100%;text-align:left;background:none;border:none;color:var(--muted);font-size:0.95rem;padding:10px 12px;border-radius:8px;cursor:pointer;margin-bottom:4px;font-weight:500;}
+  nav button:hover{background:var(--panel2);color:var(--text);}
+  nav button.active{background:var(--accent);color:#0b0d12;}
+  main{flex:1;padding:32px 36px;max-width:980px;}
+  section{display:none;}
+  section.active{display:block;}
+  h2{font-size:1.5rem;margin-bottom:4px;}
+  .sub{color:var(--muted);margin-top:0;margin-bottom:24px;font-size:0.95rem;}
+  .group{margin-bottom:22px;}
+  .group h3{font-size:0.85rem;text-transform:uppercase;letter-spacing:.04em;color:var(--accent2);margin-bottom:10px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{background:var(--chip);border:1px solid var(--chip-border);color:var(--text);padding:6px 12px;border-radius:20px;font-size:0.85rem;}
+  .week{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:12px;}
+  .week .dates{color:var(--accent);font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em;}
+  .week h4{margin:4px 0 8px;font-size:1.05rem;}
+  .week p{margin:2px 0;color:var(--muted);font-size:0.9rem;}
+  .week p b{color:var(--text);font-weight:600;}
+  .dec{background:linear-gradient(135deg,#1b2030,#231a2e);border:1px solid #3a2f52;border-radius:12px;padding:20px;margin-top:24px;}
+  .dec h3{color:#c9a8ff;margin-top:0;}
+  .dec ul{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:0.9rem;}
+  .dec li{margin-bottom:4px;}
+  .day-structure{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;}
+  .day-structure div{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:0.85rem;flex:1;min-width:130px;}
+  .day-structure div b{display:block;color:var(--accent2);font-size:0.8rem;margin-bottom:2px;}
+  @media(max-width:720px){.app{flex-direction:column}nav{width:100%;height:auto;position:relative;display:flex;gap:6px;padding:12px;}nav h1{display:none}nav button{margin:0;flex:1;text-align:center}main{padding:20px;}}
 </style>
 </head>
 <body>
-  <h1>🇬🇧 Eng</h1>
-  <p class="tagline">Workplace English learning — B1 → B2, for a senior frontend developer.</p>
-  <span class="status">🚧 Under construction</span>
+<div class="app">
+  <nav>
+    <h1>🇬🇧 Eng</h1>
+    <button class="tab active" data-target="home">Home</button>
+    <button class="tab" data-target="topics">Topics</button>
+    <button class="tab" data-target="plan">Plan</button>
+  </nav>
+  <main>
+
+    <section id="home" class="active">
+      <h2>Workplace English — B1 → B2</h2>
+      <p class="sub">Senior frontend developer · target: confident B2, exam in December</p>
+      <div class="chips">
+        <span class="chip">103 speaking topics</span>
+        <span class="chip">9 weeks · Oct–Nov</span>
+        <span class="chip">2h / day · Mon–Fri</span>
+        <span class="chip">December: exam polish</span>
+      </div>
+    </section>
+
+    <section id="topics">
+      <h2>Topics</h2>
+      <p class="sub">All business domains and speaking situations covered</p>
+
+      <div class="group"><h3>A · Real domains (from CV)</h3><div class="chips">
+        <span class="chip">B2C e-commerce / storefronts</span><span class="chip">B2B / bulk orders</span>
+        <span class="chip">Dealer & partner portals</span><span class="chip">Referral / influencer / affiliate</span>
+        <span class="chip">Marketplace</span><span class="chip">Retail & fashion</span>
+        <span class="chip">POS & restaurant business</span><span class="chip">Events & ticketing</span>
+        <span class="chip">Logistics & delivery</span><span class="chip">Fintech</span>
+        <span class="chip">Payments</span><span class="chip">Compliance & document verification</span>
+        <span class="chip">SaaS / multi-portal</span><span class="chip">Subscriptions & billing</span>
+        <span class="chip">EdTech / e-learning</span><span class="chip">Games & entertainment</span>
+        <span class="chip">Admin panels & operations</span><span class="chip">Customer support & operations</span>
+        <span class="chip">Analytics & monitoring</span><span class="chip">UI/UX & design systems</span>
+      </div></div>
+
+      <div class="group"><h3>B · Named, not in CV</h3><div class="chips">
+        <span class="chip">Banking</span><span class="chip">Loans & credit</span>
+        <span class="chip">Mortgages</span><span class="chip">Gambling / iGaming</span>
+      </div></div>
+
+      <div class="group"><h3>C · Training domains</h3><div class="chips">
+        <span class="chip">Insurance</span><span class="chip">Healthcare</span><span class="chip">Telemedicine</span>
+        <span class="chip">Real estate / PropTech</span><span class="chip">Travel & hospitality</span>
+        <span class="chip">Booking / reservations</span><span class="chip">Food delivery</span>
+        <span class="chip">HR / recruitment</span><span class="chip">LegalTech</span>
+        <span class="chip">Media / content platforms</span><span class="chip">Social networks</span>
+        <span class="chip">Marketing & advertising</span>
+      </div></div>
+
+      <div class="group"><h3>D · Technical topics</h3><div class="chips">
+        <span class="chip">Architecture decisions</span><span class="chip">Scalability</span>
+        <span class="chip">Performance (SSR, cache, SEO)</span><span class="chip">Security</span>
+        <span class="chip">Auth & authorization</span><span class="chip">Third-party integrations</span>
+        <span class="chip">Data & privacy (GDPR)</span><span class="chip">Compliance & regulations</span>
+        <span class="chip">Real-time & notifications</span><span class="chip">CMS & headless commerce</span>
+        <span class="chip">Backend & infrastructure</span><span class="chip">Technical limitations</span>
+        <span class="chip">Migration & legacy</span><span class="chip">Launch & release</span>
+        <span class="chip">Maintenance & support</span><span class="chip">Incidents & outages</span>
+        <span class="chip">Testing, quality & tech debt</span>
+      </div></div>
+
+      <div class="group"><h3>E · Business situations & client communication</h3><div class="chips">
+        <span class="chip">Requirements discovery</span><span class="chip">Product requirements / user needs</span>
+        <span class="chip">Scope & scope creep</span><span class="chip">Changing requirements</span>
+        <span class="chip">MVP / roadmap / strategy</span><span class="chip">Prioritization</span>
+        <span class="chip">Estimation</span><span class="chip">Timeline & deadlines</span>
+        <span class="chip">Budget, costs, ROI</span><span class="chip">Resources & team</span>
+        <span class="chip">Dependencies</span><span class="chip">Risks & mitigation</span>
+        <span class="chip">Business priorities & goals</span><span class="chip">Market / competition / business model</span>
+        <span class="chip">Trade-offs</span><span class="chip">Comparing alternatives</span>
+        <span class="chip">Making recommendations</span><span class="chip">Presenting solutions</span>
+        <span class="chip">Explaining tech to non-tech people</span><span class="chip">Stakeholder management</span>
+        <span class="chip">Managing client expectations</span><span class="chip">Negotiation</span>
+        <span class="chip">Handling objections</span><span class="chip">Polite disagreement / pushback</span>
+        <span class="chip">Saying no professionally</span>
+      </div></div>
+
+      <div class="group"><h3>F · Team, process & about yourself</h3><div class="chips">
+        <span class="chip">Standup / status update</span><span class="chip">Code review & feedback</span>
+        <span class="chip">Demo / retro / Jira</span><span class="chip">Discovery call</span>
+        <span class="chip">Tell me about yourself / career gap</span><span class="chip">Interview & expectations</span>
+        <span class="chip">Handling unexpected questions</span><span class="chip">Clarification & paraphrasing</span>
+      </div></div>
+
+      <div class="group"><h3>G · Everyday life</h3><div class="chips">
+        <span class="chip">Small talk</span><span class="chip">Travel</span><span class="chip">Restaurants & shopping</span>
+        <span class="chip">Neighbors</span><span class="chip">Doctors & services</span><span class="chip">Plans</span>
+        <span class="chip">Storytelling</span><span class="chip">Emotions & opinions</span>
+      </div></div>
+
+      <div class="group"><h3>H · Random topics</h3><div class="chips">
+        <span class="chip">Movies</span><span class="chip">Books</span><span class="chip">Technology</span>
+        <span class="chip">Society</span><span class="chip">Hobbies</span><span class="chip">Parenting</span>
+        <span class="chip">Money</span><span class="chip">News</span><span class="chip">Hypotheticals</span>
+      </div></div>
+    </section>
+
+    <section id="plan">
+      <h2>Plan · Oct–Nov, daily Mon–Fri, 2h</h2>
+      <p class="sub">December: полировка перед B2-экзаменом</p>
+
+      <div class="day-structure">
+        <div><b>30 мин</b>Grammar — тема недели</div>
+        <div><b>20 мин</b>Vocabulary — слова из Notion с низким Score</div>
+        <div><b>50 мин</b>Speaking simulation — тема дня</div>
+        <div><b>20 мин</b>Feedback + error log</div>
+      </div>
+
+      <div class="week"><div class="dates">28 Сен – 2 Окт · Неделя 1</div>
+        <h4>Grammar: articles + 3rd person -s</h4>
+        <p><b>Домены:</b> e-commerce & storefronts, B2B / bulk orders</p></div>
+
+      <div class="week"><div class="dates">5 – 9 Окт · Неделя 2</div>
+        <h4>Grammar: past tense + word order</h4>
+        <p><b>Домены:</b> payments, fintech, compliance & documents</p></div>
+
+      <div class="week"><div class="dates">12 – 16 Окт · Неделя 3</div>
+        <h4>Grammar: infinitive vs gerund</h4>
+        <p><b>Домены:</b> SaaS, admin panels, analytics, UI/UX</p></div>
+
+      <div class="week"><div class="dates">19 – 23 Окт · Неделя 4</div>
+        <h4>Grammar: prepositions + conditionals</h4>
+        <p><b>Домены:</b> logistics & delivery, POS/restaurant, marketplace</p></div>
+
+      <div class="week"><div class="dates">26 – 30 Окт · Неделя 5</div>
+        <h4>Grammar: passive voice + reported speech (повтор)</h4>
+        <p><b>Домены:</b> events & ticketing, subscriptions & billing, dealer/referral</p></div>
+
+      <div class="week"><div class="dates">2 – 6 Ноя · Неделя 6</div>
+        <h4>Grammar: relative clauses + сложные предложения</h4>
+        <p><b>Домены:</b> architecture, security, auth, integrations, data/privacy</p></div>
+
+      <div class="week"><div class="dates">9 – 13 Ноя · Неделя 7</div>
+        <h4>Блок: requirements, scope, estimation, trade-offs</h4>
+        <p><b>Сценарии:</b> discovery call, negotiation, handling objections</p></div>
+
+      <div class="week"><div class="dates">16 – 20 Ноя · Неделя 8</div>
+        <h4>Блок: risks, incidents, migration, stakeholder management</h4>
+        <p><b>Сценарии:</b> standup, code review, demo, tell me about yourself / interview</p></div>
+
+      <div class="week"><div class="dates">23 – 27 Ноя · Неделя 9</div>
+        <h4>Mixed simulation — без подготовки, случайные темы</h4>
+        <p><b>Домены:</b> banking, gambling, healthcare, real estate, travel + everyday + storytelling (STAR)</p></div>
+
+      <div class="dec">
+        <h3>Декабрь — полировка перед B2</h3>
+        <ul>
+          <li>1–3 дек: полный mock-тест (speaking + writing + listening) → находим реальные провалы</li>
+          <li>Ежедневно: 1 grammar drill по error log + 1 таймированное задание в формате экзамена</li>
+          <li>Приоритет по диагностике: articles, 3rd person -s, past tense, word order, infinitive/gerund, prepositions, conditionals</li>
+          <li>Отдельно закрыть непроверенное: listening на естественной скорости, writing</li>
+          <li>Последние 2 недели: один полный практический тест в неделю + разбор ошибок</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script>
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('main section').forEach(s=>s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.target).classList.add('active');
+  });
+});
+</script>
 </body>
 </html>
