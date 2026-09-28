@@ -51,7 +51,7 @@ function buildCells(startStr: string, endStr: string) {
 }
 
 export default function Heatmap({ start, end }: { start: string; end: string }) {
-  const { progress, toggleActivity, isSignedIn } = useProgress();
+  const { progress, toggleActivity } = useProgress();
   const scrollRef = useRef<HTMLDivElement>(null);
   const { cells, monthLabels } = buildCells(start, end);
 
@@ -88,12 +88,12 @@ export default function Heatmap({ start, end }: { start: string; end: string }) 
                 className={
                   'cell' +
                   (progress.activity[c.iso] ? ' done' : '') +
-                  (c.isFuture || !isSignedIn ? ' future' : '') +
+                  (c.isFuture ? ' future' : '') +
                   (c.isToday ? ' today' : '')
                 }
-                title={!isSignedIn ? 'Sign in to save progress' : c.iso}
+                title={c.iso}
                 onClick={() => {
-                  if (!c.isFuture && isSignedIn) toggleActivity(c.iso);
+                  if (!c.isFuture) toggleActivity(c.iso);
                 }}
               />
             )

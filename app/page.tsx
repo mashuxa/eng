@@ -6,7 +6,7 @@ import { useProgress } from '@/lib/progress-context';
 import lessons from '@/data/lessons.json';
 
 export default function HomePage() {
-  const { progress, syncState, isSignedIn, setGoal } = useProgress();
+  const { progress, setGoal } = useProgress();
   const done = lessons.filter((l) => progress.lessons[String(l.day)]).length;
 
   const [start, setStart] = useState('');
@@ -26,7 +26,7 @@ export default function HomePage() {
     setEditing(false);
   }
 
-  const showForm = isSignedIn && (!progress.goal || editing);
+  const showForm = !progress.goal || editing;
 
   return (
     <section>
@@ -41,65 +41,42 @@ export default function HomePage() {
         </span>
       </div>
 
-      {!isSignedIn && (
-        <div className="signin-banner">
-          <b>Sign in to save progress</b>
-          <span>Nothing is saved while you&apos;re signed out — use the button in the sidebar.</span>
+      <h3 className="section-label">Activity</h3>
+
+      {showForm ? (
+        <div className="goal-form">
+          <p className="sub" style={{ marginBottom: 12 }}>
+            Set your study period to start tracking activity
+          </p>
+          <div className="goal-inputs">
+            <label>
+              From
+              <input type="date" value={start} onChange={(e) => setStart(e.target.value)} />
+            </label>
+            <label>
+              To
+              <input type="date" value={end} min={start || undefined} onChange={(e) => setEnd(e.target.value)} />
+            </label>
+            <button className="auth-btn" onClick={saveGoal} disabled={!start || !end || end < start}>
+              Save
+            </button>
+            {progress.goal && (
+              <button className="link-btn" onClick={() => setEditing(false)}>
+                Cancel
+              </button>
+            )}
+          </div>
         </div>
-      )}
-
-      {isSignedIn && (
+      ) : (
         <>
-          <h3 className="section-label">Activity</h3>
-
-          {showForm ? (
-            <div className="goal-form">
-              <p className="sub" style={{ marginBottom: 12 }}>
-                Set your study period to start tracking activity
-              </p>
-              <div className="goal-inputs">
-                <label>
-                  From
-                  <input type="date" value={start} onChange={(e) => setStart(e.target.value)} />
-                </label>
-                <label>
-                  To
-                  <input type="date" value={end} min={start || undefined} onChange={(e) => setEnd(e.target.value)} />
-                </label>
-                <button className="auth-btn" onClick={saveGoal} disabled={!start || !end || end < start}>
-                  Save
-                </button>
-                {progress.goal && (
-                  <button className="link-btn" onClick={() => setEditing(false)}>
-                    Cancel
-                  </button>
-                )}
-              </div>
-            </div>
-          ) : (
-            <>
-              <div className="sync-line">
-                <span
-                  className={
-                    'sync-dot' + (syncState === 'synced' ? ' ok' : syncState === 'error' ? ' err' : '')
-                  }
-                />
-                <span>
-                  {syncState === 'synced'
-                    ? 'synced'
-                    : syncState === 'saving'
-                    ? 'saving…'
-                    : syncState === 'error'
-                    ? 'offline — try again in a moment'
-                    : 'loading…'}
-                </span>
-                <button className="link-btn" onClick={() => setEditing(true)}>
-                  edit dates
-                </button>
-              </div>
-              {progress.goal && <Heatmap start={progress.goal.start} end={progress.goal.end} />}
-            </>
-          )}
+          <div className="sync-line">
+            <span className="sync-dot ok" />
+            <span>saved in this browser</span>
+            <button className="link-btn" onClick={() => setEditing(true)}>
+              edit dates
+            </button>
+          </div>
+          {progress.goal && <Heatmap start={progress.goal.start} end={progress.goal.end} />}
         </>
       )}
     </section>
